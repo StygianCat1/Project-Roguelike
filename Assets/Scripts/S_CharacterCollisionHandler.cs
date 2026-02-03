@@ -1,17 +1,16 @@
 using System;
 using UnityEngine;
 
-public class CharacterCollisionHandler : MonoBehaviour
+public class S_CharacterCollisionHandler : MonoBehaviour
 {
+    public Teleporter teleporterRef;   
     
-    private Rogue_Inputs _inputsManager;
-    private Rogue_Combat _rogueCombat;
+    private S_Rogue_Inputs _inputsManager;
+    private S_Rogue_Combat _rogueCombat;
     
-    public Teleporter teleporterRef;
-
     private void Start()
     {
-        _inputsManager = GetComponentInParent<Rogue_Inputs>();
+        _inputsManager = GetComponentInParent<S_Rogue_Inputs>();
     }
 
     private void Update()

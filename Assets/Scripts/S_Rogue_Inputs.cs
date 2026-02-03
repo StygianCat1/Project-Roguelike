@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class Rogue_Inputs : MonoBehaviour
+public class S_Rogue_Inputs : MonoBehaviour
 {
     public float moveX;
     

@@ -1,14 +1,14 @@
 using UnityEngine;
 
-public class Rogue_Combat : MonoBehaviour
+public class S_Rogue_Combat : MonoBehaviour
 {
-    private HP_Component _characterHealthRef;
-    private HP_Component _targetHealthRef;
+    private S_HP_Component _characterHealthRef;
+    private S_HP_Component _targetHealthRef;
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     private void Start()
     {
-        _characterHealthRef = this.GetComponent<HP_Component>();
+        _characterHealthRef = this.GetComponent<S_HP_Component>();
         
     }
 

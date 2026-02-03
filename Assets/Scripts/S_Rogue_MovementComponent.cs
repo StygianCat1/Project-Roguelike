@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Rogue_MovementComponent : MonoBehaviour
+public class S_Rogue_MovementComponent : MonoBehaviour
 {
     [SerializeField] private float _moveSmoothTime = 0.1f;
     [SerializeField] private float _movementSpeed = 10.0f;
@@ -18,7 +18,7 @@ public class Rogue_MovementComponent : MonoBehaviour
     [SerializeField] private float _dashCooldown = 1.0f;
     
     
-    private Rogue_Inputs _inputsManager;
+    private S_Rogue_Inputs _inputsManager;
     private Rigidbody _rigidbody;
     
     private Vector3 _currentMoveVelocity;
@@ -36,7 +36,7 @@ public class Rogue_MovementComponent : MonoBehaviour
     private void Start()
     {
         _rigidbody = GetComponent<Rigidbody>();
-        _inputsManager = GetComponent<Rogue_Inputs>();
+        _inputsManager = GetComponent<S_Rogue_Inputs>();
         
         _jumpSecurityTimer =_jumpSecurity;
     }

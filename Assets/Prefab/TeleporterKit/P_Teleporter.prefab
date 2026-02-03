@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 5828654731877574768}
   - component: {fileID: 2886872996696158773}
   m_Layer: 0
-  m_Name: Teleporter
+  m_Name: P_Teleporter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -143,3 +143,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f3b441cc05f9d543904e19d615b6b96, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tpLocation: {fileID: 0}

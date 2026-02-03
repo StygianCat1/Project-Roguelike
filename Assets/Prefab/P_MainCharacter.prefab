@@ -156,8 +156,9 @@ GameObject:
   - component: {fileID: 1472397160789954494}
   - component: {fileID: 5177497896356174817}
   - component: {fileID: 2689831106235062904}
+  - component: {fileID: 7848649993071821645}
   m_Layer: 0
-  m_Name: MainCharacter
+  m_Name: P_MainCharacter
   m_TagString: MainCharacter
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -390,3 +391,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98c30e42836efe144875e152eb6f2d19, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &7848649993071821645
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6302844824968189284}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c182dc87c70e26428f59d42e6da3044, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  teleporterRef: {fileID: 0}
