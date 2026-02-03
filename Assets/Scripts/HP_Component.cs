@@ -3,11 +3,11 @@ using UnityEngine;
 public class HP_Component : MonoBehaviour
 {
     [SerializeField] private int _maxHealth = 100;
-    [SerializeField] private int _currentHealth;
+    public int _currentHealth;
     
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    private void Start()
     {
         _currentHealth = _maxHealth;
     }

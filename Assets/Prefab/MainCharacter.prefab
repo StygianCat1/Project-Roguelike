@@ -17,6 +17,8 @@ GameObject:
   - component: {fileID: 2221901087103808506}
   - component: {fileID: 333786852210253151}
   - component: {fileID: 1472397160789954494}
+  - component: {fileID: 5177497896356174817}
+  - component: {fileID: 2689831106235062904}
   m_Layer: 0
   m_Name: MainCharacter
   m_TagString: MainCharacter
@@ -140,7 +142,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 80
+  m_Constraints: 88
   m_CollisionDetection: 0
 --- !u!114 &5696682646711467489
 MonoBehaviour:
@@ -200,6 +202,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveX: 0
   jump: 0
+  interact: 0
+  dash: 0
 --- !u!114 &1472397160789954494
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -216,3 +220,35 @@ MonoBehaviour:
   _movementSpeed: 10
   _jumpHeight: 5
   _gravityScale: 5
+  _backDashPower: 12
+  _backDashDuration: 0.1
+  _backDashCooldown: 0.1
+  _dashPower: 24
+  _dashDuration: 0.2
+  _dashCooldown: 1
+--- !u!114 &5177497896356174817
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6302844824968189284}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e4e4c3364fe1a14b89a7967f4a3655f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  resources1: 0
+  resources2: 0
+--- !u!114 &2689831106235062904
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6302844824968189284}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98c30e42836efe144875e152eb6f2d19, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
