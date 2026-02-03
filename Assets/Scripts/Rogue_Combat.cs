@@ -15,6 +15,6 @@ public class Rogue_Combat : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(_characterHealthRef._currentHealth);
+
     }
 }
