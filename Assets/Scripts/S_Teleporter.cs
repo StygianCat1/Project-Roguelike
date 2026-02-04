@@ -6,8 +6,9 @@ public class Teleporter : MonoBehaviour
 {
 
     public GameObject tpLocation;
-    
-    [SerializeField] private List<GameObject> teleporterToNotUse;
+
+    [SerializeField] private List<GameObject> _enemiesInZone;
+    [SerializeField][Tooltip("Only put the 'P_TpPoint' that you do not want to use in this list")] private List<GameObject> teleporterToNotUse;
     
     private GameObject _player;
     private S_CharacterCollisionHandler _collisionHandler;
@@ -79,6 +80,14 @@ public class Teleporter : MonoBehaviour
         if (_player != null && collision.gameObject.GameObject() == _player)
         {
             _collisionHandler.teleporterRef = null;
+        }
+    }
+
+    private void OnDrawGizmos()
+    {
+        if (tpLocation != null)
+        {
+            Gizmos.DrawLine(transform.position, tpLocation.transform.position);
         }
     }
 }
