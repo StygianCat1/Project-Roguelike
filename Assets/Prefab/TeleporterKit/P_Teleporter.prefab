@@ -31,7 +31,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 2.05, z: 1.05}
-  m_LocalScale: {x: 1.8035, y: 2.8884, z: 0.60013515}
+  m_LocalScale: {x: 2.8933551, y: 3.6172895, z: 0.60013515}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -108,7 +108,7 @@ BoxCollider:
   m_ProvidesContacts: 1
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.9999999, y: 1, z: 0.99999994}
+  m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!65 &5828654731877574768
 BoxCollider:
@@ -129,8 +129,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 4.4681892}
-  m_Center: {x: 0, y: 0, z: -1.7340949}
+  m_Size: {x: 1, y: 1, z: 5.3}
+  m_Center: {x: 0, y: 0, z: -2.15}
 --- !u!114 &2886872996696158773
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -144,3 +144,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tpLocation: {fileID: 0}
+  _enemiesInZone: []
+  teleporterToNotUse:
+  - {fileID: 0}
+  - {fileID: 0}
