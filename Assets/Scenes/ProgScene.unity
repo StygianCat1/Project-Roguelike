@@ -198,7 +198,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!65 &40084058
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -432,7 +432,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!65 &977577084
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -530,6 +530,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1472397160789954494, guid: 4fab1ef4e2cd21147a07ad997c09ad28, type: 3}
+      propertyPath: _jumpHeight
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 6302844824968189284, guid: 4fab1ef4e2cd21147a07ad997c09ad28, type: 3}
       propertyPath: m_Name
       value: P_MainCharacter
@@ -733,8 +737,10 @@ MonoBehaviour:
   _minRangeY: 0
   _maxRangeX: 27
   _maxRangeY: 12
-  _prefabSpawnUp: {fileID: 40084057}
-  _prefabSpawnDown: {fileID: 977577083}
+  _cutRoomVertically: 5
+  _cutRoomHorizontally: 2
+  _prefabSpawnUp: {fileID: 977577083}
+  _prefabSpawnDown: {fileID: 40084057}
   _prefabLittleRoom:
   - {fileID: 8809699801848148596, guid: c79255d449200c44ca34e6f39ccf037a, type: 3}
   _prefabMiddleRoom:
