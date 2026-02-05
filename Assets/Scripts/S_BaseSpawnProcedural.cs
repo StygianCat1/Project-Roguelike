@@ -5,16 +5,19 @@ using UnityEngine;
 public class Room
 {
     public Vector2 Size;
-    public Vector2 Center;
+    public Vector3 Center;
     public GameObject InstanciatedChunk;
 }
 
 public class S_BaseSpawnProcedural : MonoBehaviour
 {
-    [SerializeField]private int _minRangeX = 9; 
+    [SerializeField] private int _minRangeX = 9; 
     [SerializeField] private int _minRangeY = 6;
-    [SerializeField]private int _maxRangeX = 27;
-    [SerializeField]private int _maxRangeY = 12;
+    [SerializeField] private int _maxRangeX = 27;
+    [SerializeField] private int _maxRangeY = 12;
+    
+    [SerializeField] private int _cutRoomVertically = 2;
+    [SerializeField] private int _cutRoomHorizontally = 2;
     
     [SerializeField] private GameObject _prefabSpawnUp;
     [SerializeField] private GameObject _prefabSpawnDown;
@@ -29,7 +32,7 @@ public class S_BaseSpawnProcedural : MonoBehaviour
     private GameObject _prefabToDestroy;
     
     private List<Room> _roomsToCut ;
-    private List<Room> _rooms;
+    private List<Room> _roomsTotal;
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -39,15 +42,63 @@ public class S_BaseSpawnProcedural : MonoBehaviour
             Debug.LogError("Prefab Spawn Up or Spawn Down are required.");
             return;
         }
-        CutSizeInPart(_prefabSpawnDown);
+        DefineRoom(_prefabSpawnDown);
     }
 
     private void DefineRoom(GameObject prefab)
     {
         Room rootRoom = new Room();
-        _rooms = new List<Room>();
+        rootRoom.Size = _sizeRoomSize;
+        rootRoom.Center = new Vector3(prefab.transform.position.x + _offsetRoomSize.x, prefab.transform.position.y + (_sizeRoomSize.y /2.0f) + _offsetRoomSize.y, prefab.transform.position.z + _offsetRoomSize.z);;
+        
+        _roomsTotal = new List<Room>();
+        
         _roomsToCut = new List<Room>();
         _roomsToCut.Add(rootRoom);
+        
+        Room cuttableRoom = _roomsToCut[0];
+        float newHeightHorizontal = _sizeRoomSize.y / _cutRoomHorizontally;
+        for (int i = 0; i < _cutRoomHorizontally; i++)
+        {
+            Room roomUp = new Room();
+            Room roomDown = new Room();
+                
+            roomDown.Size = new Vector2(cuttableRoom.Size.x, newHeightHorizontal);
+            roomUp.Size = new Vector2(cuttableRoom.Size.x, cuttableRoom.Size.y - newHeightHorizontal);
+                
+            float offsetHorizontal  = (cuttableRoom.Size.y / 2) - (roomDown.Size.y / 2);
+            roomDown.Center = new Vector3(cuttableRoom.Center.x, cuttableRoom.Center.y - offsetHorizontal, cuttableRoom.Center.z);
+                
+            offsetHorizontal = (cuttableRoom.Size.y / 2) - (roomUp.Size.y/ 2);
+            roomUp.Center = new Vector3(cuttableRoom.Center.x, cuttableRoom.Center.y + offsetHorizontal, cuttableRoom.Center.z);
+
+            cuttableRoom = roomUp; 
+            _roomsToCut.Add(roomDown);
+        }
+        _roomsToCut.RemoveAt(0);
+        
+        float newWidthVertical = _sizeRoomSize.x / _cutRoomVertically;
+        foreach (Room cutRoom in _roomsToCut)
+        {
+            cuttableRoom = cutRoom;
+            for (int i = 0; i < _cutRoomVertically; i++)
+            {
+                Room roomLeft = new Room();
+                Room roomRight = new Room();
+                
+                roomLeft.Size = new Vector2(newWidthVertical, cuttableRoom.Size.y);
+                roomRight.Size = new Vector2(cuttableRoom.Size.x - newWidthVertical, cuttableRoom.Size.y);
+                
+                float offsetVertical  = (cuttableRoom.Size.x / 2) - (roomLeft.Size.x / 2);
+                roomLeft.Center = new Vector3(cuttableRoom.Center.x - offsetVertical, cuttableRoom.Center.y, cuttableRoom.Center.z);
+                
+                offsetVertical = (cuttableRoom.Size.x / 2) - (roomRight.Size.x / 2);
+                roomRight.Center = new Vector3(cuttableRoom.Center.x + offsetVertical, cuttableRoom.Center.y, cuttableRoom.Center.z);
+
+                cuttableRoom = roomRight;
+                _roomsTotal.Add(roomLeft);
+            }
+        }
     }
 
     private void CutSizeInPart(GameObject prefabToCut)
@@ -74,13 +125,20 @@ public class S_BaseSpawnProcedural : MonoBehaviour
             Gizmos.color = Color.red;
             Gizmos.DrawWireCube(new Vector3(_prefabSpawnDown.transform.position.x + _offsetRoomSize.x, _prefabSpawnDown.transform.position.y + (_sizeRoomSize.y /2.0f) + _offsetRoomSize.y, _prefabSpawnDown.transform.position.z + _offsetRoomSize.z), _sizeRoomSize);    
         }
-
-        if (_prefabSpawnUp != null || _prefabSpawnDown != null)
+        
+        if (_roomsTotal != null)
         {
-            Gizmos.color = Color.white;
-            Gizmos.DrawLine(_prefabSpawnUp.transform.position, _prefabSpawnDown.transform.position);    
+            foreach (Room room in _roomsTotal)
+            {
+                Gizmos.color = Color.white;
+                Gizmos.DrawWireCube(new Vector3(room.Center.x, room.Center.y ,room.Center.z ), new Vector3(room.Size.x, room.Size.y, 0));
+            }
         }
         
-        
+        if (_prefabSpawnUp != null || _prefabSpawnDown != null)
+        {
+            Gizmos.color = Color.black;
+            Gizmos.DrawLine(_prefabSpawnUp.transform.position, _prefabSpawnDown.transform.position);    
+        }
     }
 }
