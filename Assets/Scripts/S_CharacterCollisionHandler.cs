@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using UnityEngine;
 
 public class S_CharacterCollisionHandler : MonoBehaviour
@@ -20,10 +21,12 @@ public class S_CharacterCollisionHandler : MonoBehaviour
             if (teleporterRef != null && teleporterRef.tpLocation != null)
             {
                 transform.position = teleporterRef.tpLocation.transform.position;
-                return;
+                teleporterRef.IncrementTeleporter();
+                teleporterRef = null;
             }
         }
     }
+
 
     private void OnCollisionEnter(Collision collision)
     {

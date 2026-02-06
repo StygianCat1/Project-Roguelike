@@ -325,8 +325,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bab8da37cb1dbca4697f0d0920923689, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _maxHealth: 100
   _currentHealth: 0
+  _maxHealth: 100
 --- !u!114 &333786852210253151
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -357,7 +357,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _moveSmoothTime: 0.1
   _movementSpeed: 10
-  _jumpHeight: 5
+  _jumpHeight: 3
   _gravityScale: 5
   _backDashPower: 12
   _backDashDuration: 0.1

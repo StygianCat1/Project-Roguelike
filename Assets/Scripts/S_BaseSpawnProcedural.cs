@@ -51,7 +51,7 @@ public class S_BaseSpawnProcedural : MonoBehaviour
         DefineRoom(_prefabSpawnDown);
     }
 
-    private void DefineRoom(GameObject prefab)
+    public void DefineRoom(GameObject prefab)
     {
         Room rootRoom = new Room();
         rootRoom.Size = _sizeRoomSize;
@@ -219,7 +219,6 @@ public class S_BaseSpawnProcedural : MonoBehaviour
             S_RoomScript roomScript = prefabToSpawn.GetComponent<S_RoomScript>();
             if (_prefabSmallRoom.Contains(prefabToSpawn))
             {
-                Debug.Log("aled");
                 if (roomToSpawn == _roomsTotal[1])
                 {
                     Debug.Log("Working");
@@ -243,7 +242,7 @@ public class S_BaseSpawnProcedural : MonoBehaviour
         _roomsThatSpawnRef.Add(Instantiate(prefabToSpawn, new Vector3(roomToSpawn.Center.x - (roomToSpawn.Size.x / 2), roomToSpawn.Center.y - (roomToSpawn.Size.y / 2), roomToSpawn.Center.z), prefabToSpawn.transform.rotation));
     }
 
-    private void DestroyPrefab()
+    public void DestroyPrefab()
     {
         foreach (GameObject roomToDestroy in _roomsThatSpawnRef)
         { 
@@ -273,12 +272,6 @@ public class S_BaseSpawnProcedural : MonoBehaviour
                 Gizmos.color = Color.white;
                 Gizmos.DrawWireCube(new Vector3(room.Center.x, room.Center.y ,room.Center.z ), new Vector3(room.Size.x, room.Size.y, 0));
             }
-        }
-        
-        if (_prefabSpawnUp != null || _prefabSpawnDown != null)
-        {
-            Gizmos.color = Color.black;
-            Gizmos.DrawLine(_prefabSpawnUp.transform.position, _prefabSpawnDown.transform.position);    
         }
     }
 }
