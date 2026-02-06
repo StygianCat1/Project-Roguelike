@@ -8,12 +8,17 @@ public class Teleporter : MonoBehaviour
 {
 
     public GameObject tpLocation;
-    public S_TeleporterHandler _teleporterHandler;
+    [HideInInspector] public S_TeleporterHandler _teleporterHandler;
 
     [SerializeField] private List<GameObject> _enemiesInZone;
     
+    [SerializeField] private GameObject _roomToSpawn;
+    
+    [SerializeField] private S_BaseSpawnProcedural _spawnProcedural;
+    
     private GameObject _player;
     private S_CharacterCollisionHandler _collisionHandler;
+    
 
     private void Start()
     {
@@ -23,6 +28,22 @@ public class Teleporter : MonoBehaviour
         }
     }
 
+    public void IncrementTeleporter()
+    {
+        _teleporterHandler.floorNumber += 1;
+        SpawnRoomAndDestroyOther();
+        if (_teleporterHandler.floorNumber == _teleporterHandler.numberOfFloorToReach)
+        {
+            Debug.Log("Teleporter: Reached the end of the floor");
+            _teleporterHandler.ChangeRefToFinalTeleporter();
+        }
+    }
+
+    public void SpawnRoomAndDestroyOther()
+    {
+        _spawnProcedural.DestroyPrefab();
+        _spawnProcedural.DefineRoom(_roomToSpawn);
+    }
 
     private void OnTriggerEnter(Collider collision)
     {
