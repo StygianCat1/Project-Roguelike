@@ -2,8 +2,8 @@ namespace Enum
 {
     public enum E_RoomType
     {
-        BigRoom,
+        SmallRoom,
         MediumRoom,
-        LittleRoom
+        BigRoom
     }
 }

@@ -6,9 +6,11 @@ public class S_RoomScript : MonoBehaviour
     
     public GameObject _leftDoor ;
     public GameObject _rightDoor ;
+    public GameObject _leftUpDoor ;
+    public GameObject _rightUpDoor ;
 
     [SerializeField] private E_RoomType _roomType;
-    [SerializeField] private E_SpawnLocation _spawnLocation;
+    [SerializeField] private E_SpecialRoom _specialRoomtype;
 
     private bool _roomOnLeft = false;
     private bool _roomOnRight = false;
@@ -16,10 +18,14 @@ public class S_RoomScript : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     private void Start()
     {
-        Debug.Log(_roomType);
         if (_leftDoor == null || _rightDoor == null)
         {
             Debug.Log("You forgot to add a door reference");
+        }
+        if (_leftUpDoor != null && _rightUpDoor != null && _roomType == E_RoomType.BigRoom)
+        {
+            _leftUpDoor.SetActive(false);
+            _rightUpDoor.SetActive(false);
         }
         _leftDoor.SetActive(false);
         _rightDoor.SetActive(false);

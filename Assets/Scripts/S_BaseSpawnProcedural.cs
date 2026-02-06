@@ -11,24 +11,30 @@ public class Room
 
 public class S_BaseSpawnProcedural : MonoBehaviour
 {
-    [SerializeField] private int _minRangeX = 9; 
-    [SerializeField] private int _minRangeY = 6;
-    [SerializeField] private int _maxRangeX = 27;
-    [SerializeField] private int _maxRangeY = 12;
-    
     [SerializeField] private int _cutRoomVertically = 2;
     [SerializeField] private int _cutRoomHorizontally = 2;
     
     [SerializeField] private GameObject _prefabSpawnUp;
     [SerializeField] private GameObject _prefabSpawnDown;
     
-    [SerializeField] private List<GameObject> _prefabLittleRoom;
-    [SerializeField] private List<GameObject> _prefabMiddleRoom;
+    [SerializeField] private List<GameObject> _prefabSmallRoom;
+    [SerializeField] private List<GameObject> _prefabSpecialRoom;
+    [SerializeField] private List<GameObject> _prefabMediumRoom;
     [SerializeField] private List<GameObject> _prefabBigRoom;
+    
+    [SerializeField] private Vector2 _prefabSmallRoomSize;
+    [SerializeField] private Vector2 _prefabMediumRoomSize;
+    [SerializeField] private Vector2 _prefabBigRoomSize;
+    
+    [SerializeField] private float _prefabSmallRoomDropRate;
+    [SerializeField] private float _prefabMediumRoomDropRate;
+    [SerializeField] private float _prefabBigRoomDropRate;
     
     [SerializeField] private Vector3 _sizeRoomSize;
     [SerializeField][Tooltip("Use it as an offset to align to the place with the perfect point")] private Vector3 _offsetRoomSize;
     
+    
+    private List<GameObject> _roomsThatSpawnRef;
     private GameObject _prefabToDestroy;
     
     private List<Room> _roomsToCut ;
@@ -55,6 +61,8 @@ public class S_BaseSpawnProcedural : MonoBehaviour
         
         _roomsToCut = new List<Room>();
         _roomsToCut.Add(rootRoom);
+        
+        _roomsThatSpawnRef = new List<GameObject>();
         
         Room cuttableRoom = _roomsToCut[0];
         float newHeightHorizontal = _sizeRoomSize.y / _cutRoomHorizontally;
@@ -99,16 +107,148 @@ public class S_BaseSpawnProcedural : MonoBehaviour
                 _roomsTotal.Add(roomLeft);
             }
         }
+        ChosePrefab(prefab);
     }
 
-    private void CutSizeInPart(GameObject prefabToCut)
+    private void ChosePrefab(GameObject prefabToCut)
     {
+        List<List<bool>> roomsToUsed = new List<List<bool>>();
         
+        for (int i = 0; i < _cutRoomHorizontally; i++)
+        {
+            roomsToUsed.Add(new List<bool> {false});
+        }
+        foreach (List<bool> listOfBools in roomsToUsed)
+        {
+            for (int i = 0; i < _cutRoomVertically - 1; i++)
+            {
+                listOfBools.Add(false);
+            }
+        }
+        
+        if (_prefabSmallRoomDropRate + _prefabMediumRoomDropRate + _prefabBigRoomDropRate == 100)
+        {
+            for (int i = 0 ; i < roomsToUsed.Count ; i++)
+            {
+                for (int j = 0 ; j < roomsToUsed[i].Count ; j++)
+                {
+                     if (roomsToUsed[i][j]) 
+                     {
+                         continue; 
+                     }
+                     while (!roomsToUsed[i][j])
+                     {
+                         int randomNumber = Random.Range(0, 100);
+                         int numberVerify = 0;
+                         if (randomNumber < _prefabSmallRoomDropRate)
+                         {
+                            for (int k = 0; k < _prefabSmallRoomSize.y; k++)
+                            {
+                                for (int l = 0; l < _prefabSmallRoomSize.x; l++)
+                                {
+                                    roomsToUsed[i+k][j+l] = true;
+                                    SpawnPrefab(_roomsTotal[i*_cutRoomVertically+j],_prefabSmallRoom[Random.Range(0, _prefabSmallRoom.Count)]);
+                                }
+                            }
+                         }
+                         else if (randomNumber >= _prefabSmallRoomDropRate && randomNumber < _prefabSmallRoomDropRate + _prefabMediumRoomDropRate)
+                         {
+                            for (int k = 0; k < _prefabMediumRoomSize.y; k++)
+                            {
+                                for (int l = 0; l < _prefabMediumRoomSize.x; l++)
+                                {
+                                    if (i+k > roomsToUsed.Count - 1 || j+l > roomsToUsed[i].Count - 1)
+                                    {
+                                        continue;
+                                    }
+                                    numberVerify++;
+                                }
+                            }
+                            if (numberVerify == _prefabMediumRoomSize.y * _prefabMediumRoomSize.x)
+                            {
+                                for (int k = 0; k < _prefabMediumRoomSize.y; k++)
+                                {
+                                    for (int l = 0; l < _prefabMediumRoomSize.x; l++)
+                                    {
+                                        roomsToUsed[i+k][j+l] = true;
+                                    }
+                                }
+
+                                SpawnPrefab(_roomsTotal[i*_cutRoomVertically+j],_prefabMediumRoom[Random.Range(0, _prefabMediumRoom.Count)]);
+                            }
+                         }
+                         else
+                         {
+                            for (int k = 0; k < _prefabBigRoomSize.y; k++)
+                            {
+                                for (int l = 0; l < _prefabBigRoomSize.x; l++)
+                                {
+                                    if (i+k > roomsToUsed.Count - 1 || j+l > roomsToUsed[i].Count - 1)
+                                    {
+                                        continue;
+                                    }
+                                    numberVerify++;
+                                }
+                            }
+                            if (numberVerify == _prefabBigRoomSize.y * _prefabBigRoomSize.x)
+                            {
+                                for (int k = 0; k < _prefabBigRoomSize.y; k++)
+                                {
+                                    for (int l = 0; l < _prefabBigRoomSize.x; l++)
+                                    {
+                                        roomsToUsed[i+k][j+l] = true;
+                                    }
+                                }
+                                SpawnPrefab(_roomsTotal[i*_cutRoomVertically+j],_prefabBigRoom[Random.Range(0, _prefabBigRoom.Count)]);
+                            }
+                         }
+                     }
+                }
+            }
+        }
+        else
+        {
+            Debug.Log("Impossible to spawn rooms, need a total of 100 in drop rate to begin");
+        }
     }
 
-    private void DestroyPrefab(GameObject prefabToDestroy)
+    private void SpawnPrefab(Room roomToSpawn, GameObject prefabToSpawn)
     {
-        Destroy(prefabToDestroy);
+        if (prefabToSpawn.GetComponent<S_RoomScript>() != null)
+        {
+            S_RoomScript roomScript = prefabToSpawn.GetComponent<S_RoomScript>();
+            if (_prefabSmallRoom.Contains(prefabToSpawn))
+            {
+                Debug.Log("aled");
+                if (roomToSpawn == _roomsTotal[1])
+                {
+                    Debug.Log("Working");
+                }
+            }
+            else if (_prefabMediumRoom.Contains(prefabToSpawn))
+            {
+                if (roomToSpawn == _roomsTotal[1])
+                {
+                    Debug.Log("Working");
+                }
+            }
+            else if (_prefabBigRoom.Contains(prefabToSpawn))
+            {
+                if (roomToSpawn == _roomsTotal[1])
+                {
+                    Debug.Log("Working");
+                }
+            }
+        }
+        _roomsThatSpawnRef.Add(Instantiate(prefabToSpawn, new Vector3(roomToSpawn.Center.x - (roomToSpawn.Size.x / 2), roomToSpawn.Center.y - (roomToSpawn.Size.y / 2), roomToSpawn.Center.z), prefabToSpawn.transform.rotation));
+    }
+
+    private void DestroyPrefab()
+    {
+        foreach (GameObject roomToDestroy in _roomsThatSpawnRef)
+        { 
+            Destroy(roomToDestroy);   
+        }
     }
 
 

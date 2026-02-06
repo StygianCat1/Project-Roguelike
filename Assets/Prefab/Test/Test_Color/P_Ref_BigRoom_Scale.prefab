@@ -30,11 +30,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3866026464a894548a608c29a873c907, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3866026464a894548a608c29a873c907, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3866026464a894548a608c29a873c907, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -103,3 +103,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _leftDoor: {fileID: 0}
   _rightDoor: {fileID: 0}
+  _roomType: 0
+  _spawnLocation: 0
