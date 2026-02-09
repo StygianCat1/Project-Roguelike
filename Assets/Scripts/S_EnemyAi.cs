@@ -5,10 +5,6 @@ using Random = Unity.Mathematics.Random;
 
 public class S_EnemyAi : MonoBehaviour
 {
-    private  NavMeshAgent _agent; 
-    private Transform _player;
-    private S_HP_Component _health;
-    
     [SerializeField] private GameObject _characterPrefab;
     
     [SerializeField] private Vector3 _walkPoint;
@@ -16,11 +12,15 @@ public class S_EnemyAi : MonoBehaviour
     
     [SerializeField] private float _timeBetweenAttacks;
     
+    [SerializeField] private float _sightRange = 10f, _attackRange = 1f;
+    
+    private  NavMeshAgent _agent; 
+    private Transform _player;
+    private S_HP_Component _health;
+    
     private bool _walkPointSet;
     private bool _alreadyAttacked;
-    
-    [SerializeField] private float _sightRange = 10f, _attackRange = 1f;
-    [SerializeField] private bool _playerInSight, _playerInAttackRange;
+    private bool _playerInSight, _playerInAttackRange;
 
     private void Awake()
     {

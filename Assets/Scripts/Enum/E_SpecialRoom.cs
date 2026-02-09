@@ -4,7 +4,7 @@ namespace Enum
     {
         None,
         Pachinko,
-        Gacha,
-        Other
+        Bar,
+        VendingMachine
     }
 }

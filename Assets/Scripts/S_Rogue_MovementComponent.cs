@@ -66,7 +66,7 @@ public class S_Rogue_MovementComponent : MonoBehaviour
     {
         _jumpVelocity += Physics.gravity.y * _gravityScale * Time.deltaTime;
         Ray groundCheckRay = new Ray(transform.position, Vector3.down);
-        if (Physics.Raycast(groundCheckRay, out RaycastHit groundHit, 1.1f))
+        if (Physics.Raycast(groundCheckRay, out RaycastHit groundHit, 1f))
         {
             _jumpVelocity = 0;
             if (!_canJump)
@@ -156,6 +156,6 @@ public class S_Rogue_MovementComponent : MonoBehaviour
 
     private void OnDrawGizmos()
     {
-        Gizmos.DrawLine(this.transform.position, transform.position + new Vector3(0,- 1.1f, 0));
+        Gizmos.DrawLine(this.transform.position, transform.position + new Vector3(0,- 1f, 0));
     }
 }
