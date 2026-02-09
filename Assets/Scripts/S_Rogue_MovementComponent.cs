@@ -26,22 +26,19 @@ public class S_Rogue_MovementComponent : MonoBehaviour
     private Vector3 _moveDampVelocity;
 
     private float _jumpSecurity = 0.05f;
-    private float _jumpSecurityTimer;
     private float _jumpVelocity;
     private float _directionCharacter = 1;
     
     private bool _canJump = true;
 
     private bool _canDash = true;
-    private bool _isDashing = false;
+    private bool _isDashing;
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     private void Start()
     {
         _rigidbody = GetComponent<Rigidbody>();
         _inputsManager = GetComponent<S_Rogue_Inputs>();
-        
-        _jumpSecurityTimer =_jumpSecurity;
     }
 
     // Update is called once per frame
@@ -69,22 +66,25 @@ public class S_Rogue_MovementComponent : MonoBehaviour
     {
         _jumpVelocity += Physics.gravity.y * _gravityScale * Time.deltaTime;
         Ray groundCheckRay = new Ray(transform.position, Vector3.down);
-        if (Physics.Raycast(groundCheckRay, out RaycastHit groundHit, 1.1f))
+        if (Physics.Raycast(groundCheckRay, out RaycastHit groundHit, 1f))
         {
-            _jumpSecurityTimer += Time.deltaTime;
-            if (_jumpSecurityTimer >= _jumpSecurity)
-            {
-                _canJump = true;
-            }
             _jumpVelocity = 0;
+            if (!_canJump)
+            {
+                Invoke(nameof(ResetJump), _jumpSecurity);
+            }
         }
         if (_inputsManager.jump && _canJump)
         {
             _jumpVelocity = Mathf.Sqrt(_jumpHeight * -2.5f * ( Physics.gravity.y * _gravityScale));
             _canJump = false;
-            _jumpSecurityTimer = 0;
         } 
         transform.Translate(new Vector3 (0, _jumpVelocity, 0) * Time.deltaTime, Space.World);
+    }
+
+    private void ResetJump()
+    {
+        _canJump = true;
     }
     /*
     private void Jump()
@@ -156,6 +156,6 @@ public class S_Rogue_MovementComponent : MonoBehaviour
 
     private void OnDrawGizmos()
     {
-        Gizmos.DrawLine(this.transform.position, transform.position + new Vector3(0,- 1.1f, 0));
+        Gizmos.DrawLine(this.transform.position, transform.position + new Vector3(0,- 1f, 0));
     }
 }
