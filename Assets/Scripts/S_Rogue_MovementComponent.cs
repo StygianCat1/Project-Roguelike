@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Net;
 using UnityEngine;
 
 public class S_Rogue_MovementComponent : MonoBehaviour
@@ -28,6 +29,8 @@ public class S_Rogue_MovementComponent : MonoBehaviour
     private float _jumpSecurityTimer;
     private float _jumpVelocity;
     private float _directionCharacter = 1;
+    
+    private bool _canJump = true;
 
     private bool _canDash = true;
     private bool _isDashing = false;
@@ -68,6 +71,28 @@ public class S_Rogue_MovementComponent : MonoBehaviour
         Ray groundCheckRay = new Ray(transform.position, Vector3.down);
         if (Physics.Raycast(groundCheckRay, out RaycastHit groundHit, 1.1f))
         {
+            _jumpSecurityTimer += Time.deltaTime;
+            if (_jumpSecurityTimer >= _jumpSecurity)
+            {
+                _canJump = true;
+            }
+            _jumpVelocity = 0;
+        }
+        if (_inputsManager.jump && _canJump)
+        {
+            _jumpVelocity = Mathf.Sqrt(_jumpHeight * -2.5f * ( Physics.gravity.y * _gravityScale));
+            _canJump = false;
+            _jumpSecurityTimer = 0;
+        } 
+        transform.Translate(new Vector3 (0, _jumpVelocity, 0) * Time.deltaTime, Space.World);
+    }
+    /*
+    private void Jump()
+    {
+        //_jumpVelocity += Physics.gravity.y * _gravityScale * Time.deltaTime;
+        Ray groundCheckRay = new Ray(transform.position, Vector3.down);
+        if (Physics.Raycast(groundCheckRay, out RaycastHit groundHit, 1.1f))
+        {
             _jumpSecurityTimer = Mathf.Clamp(_jumpSecurityTimer - Time.deltaTime, 0, _jumpSecurity);
             _jumpVelocity = 0;
             if (_inputsManager.jump && _jumpSecurityTimer == 0)
@@ -78,6 +103,7 @@ public class S_Rogue_MovementComponent : MonoBehaviour
         }
         transform.Translate(new Vector3 (0, _jumpVelocity, 0) * Time.deltaTime, Space.World);
     }
+    */
 
     private void Dash()
     {
@@ -87,6 +113,11 @@ public class S_Rogue_MovementComponent : MonoBehaviour
             if (_inputsManager.dash && _canDash )
             {
                 StartCoroutine(DashCoroutine());
+                _inputsManager.dash = false;
+                return;
+            }
+            if (_inputsManager.dash && !_canDash)
+            {
                 _inputsManager.dash = false;
             }
         }

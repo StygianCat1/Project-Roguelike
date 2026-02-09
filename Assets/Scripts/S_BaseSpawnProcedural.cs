@@ -33,11 +33,10 @@ public class S_BaseSpawnProcedural : MonoBehaviour
     [SerializeField] private Vector3 _sizeRoomSize;
     [SerializeField][Tooltip("Use it as an offset to align to the place with the perfect point")] private Vector3 _offsetRoomSize;
     
-    
     private List<GameObject> _roomsThatSpawnRef;
     private GameObject _prefabToDestroy;
     
-    private List<Room> _roomsToCut ;
+    private List<Room> _roomsToCut;
     private List<Room> _roomsTotal;
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -45,7 +44,7 @@ public class S_BaseSpawnProcedural : MonoBehaviour
     {
         if (_prefabSpawnUp == null || _prefabSpawnDown == null)
         {
-            Debug.LogError("Prefab Spawn Up or Spawn Down are required.");
+            Debug.LogError("Prefab Spawn Up or Spawn Down is missing, or even both prefabs are missing.");
             return;
         }
         DefineRoom(_prefabSpawnDown);
@@ -131,34 +130,34 @@ public class S_BaseSpawnProcedural : MonoBehaviour
             for (int i = 0 ; i < roomsToUsed.Count ; i++)
             {
                 for (int j = 0 ; j < roomsToUsed[i].Count ; j++)
-                {
-                     if (roomsToUsed[i][j]) 
-                     {
-                         continue; 
-                     }
-                     while (!roomsToUsed[i][j])
-                     {
-                         int randomNumber = Random.Range(0, 100);
-                         int numberVerify = 0;
-                         if (randomNumber < _prefabSmallRoomDropRate)
-                         {
+                { 
+                    if (roomsToUsed[i][j]) 
+                    { 
+                        continue; 
+                    }
+                    while (!roomsToUsed[i][j])
+                    {
+                        int randomNumber = Random.Range(0, 100);
+                        int numberVerify = 0;
+                        if (randomNumber < _prefabSmallRoomDropRate)
+                        { 
                             for (int k = 0; k < _prefabSmallRoomSize.y; k++)
                             {
                                 for (int l = 0; l < _prefabSmallRoomSize.x; l++)
-                                {
+                                { 
                                     roomsToUsed[i+k][j+l] = true;
                                     SpawnPrefab(_roomsTotal[i*_cutRoomVertically+j],_prefabSmallRoom[Random.Range(0, _prefabSmallRoom.Count)]);
                                 }
                             }
-                         }
-                         else if (randomNumber >= _prefabSmallRoomDropRate && randomNumber < _prefabSmallRoomDropRate + _prefabMediumRoomDropRate)
-                         {
+                        }
+                        else if (randomNumber >= _prefabSmallRoomDropRate && randomNumber < _prefabSmallRoomDropRate + _prefabMediumRoomDropRate)
+                        {
                             for (int k = 0; k < _prefabMediumRoomSize.y; k++)
                             {
                                 for (int l = 0; l < _prefabMediumRoomSize.x; l++)
                                 {
                                     if (i+k > roomsToUsed.Count - 1 || j+l > roomsToUsed[i].Count - 1)
-                                    {
+                                    { 
                                         continue;
                                     }
                                     numberVerify++;
@@ -166,28 +165,26 @@ public class S_BaseSpawnProcedural : MonoBehaviour
                             }
                             if (numberVerify == _prefabMediumRoomSize.y * _prefabMediumRoomSize.x)
                             {
-                                for (int k = 0; k < _prefabMediumRoomSize.y; k++)
-                                {
-                                    for (int l = 0; l < _prefabMediumRoomSize.x; l++)
-                                    {
-                                        roomsToUsed[i+k][j+l] = true;
-                                    }
-                                }
-
-                                SpawnPrefab(_roomsTotal[i*_cutRoomVertically+j],_prefabMediumRoom[Random.Range(0, _prefabMediumRoom.Count)]);
+                                 for (int k = 0; k < _prefabMediumRoomSize.y; k++) 
+                                 {
+                                     for (int l = 0; l < _prefabMediumRoomSize.x; l++)
+                                     {
+                                         roomsToUsed[i+k][j+l] = true;
+                                     }
+                                 }
+                                 SpawnPrefab(_roomsTotal[i*_cutRoomVertically+j],_prefabMediumRoom[Random.Range(0, _prefabMediumRoom.Count)]);
                             }
-                         }
-                         else
-                         {
+                        }
+                        else
+                        {
                             for (int k = 0; k < _prefabBigRoomSize.y; k++)
                             {
                                 for (int l = 0; l < _prefabBigRoomSize.x; l++)
-                                {
-                                    if (i+k > roomsToUsed.Count - 1 || j+l > roomsToUsed[i].Count - 1)
+                                { if (i+k > roomsToUsed.Count - 1 || j+l > roomsToUsed[i].Count - 1) 
                                     {
                                         continue;
                                     }
-                                    numberVerify++;
+                                    numberVerify++; 
                                 }
                             }
                             if (numberVerify == _prefabBigRoomSize.y * _prefabBigRoomSize.x)
@@ -201,8 +198,8 @@ public class S_BaseSpawnProcedural : MonoBehaviour
                                 }
                                 SpawnPrefab(_roomsTotal[i*_cutRoomVertically+j],_prefabBigRoom[Random.Range(0, _prefabBigRoom.Count)]);
                             }
-                         }
-                     }
+                        }
+                    }
                 }
             }
         }
@@ -219,24 +216,7 @@ public class S_BaseSpawnProcedural : MonoBehaviour
             S_RoomScript roomScript = prefabToSpawn.GetComponent<S_RoomScript>();
             if (_prefabSmallRoom.Contains(prefabToSpawn))
             {
-                if (roomToSpawn == _roomsTotal[1])
-                {
-                    Debug.Log("Working");
-                }
-            }
-            else if (_prefabMediumRoom.Contains(prefabToSpawn))
-            {
-                if (roomToSpawn == _roomsTotal[1])
-                {
-                    Debug.Log("Working");
-                }
-            }
-            else if (_prefabBigRoom.Contains(prefabToSpawn))
-            {
-                if (roomToSpawn == _roomsTotal[1])
-                {
-                    Debug.Log("Working");
-                }
+
             }
         }
         _roomsThatSpawnRef.Add(Instantiate(prefabToSpawn, new Vector3(roomToSpawn.Center.x - (roomToSpawn.Size.x / 2), roomToSpawn.Center.y - (roomToSpawn.Size.y / 2), roomToSpawn.Center.z), prefabToSpawn.transform.rotation));
