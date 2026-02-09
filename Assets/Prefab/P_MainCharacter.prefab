@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3037252468339649142}
   - component: {fileID: 1745496957373036381}
   - component: {fileID: 966372351703738057}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Main Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
@@ -157,7 +157,8 @@ GameObject:
   - component: {fileID: 5177497896356174817}
   - component: {fileID: 2689831106235062904}
   - component: {fileID: 7848649993071821645}
-  m_Layer: 0
+  - component: {fileID: 2992108265016532830}
+  m_Layer: 6
   m_Name: P_MainCharacter
   m_TagString: MainCharacter
   m_Icon: {fileID: 0}
@@ -281,7 +282,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 88
+  m_Constraints: 120
   m_CollisionDetection: 0
 --- !u!114 &5696682646711467489
 MonoBehaviour:
@@ -357,8 +358,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _moveSmoothTime: 0.1
   _movementSpeed: 10
-  _jumpHeight: 3
-  _gravityScale: 5
+  _jumpHeight: 2
+  _gravityScale: 9.31
   _backDashPower: 12
   _backDashDuration: 0.1
   _backDashCooldown: 0.1
@@ -404,3 +405,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   teleporterRef: {fileID: 0}
+--- !u!114 &2992108265016532830
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6302844824968189284}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e3fdca004f2d45fe8abbed571a8abd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SerializedVersion: 0
+  m_OverrideArea: 0
+  m_Area: 0
+  m_OverrideGenerateLinks: 0
+  m_GenerateLinks: 0
+  m_IgnoreFromBuild: 1
+  m_ApplyToChildren: 1
+  m_AffectedAgents: ffffffff
