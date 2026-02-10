@@ -14,6 +14,7 @@ public class S_MainMenuScript : MonoBehaviour
     public void OpenOptionsMenu()
     {
         OptionsMenu.SetActive(true);
+        gameObject.SetActive(false);
     }
 
     public void DoExitGame()
