@@ -38,10 +38,10 @@ public class S_RoomScript : MonoBehaviour
         if (_leftUpDoor != null && _rightUpDoor != null && _roomType == E_RoomType.BigRoom)
         {
             foreach(GameObject featuresAtLeftUpDoor in _leftUpDoor) featuresAtLeftUpDoor.SetActive(false);
-            foreach(GameObject featuresAtRightUpDoor in _leftUpDoor) featuresAtRightUpDoor.SetActive(false);
+            foreach(GameObject featuresAtRightUpDoor in _rightUpDoor) featuresAtRightUpDoor.SetActive(false);
         }
         foreach (GameObject featuresAtLeftDoor  in _leftDoor) featuresAtLeftDoor.SetActive(false);
-        foreach (GameObject featuresAtRightDoor  in _leftDoor) featuresAtRightDoor.SetActive(false);
+        foreach (GameObject featuresAtRightDoor  in _rightDoor) featuresAtRightDoor.SetActive(false);
 
         if (_roomType == E_RoomType.BigRoom)
         {
@@ -53,27 +53,27 @@ public class S_RoomScript : MonoBehaviour
 
     private void CreationDoorForSmallAndMediumRoom()
     {
-        if (!_roomOnLeft)
+        if (_roomOnLeft)
         {
             foreach (GameObject featuresAtRightDoor  in _leftDoor) featuresAtRightDoor.SetActive(true);
         }
 
-        if (!_roomOnRight)
+        if (_roomOnRight)
         {
-            foreach (GameObject featuresAtRightDoor  in _leftDoor) featuresAtRightDoor.SetActive(true);
+            foreach (GameObject featuresAtRightDoor  in _rightDoor) featuresAtRightDoor.SetActive(true);
         }
     }
     
     private void CreationDoorForBigRoom()
     {
-        if (!_roomOnLeft)
+        if (_roomOnLeft)
         {
             foreach (GameObject featuresAtLeftUpDoor  in _leftUpDoor) featuresAtLeftUpDoor.SetActive(true);
         }
 
-        if (!_roomOnRight)
+        if (_roomOnRight)
         {
-            foreach (GameObject featuresAtRightUpDoor  in _leftUpDoor) featuresAtRightUpDoor.SetActive(true);
+            foreach (GameObject featuresAtRightUpDoor  in _rightUpDoor) featuresAtRightUpDoor.SetActive(true);
         }
     }
 }

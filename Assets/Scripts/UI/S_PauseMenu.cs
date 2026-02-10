@@ -8,7 +8,7 @@ public class S_PauseMenu : MonoBehaviour
 
     private void Awake()
     {
-        //Time.timeScale = 0;
+        Time.timeScale = 0;
         _verificationMenuScript = verificationMenu.GetComponent<S_PauseMenuVerification>();
     }
     
