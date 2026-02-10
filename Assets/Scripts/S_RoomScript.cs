@@ -26,7 +26,7 @@ public class S_RoomScript : MonoBehaviour
             Debug.Log("You forgot to add a door reference");
         }
 
-        if (_roomType == E_RoomType.BigRoom)
+        if (_roomType == E_RoomType.BigRoom && _stairsRef != null)
         {
             foreach (GameObject stairs in _stairsRef)
             {
