@@ -1,11 +1,11 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class S_PauseMenuVerifiication : MonoBehaviour
+public class S_PauseMenuVerification : MonoBehaviour
 {
 
     [HideInInspector] public bool tryClosingGame;
-    [HideInInspector] public string SceneToLoadName;
+    public string SceneToLoadName;
         
     public void CloseWindows()
     {
