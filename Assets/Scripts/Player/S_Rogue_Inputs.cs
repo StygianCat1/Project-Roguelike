@@ -8,6 +8,7 @@ public class S_Rogue_Inputs : MonoBehaviour
     public bool jump;
     public bool interact;
     public bool dash;
+    public bool pause;
 
     public void OnMove(InputValue value)
     {
@@ -27,5 +28,10 @@ public class S_Rogue_Inputs : MonoBehaviour
     public void OnDash(InputValue value)
     {
         dash = value.isPressed;
+    }
+
+    public void OnPause(InputValue value)
+    {
+        pause = value.isPressed;
     }
 }
