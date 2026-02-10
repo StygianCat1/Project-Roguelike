@@ -5,10 +5,10 @@ using UnityEngine;
 public class S_RoomScript : MonoBehaviour
 {
     
-    public GameObject _leftDoor ;
-    public GameObject _rightDoor ;
-    public GameObject _leftUpDoor ;
-    public GameObject _rightUpDoor ;
+    public List<GameObject> _leftDoor ;
+    public List<GameObject> _rightDoor ;
+    public List<GameObject> _leftUpDoor ;
+    public List<GameObject> _rightUpDoor ;
 
     [SerializeField] private E_RoomType _roomType;
     [SerializeField] private E_SpecialRoom _specialRoomtype;
@@ -37,24 +37,43 @@ public class S_RoomScript : MonoBehaviour
         
         if (_leftUpDoor != null && _rightUpDoor != null && _roomType == E_RoomType.BigRoom)
         {
-            _leftUpDoor.SetActive(false);
-            _rightUpDoor.SetActive(false);
+            foreach(GameObject featuresAtLeftUpDoor in _leftUpDoor) featuresAtLeftUpDoor.SetActive(false);
+            foreach(GameObject featuresAtRightUpDoor in _leftUpDoor) featuresAtRightUpDoor.SetActive(false);
         }
-        _leftDoor.SetActive(false);
-        _rightDoor.SetActive(false);
-        
+        foreach (GameObject featuresAtLeftDoor  in _leftDoor) featuresAtLeftDoor.SetActive(false);
+        foreach (GameObject featuresAtRightDoor  in _leftDoor) featuresAtRightDoor.SetActive(false);
+
+        if (_roomType == E_RoomType.BigRoom)
+        {
+            CreationDoorForBigRoom();
+            return;
+        }
+        CreationDoorForSmallAndMediumRoom();
     }
 
-    private void CreationDoor()
+    private void CreationDoorForSmallAndMediumRoom()
     {
         if (!_roomOnLeft)
         {
-            _leftDoor.SetActive(true);
+            foreach (GameObject featuresAtRightDoor  in _leftDoor) featuresAtRightDoor.SetActive(true);
         }
 
         if (!_roomOnRight)
         {
-            _rightDoor.SetActive(true);
+            foreach (GameObject featuresAtRightDoor  in _leftDoor) featuresAtRightDoor.SetActive(true);
+        }
+    }
+    
+    private void CreationDoorForBigRoom()
+    {
+        if (!_roomOnLeft)
+        {
+            foreach (GameObject featuresAtLeftUpDoor  in _leftUpDoor) featuresAtLeftUpDoor.SetActive(true);
+        }
+
+        if (!_roomOnRight)
+        {
+            foreach (GameObject featuresAtRightUpDoor  in _leftUpDoor) featuresAtRightUpDoor.SetActive(true);
         }
     }
 }
