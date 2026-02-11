@@ -73,13 +73,11 @@ public class S_EnemyAi : MonoBehaviour
     
     private void ChasePlayer()
     {
-        Debug.Log("Chasing player");
         _agent.SetDestination(_player.position);
     }
     
     private void AttackPlayer()
     {
-        Debug.Log("Attacking player");
         _agent.SetDestination(transform.position);
         
         transform.LookAt(new Vector3(_player.position.x, transform.position.y, transform.position.z));

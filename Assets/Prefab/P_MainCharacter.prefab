@@ -342,6 +342,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveX: 0
+  attack: 0
+  shoot: 0
+  useCapacity: 0
   jump: 0
   interact: 0
   dash: 0
@@ -368,6 +371,7 @@ MonoBehaviour:
   _dashPower: 24
   _dashDuration: 0.2
   _dashCooldown: 1
+  _directionCharacter: 1
 --- !u!114 &2689831106235062904
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -381,6 +385,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _attackHitBoxes: []
+  _capacityCooldown: 11
+  _gunRange: 10
+  gunAmmunitions: 20
+  _basicAttackDamage: 0
+  _gunAttackDamage: 50
+  _capacityAttackDamage: 0
 --- !u!114 &7743065372922853247
 MonoBehaviour:
   m_ObjectHideFlags: 0

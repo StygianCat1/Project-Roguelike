@@ -27,7 +27,7 @@ public class S_Rogue_MovementComponent : MonoBehaviour
 
     private float _jumpSecurity = 0.05f;
     private float _jumpVelocity;
-    private float _directionCharacter = 1;
+    [HideInInspector] public float _directionCharacter = 1;
     
     private bool _canJump = true;
 

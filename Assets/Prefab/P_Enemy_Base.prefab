@@ -141,7 +141,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 88
+  m_Constraints: 80
   m_CollisionDetection: 0
 --- !u!195 &7350938913571358066
 NavMeshAgent:
@@ -193,7 +193,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _characterPrefab: {fileID: 0}
   _walkPoint: {x: 0, y: 0, z: 0}
-  _walkPointRange: 1
+  _walkPointRange: 20
   _timeBetweenAttacks: 3
   _sightRange: 10
   _attackRange: 1

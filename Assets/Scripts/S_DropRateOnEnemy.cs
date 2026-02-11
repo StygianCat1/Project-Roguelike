@@ -19,9 +19,14 @@ public class S_DropRateOnEnemy : MonoBehaviour
     public List<ObjectDrop> objectDrops;
     private List<GameObject> _objectsToDrop;
     
-    
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     private void Start()
+    {
+        //DropRateCHoice();
+    }
+
+
+    private void DropRateCHoice()
     {
         int _randomDropRate;
         foreach (ObjectDrop objectDrop in objectDrops)

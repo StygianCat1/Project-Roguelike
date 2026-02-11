@@ -50,20 +50,20 @@ MonoBehaviour:
   _prefabSpawnUp: {fileID: 0}
   _prefabSpawnDown: {fileID: 0}
   _prefabSmallRoom:
-  - {fileID: 9037604040584689989, guid: 10a2bdbbfcee85c42a3dcb57879bb943, type: 3}
+  - {fileID: 3697634670085439748, guid: 4084352a20ab20347b262810bb977f69, type: 3}
   _prefabSpecialRoom: []
   _prefabMediumRoom:
-  - {fileID: 7285307499474268197, guid: dc2a30f087838ad4b852baffd44d54ca, type: 3}
+  - {fileID: 7531643388676799007, guid: 932501b203acd224882a6c6d039478b7, type: 3}
   _prefabBigRoom:
-  - {fileID: 1327359991392613776, guid: 2254531f124f5c6418e4eb02c6f0c626, type: 3}
+  - {fileID: 6707820838551246390, guid: bbb0a715ad95315438be49d5b122898c, type: 3}
   _prefabSmallRoomSize: {x: 1, y: 1}
   _prefabMediumRoomSize: {x: 2, y: 1}
   _prefabBigRoomSize: {x: 3, y: 2}
   _prefabSmallRoomDropRate: 30
   _prefabMediumRoomDropRate: 30
   _prefabBigRoomDropRate: 40
-  _sizeRoomSize: {x: 45, y: 12, z: 0}
-  _offsetRoomSize: {x: 0, y: 0.5, z: -1.5}
+  _sizeRoomSize: {x: 45, y: 10, z: 0}
+  _offsetRoomSize: {x: 0, y: 0.33, z: -1.5}
 --- !u!114 &951323786889169275
 MonoBehaviour:
   m_ObjectHideFlags: 0
