@@ -1,10 +1,12 @@
 using System;
 using System.Collections;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class S_CharacterCollisionHandler : MonoBehaviour
 {
-    public Teleporter teleporterRef;   
+    public Teleporter teleporterRef;  
+    public S_TeleportToGameScene teleportToGameSceneRef;
     
     private S_Rogue_Inputs _inputsManager;
     private S_Rogue_Combat _rogueCombat;
@@ -23,6 +25,11 @@ public class S_CharacterCollisionHandler : MonoBehaviour
                 transform.position = teleporterRef.tpLocation.transform.position;
                 teleporterRef.IncrementTeleporter();
                 teleporterRef = null;
+            }
+
+            if (teleportToGameSceneRef != null && teleportToGameSceneRef.levelToLoadName != null)
+            {
+                SceneManager.LoadScene(teleportToGameSceneRef.levelToLoadName);
             }
         }
     }
