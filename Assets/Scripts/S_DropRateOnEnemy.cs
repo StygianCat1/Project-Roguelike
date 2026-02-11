@@ -22,11 +22,11 @@ public class S_DropRateOnEnemy : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     private void Start()
     {
-        //DropRateCHoice();
+        //DropRateChoice();
     }
 
 
-    private void DropRateCHoice()
+    private void DropRateChoice()
     {
         int _randomDropRate;
         foreach (ObjectDrop objectDrop in objectDrops)
