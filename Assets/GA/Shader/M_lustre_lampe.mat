@@ -29,7 +29,7 @@ Material:
   m_LightmapFlags: 2
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: 2995
+  m_CustomRenderQueue: 1995
   stringTagMap: {}
   disabledShaderPasses:
   - MOTIONVECTORS
@@ -38,7 +38,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _base_color:
-        m_Texture: {fileID: 2800000, guid: 453619055bbae0e4fa56479421b264da, type: 3}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _emissive:
@@ -75,8 +75,9 @@ Material:
     - _QueueOffset: -5
     - _test: 1
     - _transparence: 1
-    - _use_base_color: 1
+    - _use_base_color: 0
     m_Colors:
+    - _color: {r: 1, g: 1, b: 1, a: 0}
     - _emissive: {r: 2.7454488, g: 2.4839191, b: 0.5568599, a: 0}
     - _flat_color: {r: 0.4433962, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []
