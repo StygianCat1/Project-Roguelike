@@ -7,6 +7,7 @@ public class S_Rogue_Combat : MonoBehaviour
     private S_HP_Component _characterHealthRef;
     private S_Rogue_Inputs _inputsManager;
     private S_Rogue_MovementComponent _movementComponent;
+    private S_Rogue_Bonus _movementBonus;
 
     [SerializeField] private List<Collider> _attackHitBoxes;
 
@@ -27,6 +28,7 @@ public class S_Rogue_Combat : MonoBehaviour
         _characterHealthRef = GetComponent<S_HP_Component>();
         _inputsManager = GetComponent<S_Rogue_Inputs>();
         _movementComponent = GetComponent<S_Rogue_MovementComponent>();
+        _movementBonus = GetComponent<S_Rogue_Bonus>();
     }
 
     // Update is called once per frame
@@ -50,6 +52,7 @@ public class S_Rogue_Combat : MonoBehaviour
                 }
                 Debug.Log("potato");
             }
+            
             gunAmmunitions--;
             return;
         }
