@@ -1,4 +1,5 @@
 using System;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.AI;
 using Random = Unity.Mathematics.Random;
@@ -16,7 +17,8 @@ public class S_EnemyAi : MonoBehaviour
     
     private  NavMeshAgent _agent; 
     private Transform _player;
-    private S_HP_Component _health;
+    private S_HP_Component _playerHealth;
+    private Rigidbody _rb;
     
     private bool _walkPointSet;
     private bool _alreadyAttacked;
@@ -25,13 +27,13 @@ public class S_EnemyAi : MonoBehaviour
     private void Awake()
     {
         _player = GameObject.FindGameObjectWithTag("MainCharacter").transform;
+        _rb = GetComponent<Rigidbody>();
+        _playerHealth = _player.GetComponent<S_HP_Component>();   
         _agent = GetComponent<NavMeshAgent>();
-        _health = GetComponent<S_HP_Component>();
     }
 
     private void Update()
     {
-
         bool checkSight = Physics.CheckSphere(transform.position, _sightRange, LayerMask.GetMask("Player"));
         if (checkSight)
         {
@@ -68,18 +70,16 @@ public class S_EnemyAi : MonoBehaviour
         {
             _walkPointSet = true;
         }
-        _characterPrefab.transform.LookAt(new Vector3(_walkPoint.x, transform.position.y, transform.position.z));
+        transform.LookAt(new Vector3(_walkPoint.x, transform.position.y, transform.position.z));
     }
     
     private void ChasePlayer()
     {
-        Debug.Log("Chasing player");
         _agent.SetDestination(_player.position);
     }
     
     private void AttackPlayer()
     {
-        Debug.Log("Attacking player");
         _agent.SetDestination(transform.position);
         
         transform.LookAt(new Vector3(_player.position.x, transform.position.y, transform.position.z));
@@ -99,5 +99,10 @@ public class S_EnemyAi : MonoBehaviour
     private void ResetAttack()
     {
         _alreadyAttacked = false;
+    }
+
+    public void OnTriggerEnter(Collider other)
+    {
+        //if (other.tag != "Enemy") Debug.Log("aled"); _rb.AddForce(Vector3.up * 10f, ForceMode.Impulse);
     }
 }

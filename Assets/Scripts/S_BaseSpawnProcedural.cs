@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using Enum;
 using NUnit.Framework;
 using UnityEngine;
 
@@ -34,6 +35,8 @@ public class S_BaseSpawnProcedural : MonoBehaviour
     [SerializeField][Tooltip("Use it as an offset to align to the place with the perfect point")] private Vector3 _offsetRoomSize;
     
     private List<GameObject> _roomsThatSpawnRef;
+    
+    public E_SpecialRoom specialRoomToSpawn = E_SpecialRoom.Bar; 
     private GameObject _prefabToDestroy;
     
     private List<Room> _roomsToCut;
@@ -207,19 +210,60 @@ public class S_BaseSpawnProcedural : MonoBehaviour
         {
             Debug.Log("Impossible to spawn rooms, need a total of 100 in drop rate to begin");
         }
+        AddPrefabSpecialRoom(specialRoomToSpawn);
     }
 
     private void SpawnPrefab(Room roomToSpawn, GameObject prefabToSpawn)
     {
-        if (prefabToSpawn.GetComponent<S_RoomScript>() != null)
-        {
-            S_RoomScript roomScript = prefabToSpawn.GetComponent<S_RoomScript>();
-            if (_prefabSmallRoom.Contains(prefabToSpawn))
-            {
+        _roomsThatSpawnRef.Add(Instantiate(prefabToSpawn, new Vector3(roomToSpawn.Center.x - (roomToSpawn.Size.x / 2), roomToSpawn.Center.y - (roomToSpawn.Size.y / 2), roomToSpawn.Center.z), prefabToSpawn.transform.rotation));
+    }
 
+    private void AddPrefabSpecialRoom(E_SpecialRoom roomTypeToSpawn)
+    {
+        bool foundSmallRoom = false;
+        Vector3 posRef = new Vector3();
+
+        for (int i = _roomsThatSpawnRef.Count - 1; i >= 0; i--)
+        {
+            if (_roomsThatSpawnRef[i].GetComponent<S_RoomScript>().roomType == E_RoomType.SmallRoom)
+            {
+                Debug.Log("yes little room");
+                foundSmallRoom = true;
+                posRef = _roomsThatSpawnRef[i].transform.position;
+                Destroy(_roomsThatSpawnRef[i]);
+                break;
             }
         }
-        _roomsThatSpawnRef.Add(Instantiate(prefabToSpawn, new Vector3(roomToSpawn.Center.x - (roomToSpawn.Size.x / 2), roomToSpawn.Center.y - (roomToSpawn.Size.y / 2), roomToSpawn.Center.z), prefabToSpawn.transform.rotation));
+        
+        if (foundSmallRoom == false)
+        {
+            for (int i = _roomsThatSpawnRef.Count - 1; i >= 0; i--)
+            {
+                if (_roomsThatSpawnRef[i].GetComponent<S_RoomScript>().roomType == E_RoomType.MediumRoom)
+                {
+                    posRef = _roomsThatSpawnRef[i].transform.position;
+                    Destroy(_roomsThatSpawnRef[i]);
+                    break;
+                }
+            }
+        }
+
+        GameObject specialroom = new GameObject();
+        foreach (GameObject room in _prefabSpecialRoom)
+        {
+            if (room.GetComponent<S_RoomScript>().specialRoomtype == roomTypeToSpawn)
+            {
+                specialroom = room;
+            }
+        }
+        if (foundSmallRoom)
+        {
+            _roomsThatSpawnRef.Add(Instantiate(specialroom, posRef, specialroom.transform.rotation)); 
+            return;
+        }
+        _roomsThatSpawnRef.Add(Instantiate(specialroom, posRef, specialroom.transform.rotation));
+        int randomNumber = Random.Range(0, _prefabSmallRoom.Count);
+        _roomsThatSpawnRef.Add(Instantiate(_prefabSmallRoom[randomNumber],new Vector3(posRef.x + 9f, posRef.y, posRef.z) , _prefabSmallRoom[randomNumber].transform.rotation));
     }
 
     public void DestroyPrefab()

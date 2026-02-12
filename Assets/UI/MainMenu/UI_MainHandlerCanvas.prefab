@@ -148,18 +148,6 @@ PrefabInstance:
       value: 1080
       objectReference: {fileID: 0}
     - target: {fileID: 1013517328177362300, guid: 44edb94436ab6f84fac45f4d3397523c, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1013517328177362300, guid: 44edb94436ab6f84fac45f4d3397523c, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1013517328177362300, guid: 44edb94436ab6f84fac45f4d3397523c, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1013517328177362300, guid: 44edb94436ab6f84fac45f4d3397523c, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -208,10 +196,6 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7825017454475551831, guid: 44edb94436ab6f84fac45f4d3397523c, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7825017454475551831, guid: 44edb94436ab6f84fac45f4d3397523c, type: 3}
       propertyPath: OptionsMenu
       value: 
       objectReference: {fileID: 3693404557208268120}
@@ -245,26 +229,6 @@ PrefabInstance:
     - target: {fileID: 781741828274249048, guid: da425289c3d579e4bb019300af52fc6d, type: 3}
       propertyPath: m_Name
       value: UI_OptionsMenu
-      objectReference: {fileID: 0}
-    - target: {fileID: 781741828274249048, guid: da425289c3d579e4bb019300af52fc6d, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1450422617432224820, guid: da425289c3d579e4bb019300af52fc6d, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 7113293371022567759}
-    - target: {fileID: 1450422617432224820, guid: da425289c3d579e4bb019300af52fc6d, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: QuitOptionsMenu
-      objectReference: {fileID: 0}
-    - target: {fileID: 1450422617432224820, guid: da425289c3d579e4bb019300af52fc6d, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: S_OptionsMenu, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 1450422617432224820, guid: da425289c3d579e4bb019300af52fc6d, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 3218247256765325107, guid: da425289c3d579e4bb019300af52fc6d, type: 3}
       propertyPath: m_Pivot.x
@@ -346,13 +310,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8554277998771837523, guid: da425289c3d579e4bb019300af52fc6d, type: 3}
+      propertyPath: MainMenu
+      value: 
+      objectReference: {fileID: 2916599760481548631}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 781741828274249048, guid: da425289c3d579e4bb019300af52fc6d, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 7113293371022567759}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: da425289c3d579e4bb019300af52fc6d, type: 3}
 --- !u!224 &1527097652636004147 stripped
 RectTransform:
@@ -364,16 +329,3 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 781741828274249048, guid: da425289c3d579e4bb019300af52fc6d, type: 3}
   m_PrefabInstance: {fileID: 4150302271989411840}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &7113293371022567759
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3693404557208268120}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 352b7caf8cc75524aa6f97c063bce6dd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MainMenu: {fileID: 2916599760481548631}

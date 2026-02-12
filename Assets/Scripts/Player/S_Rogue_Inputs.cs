@@ -1,10 +1,15 @@
+using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class S_Rogue_Inputs : MonoBehaviour
 {
     public float moveX;
-    
+
+    public bool attack;
+    public bool shoot;
+    public bool useCapacity;
+
     public bool jump;
     public bool interact;
     public bool dash;
@@ -28,6 +33,21 @@ public class S_Rogue_Inputs : MonoBehaviour
     public void OnDash(InputValue value)
     {
         dash = value.isPressed;
+    }
+
+    public void OnAttack(InputValue value)
+    {
+        attack = value.isPressed;
+    }
+
+    public void OnShoot(InputValue value)
+    {
+        shoot = value.isPressed;
+    }
+
+    public void OnUseCapacity(InputValue value)
+    {
+        useCapacity = value.isPressed;
     }
 
     public void OnPause(InputValue value)

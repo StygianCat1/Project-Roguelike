@@ -328,10 +328,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68951ff488af3db48aa1f730a469dd80, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _leftDoor: {fileID: 1769199847720778458}
-  _rightDoor: {fileID: 3744213183914419240}
-  _leftUpDoor: {fileID: 0}
-  _rightUpDoor: {fileID: 0}
+  _leftDoor:
+  - {fileID: 1769199847720778458}
+  _rightDoor:
+  - {fileID: 3744213183914419240}
+  _leftUpDoor: []
+  _rightUpDoor: []
   _roomType: 0
   _specialRoomtype: 0
   _stairsRef: []

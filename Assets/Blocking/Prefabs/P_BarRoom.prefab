@@ -231,6 +231,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 8423133212615401818}
     m_Modifications:
+    - target: {fileID: 4659754247861232009, guid: 81ff2ff53d4e84743a3d7faa72d2d3eb, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6467951211191356784, guid: 81ff2ff53d4e84743a3d7faa72d2d3eb, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6719930350001860604, guid: 81ff2ff53d4e84743a3d7faa72d2d3eb, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921729988287791678, guid: 81ff2ff53d4e84743a3d7faa72d2d3eb, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 8371067877628125462, guid: 81ff2ff53d4e84743a3d7faa72d2d3eb, type: 3}
       propertyPath: m_Name
       value: GameObject 1
@@ -286,6 +302,10 @@ PrefabInstance:
     - target: {fileID: 8620265765325631538, guid: 81ff2ff53d4e84743a3d7faa72d2d3eb, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8880248264107676445, guid: 81ff2ff53d4e84743a3d7faa72d2d3eb, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -501,8 +521,8 @@ MonoBehaviour:
   - {fileID: 3545794551458227853}
   _leftUpDoor: []
   _rightUpDoor: []
-  _roomType: 0
-  _specialRoomtype: 2
+  roomType: 0
+  specialRoomtype: 2
   _stairsRef: []
 --- !u!114 &1285114399548556882
 MonoBehaviour:

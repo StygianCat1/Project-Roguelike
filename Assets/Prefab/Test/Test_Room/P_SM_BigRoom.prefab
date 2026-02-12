@@ -63,7 +63,7 @@ MonoBehaviour:
   m_OverrideVoxelSize: 0
   m_VoxelSize: 0.016666668
   m_MinRegionArea: 2
-  m_NavMeshData: {fileID: 23800000, guid: 118415b992a507b4393fa6bbb6bdff07, type: 2}
+  m_NavMeshData: {fileID: 23800000, guid: ed1bf008d8f7b254e9f8d07bdd82a471, type: 2}
   m_BuildHeightMesh: 0
 --- !u!114 &488025055407194611
 MonoBehaviour:
@@ -235,10 +235,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68951ff488af3db48aa1f730a469dd80, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _leftDoor: {fileID: 3892947022239693251}
-  _rightDoor: {fileID: 4073678135236574264}
-  _leftUpDoor: {fileID: 1400602261200227921}
-  _rightUpDoor: {fileID: 1283446407426472227}
+  _leftDoor:
+  - {fileID: 3892947022239693251}
+  _rightDoor:
+  - {fileID: 4073678135236574264}
+  _leftUpDoor:
+  - {fileID: 1400602261200227921}
+  _rightUpDoor:
+  - {fileID: 1283446407426472227}
   _roomType: 2
   _specialRoomtype: 0
   _stairsRef:

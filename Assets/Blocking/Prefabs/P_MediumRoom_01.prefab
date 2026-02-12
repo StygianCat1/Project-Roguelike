@@ -1353,19 +1353,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 81c6022a991156d4a834e88f7f2a4e70, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 81c6022a991156d4a834e88f7f2a4e70, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 81c6022a991156d4a834e88f7f2a4e70, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.00000058114523
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 81c6022a991156d4a834e88f7f2a4e70, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 81c6022a991156d4a834e88f7f2a4e70, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1373,7 +1373,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 81c6022a991156d4a834e88f7f2a4e70, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: 180
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 81c6022a991156d4a834e88f7f2a4e70, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -1483,8 +1483,8 @@ MonoBehaviour:
   - {fileID: 3385644966785212081}
   _leftUpDoor: []
   _rightUpDoor: []
-  _roomType: 1
-  _specialRoomtype: 0
+  roomType: 1
+  specialRoomtype: 0
   _stairsRef: []
 --- !u!114 &6542205298680329132
 MonoBehaviour:

@@ -16,7 +16,9 @@ GameObject:
   - component: {fileID: 7350938913571358066}
   - component: {fileID: 4874227306776157714}
   - component: {fileID: 8823224841079286484}
+  - component: {fileID: 1434045583463372048}
   - component: {fileID: 4862461139839821499}
+  - component: {fileID: 2507687580592982935}
   m_Layer: 0
   m_Name: P_Enemy_Base
   m_TagString: Enemy
@@ -190,13 +192,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d34e5f70ce80207468e71a9a3a816c03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _characterPrefab: {fileID: 0}
   _walkPoint: {x: 0, y: 0, z: 0}
-  _walkPointRange: 1
+  _walkPointRange: 20
   _timeBetweenAttacks: 3
   _sightRange: 10
   _attackRange: 1
-  _playerInSight: 0
-  _playerInAttackRange: 0
+--- !u!114 &1434045583463372048
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7766878793093973515}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46a400d3925a9c1469c0a67e6c9ee509, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectDrops:
+  - gameObject: {fileID: 0}
+    dropRate: 10
 --- !u!114 &4862461139839821499
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -217,3 +233,24 @@ MonoBehaviour:
   m_IgnoreFromBuild: 1
   m_ApplyToChildren: 1
   m_AffectedAgents: ffffffff
+--- !u!65 &2507687580592982935
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7766878793093973515}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.75, y: 0.75, z: 2}
+  m_Center: {x: 0, y: 0, z: 0}

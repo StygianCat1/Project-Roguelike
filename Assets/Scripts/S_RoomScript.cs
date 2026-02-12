@@ -10,8 +10,8 @@ public class S_RoomScript : MonoBehaviour
     public List<GameObject> _leftUpDoor ;
     public List<GameObject> _rightUpDoor ;
 
-    [SerializeField] private E_RoomType _roomType;
-    [SerializeField] private E_SpecialRoom _specialRoomtype;
+    public E_RoomType roomType;
+    public E_SpecialRoom specialRoomtype;
     
     [SerializeField] private List<GameObject> _stairsRef;
 
@@ -26,7 +26,7 @@ public class S_RoomScript : MonoBehaviour
             Debug.Log("You forgot to add a door reference");
         }
 
-        if (_roomType == E_RoomType.BigRoom)
+        if (roomType == E_RoomType.BigRoom && _stairsRef.Count != 0)
         {
             foreach (GameObject stairs in _stairsRef)
             {
@@ -35,15 +35,15 @@ public class S_RoomScript : MonoBehaviour
             _stairsRef[Random.Range(0, _stairsRef.Count)].SetActive(true);
         }
         
-        if (_leftUpDoor != null && _rightUpDoor != null && _roomType == E_RoomType.BigRoom)
+        if (_leftUpDoor != null && _rightUpDoor != null && roomType == E_RoomType.BigRoom)
         {
             foreach(GameObject featuresAtLeftUpDoor in _leftUpDoor) featuresAtLeftUpDoor.SetActive(false);
-            foreach(GameObject featuresAtRightUpDoor in _leftUpDoor) featuresAtRightUpDoor.SetActive(false);
+            foreach(GameObject featuresAtRightUpDoor in _rightUpDoor) featuresAtRightUpDoor.SetActive(false);
         }
         foreach (GameObject featuresAtLeftDoor  in _leftDoor) featuresAtLeftDoor.SetActive(false);
-        foreach (GameObject featuresAtRightDoor  in _leftDoor) featuresAtRightDoor.SetActive(false);
+        foreach (GameObject featuresAtRightDoor  in _rightDoor) featuresAtRightDoor.SetActive(false);
 
-        if (_roomType == E_RoomType.BigRoom)
+        if (roomType == E_RoomType.BigRoom)
         {
             CreationDoorForBigRoom();
             return;
@@ -53,27 +53,27 @@ public class S_RoomScript : MonoBehaviour
 
     private void CreationDoorForSmallAndMediumRoom()
     {
-        if (!_roomOnLeft)
+        if (_roomOnLeft)
         {
             foreach (GameObject featuresAtRightDoor  in _leftDoor) featuresAtRightDoor.SetActive(true);
         }
 
-        if (!_roomOnRight)
+        if (_roomOnRight)
         {
-            foreach (GameObject featuresAtRightDoor  in _leftDoor) featuresAtRightDoor.SetActive(true);
+            foreach (GameObject featuresAtRightDoor  in _rightDoor) featuresAtRightDoor.SetActive(true);
         }
     }
     
     private void CreationDoorForBigRoom()
     {
-        if (!_roomOnLeft)
+        if (_roomOnLeft)
         {
             foreach (GameObject featuresAtLeftUpDoor  in _leftUpDoor) featuresAtLeftUpDoor.SetActive(true);
         }
 
-        if (!_roomOnRight)
+        if (_roomOnRight)
         {
-            foreach (GameObject featuresAtRightUpDoor  in _leftUpDoor) featuresAtRightUpDoor.SetActive(true);
+            foreach (GameObject featuresAtRightUpDoor  in _rightUpDoor) featuresAtRightUpDoor.SetActive(true);
         }
     }
 }
