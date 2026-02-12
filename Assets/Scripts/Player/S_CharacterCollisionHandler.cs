@@ -22,6 +22,12 @@ public class S_CharacterCollisionHandler : MonoBehaviour
         {
             if (teleporterRef != null && teleporterRef.tpLocation != null)
             {
+                GameObject canvasRef = new GameObject();
+                if (teleporterRef._teleporterHandler.canvasToSpawn != null)
+                {
+                    canvasRef = Instantiate(teleporterRef._teleporterHandler.canvasToSpawn);
+                    canvasRef.GetComponent<S_AscensorScript>().teleporterUsed = teleporterRef;                    
+                }
                 transform.position = teleporterRef.tpLocation.transform.position;
                 teleporterRef.IncrementTeleporter();
                 teleporterRef = null;

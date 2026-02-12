@@ -10,6 +10,7 @@ public class S_TeleporterHandler : MonoBehaviour
     
     [SerializeField] private List<GameObject> teleporters;
     [SerializeField] private GameObject lastTpLocation;
+    public GameObject canvasToSpawn;
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     private void Start()
@@ -21,6 +22,7 @@ public class S_TeleporterHandler : MonoBehaviour
     {
         foreach (GameObject teleporter in teleporters)
         {
+            canvasToSpawn = null;
             teleporter.GetComponent<Teleporter>().tpLocation = lastTpLocation;
         }
     }

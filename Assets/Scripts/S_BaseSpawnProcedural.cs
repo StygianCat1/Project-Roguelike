@@ -227,7 +227,6 @@ public class S_BaseSpawnProcedural : MonoBehaviour
         {
             if (_roomsThatSpawnRef[i].GetComponent<S_RoomScript>().roomType == E_RoomType.SmallRoom)
             {
-                Debug.Log("yes little room");
                 foundSmallRoom = true;
                 posRef = _roomsThatSpawnRef[i].transform.position;
                 Destroy(_roomsThatSpawnRef[i]);

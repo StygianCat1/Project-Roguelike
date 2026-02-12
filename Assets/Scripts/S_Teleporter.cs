@@ -18,6 +18,7 @@ public class Teleporter : MonoBehaviour
     
     private GameObject _player;
     private S_CharacterCollisionHandler _collisionHandler;
+
     
 
     private void Start()
@@ -31,7 +32,6 @@ public class Teleporter : MonoBehaviour
     public void IncrementTeleporter()
     {
         _teleporterHandler.floorNumber += 1;
-        SpawnRoomAndDestroyOther();
         if (_teleporterHandler.floorNumber == _teleporterHandler.numberOfFloorToReach)
         {
             Debug.Log("Teleporter: Reached the end of the floor");
