@@ -173,8 +173,8 @@ MonoBehaviour:
   - {fileID: 9000421921212961722}
   _leftUpDoor: []
   _rightUpDoor: []
-  _roomType: 0
-  _specialRoomtype: 0
+  roomType: 0
+  specialRoomtype: 0
   _stairsRef: []
 --- !u!114 &8273875907124969072
 MonoBehaviour:
@@ -765,6 +765,7 @@ GameObject:
   - component: {fileID: 5703242253142702314}
   - component: {fileID: 9184337215801871208}
   - component: {fileID: 2117986227713553646}
+  - component: {fileID: 6252980395253077522}
   m_Layer: 0
   m_Name: SM_Small_Room
   m_TagString: Untagged
@@ -844,6 +845,28 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &6252980395253077522
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8873869588972137531}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -8296469528291851586, guid: 139ae1a97e1a1f34fa95921f6b7733be, type: 3}
 --- !u!1 &9000421921212961722
 GameObject:
   m_ObjectHideFlags: 0
