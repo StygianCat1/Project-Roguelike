@@ -157,6 +157,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 8423133212615401818}
     m_Modifications:
+    - target: {fileID: 5329959669844406602, guid: 85d7ab87758a2424ab89735dc93a4c98, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6999689019521228072, guid: 85d7ab87758a2424ab89735dc93a4c98, type: 3}
       propertyPath: m_LocalScale.x
       value: 100
@@ -634,9 +638,13 @@ MonoBehaviour:
   - {fileID: 8207750375179813470}
   _leftUpDoor: []
   _rightUpDoor: []
+  roomHeight: 0
   roomType: 0
   specialRoomtype: 2
   _stairsRef: []
+  _tpInRoom: {fileID: 0}
+  _doorOnLeft: 0
+  _doorOnRight: 0
 --- !u!114 &1285114399548556882
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -75,8 +75,10 @@ Material:
     - _gloss_size: 200
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 0}
-    - _L1_color: {r: 0, g: 0, b: 0, a: 1}
-    - _L1_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L10_color: {r: 1, g: 1, b: 1, a: 0}
+    - _L10_dir: {r: 0, g: 0, b: 0, a: 0}
+    - _L1_color: {r: 1, g: 1, b: 1, a: 0.99}
+    - _L1_dir: {r: 0.6424343, g: 0.76604444, b: -0.021311747, a: 0}
     - _L2_color: {r: 0, g: 0, b: 0, a: 1}
     - _L2_dir: {r: 0, g: 1, b: 0, a: 0}
     - _L3_color: {r: 0, g: 0, b: 0, a: 1}
@@ -87,6 +89,12 @@ Material:
     - _L5_dir: {r: 0, g: 1, b: 0, a: 0}
     - _L6_color: {r: 0, g: 0, b: 0, a: 1}
     - _L6_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L7_color: {r: 1, g: 1, b: 1, a: 0}
+    - _L7_dir: {r: 0, g: 0, b: 0, a: 0}
+    - _L8_color: {r: 1, g: 1, b: 1, a: 0}
+    - _L8_dir: {r: 0, g: 0, b: 0, a: 0}
+    - _L9_color: {r: 1, g: 1, b: 1, a: 0}
+    - _L9_dir: {r: 0, g: 0, b: 0, a: 0}
     - _fresnel_intensity: {r: 1, g: 1, b: 1, a: 0}
     - _gloss_intensity: {r: 1, g: 1, b: 1, a: 0}
     - _light_2_color: {r: 1, g: 1, b: 1, a: 0}
