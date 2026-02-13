@@ -3,7 +3,12 @@ guid: 0ce18402da178344fa4ca7f15716494d
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: table_poker1
+    second: {fileID: 2100000, guid: d507c9117ad978d418b77bffdd81ecbc, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
