@@ -5,7 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class S_CharacterCollisionHandler : MonoBehaviour
 {
-    public Teleporter teleporterRef;  
+    public S_Teleporter teleporterRef;  
+    public  S_RoomTeleporter roomTeleporterRef;
     public S_TeleportToGameScene teleportToGameSceneRef;
     
     private S_Rogue_Inputs _inputsManager;
@@ -31,11 +32,23 @@ public class S_CharacterCollisionHandler : MonoBehaviour
                 transform.position = teleporterRef.tpLocation.transform.position;
                 teleporterRef.IncrementTeleporter();
                 teleporterRef = null;
+                _inputsManager.interact = false;
+                return;
+            }
+
+            if (roomTeleporterRef != null && roomTeleporterRef.tpLocation != null)
+            {
+                transform.position = roomTeleporterRef.tpLocation.transform.position;
+                roomTeleporterRef = null;
+                _inputsManager.interact = false;
+                return;
             }
 
             if (teleportToGameSceneRef != null && teleportToGameSceneRef.levelToLoadName != null)
             {
                 SceneManager.LoadScene(teleportToGameSceneRef.levelToLoadName);
+                _inputsManager.interact = false;
+                return;
             }
         }
     }

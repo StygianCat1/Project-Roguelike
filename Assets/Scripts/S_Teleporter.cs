@@ -4,9 +4,8 @@ using System.Net;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class Teleporter : MonoBehaviour
+public class S_Teleporter : MonoBehaviour
 {
-
     public GameObject tpLocation;
     [HideInInspector] public S_TeleporterHandler _teleporterHandler;
 

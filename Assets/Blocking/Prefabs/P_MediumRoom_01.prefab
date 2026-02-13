@@ -1323,6 +1323,83 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 0ce18402da178344fa4ca7f15716494d, type: 3}
   m_PrefabInstance: {fileID: 6236704042817140494}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6302780346350383385
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 7191709214703591589}
+    m_Modifications:
+    - target: {fileID: 565730641640478940, guid: 62e8314af9b3b67439bba6954307c82d, type: 3}
+      propertyPath: _tpRoom
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1769782306496378293, guid: 62e8314af9b3b67439bba6954307c82d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -653.51105
+      objectReference: {fileID: 0}
+    - target: {fileID: 1769782306496378293, guid: 62e8314af9b3b67439bba6954307c82d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 213
+      objectReference: {fileID: 0}
+    - target: {fileID: 1769782306496378293, guid: 62e8314af9b3b67439bba6954307c82d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -678
+      objectReference: {fileID: 0}
+    - target: {fileID: 1769782306496378293, guid: 62e8314af9b3b67439bba6954307c82d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1769782306496378293, guid: 62e8314af9b3b67439bba6954307c82d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1769782306496378293, guid: 62e8314af9b3b67439bba6954307c82d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1769782306496378293, guid: 62e8314af9b3b67439bba6954307c82d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1769782306496378293, guid: 62e8314af9b3b67439bba6954307c82d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1769782306496378293, guid: 62e8314af9b3b67439bba6954307c82d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1769782306496378293, guid: 62e8314af9b3b67439bba6954307c82d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7319608367084421708, guid: 62e8314af9b3b67439bba6954307c82d, type: 3}
+      propertyPath: m_Name
+      value: P_RoomTeleporter
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 62e8314af9b3b67439bba6954307c82d, type: 3}
+--- !u!4 &5762495315395200172 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1769782306496378293, guid: 62e8314af9b3b67439bba6954307c82d, type: 3}
+  m_PrefabInstance: {fileID: 6302780346350383385}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &5813610908174248389 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 565730641640478940, guid: 62e8314af9b3b67439bba6954307c82d, type: 3}
+  m_PrefabInstance: {fileID: 6302780346350383385}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36fddb933f07d3b4ab3cfaaaba3ea983, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &7225088887212918606
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1426,6 +1503,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 81c6022a991156d4a834e88f7f2a4e70, type: 3}
       insertIndex: -1
       addedObject: {fileID: 8011975519510258686}
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 81c6022a991156d4a834e88f7f2a4e70, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5762495315395200172}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 81c6022a991156d4a834e88f7f2a4e70, type: 3}
       insertIndex: -1
@@ -1505,9 +1585,13 @@ MonoBehaviour:
   - {fileID: 3385644966785212081}
   _leftUpDoor: []
   _rightUpDoor: []
+  roomHeight: 0
   roomType: 1
   specialRoomtype: 0
   _stairsRef: []
+  _tpInRoom: {fileID: 5813610908174248389}
+  _doorOnLeft: 0
+  _doorOnRight: 0
 --- !u!114 &6542205298680329132
 MonoBehaviour:
   m_ObjectHideFlags: 0

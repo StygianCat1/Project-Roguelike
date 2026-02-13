@@ -36,7 +36,7 @@ public class S_BaseSpawnProcedural : MonoBehaviour
     
     private List<GameObject> _roomsThatSpawnRef;
     
-    public E_SpecialRoom specialRoomToSpawn = E_SpecialRoom.Bar; 
+    public E_SpecialRoom specialRoomToSpawn = E_SpecialRoom.None; 
     private GameObject _prefabToDestroy;
     
     private List<Room> _roomsToCut;
@@ -114,13 +114,13 @@ public class S_BaseSpawnProcedural : MonoBehaviour
 
     private void ChosePrefab(GameObject prefabToCut)
     {
-        List<List<bool>> roomsToUsed = new List<List<bool>>();
+        List<List<bool>> roomsToUse = new List<List<bool>>();
         
         for (int i = 0; i < _cutRoomHorizontally; i++)
         {
-            roomsToUsed.Add(new List<bool> {false});
+            roomsToUse.Add(new List<bool> {false});
         }
-        foreach (List<bool> listOfBools in roomsToUsed)
+        foreach (List<bool> listOfBools in roomsToUse)
         {
             for (int i = 0; i < _cutRoomVertically - 1; i++)
             {
@@ -130,40 +130,54 @@ public class S_BaseSpawnProcedural : MonoBehaviour
         
         if (_prefabSmallRoomDropRate + _prefabMediumRoomDropRate + _prefabBigRoomDropRate == 100)
         {
-            for (int i = 0 ; i < roomsToUsed.Count ; i++)
+            for (int i = 0 ; i < roomsToUse.Count ; i++)
             {
-                for (int j = 0 ; j < roomsToUsed[i].Count ; j++)
+                for (int j = 0 ; j < roomsToUse[i].Count ; j++)
                 { 
-                    if (roomsToUsed[i][j]) 
+                    if (roomsToUse[i][j]) 
                     { 
                         continue; 
                     }
-                    while (!roomsToUsed[i][j])
+                    while (!roomsToUse[i][j])
                     {
                         int randomNumber = Random.Range(0, 100);
                         int numberVerify = 0;
                         if (randomNumber < _prefabSmallRoomDropRate)
                         { 
+                            bool needRightWall = false;
+                            bool needLeftWall = false;
+                            E_RoomHeight roomHeightCheck = E_RoomHeight.None;
                             for (int k = 0; k < _prefabSmallRoomSize.y; k++)
                             {
                                 for (int l = 0; l < _prefabSmallRoomSize.x; l++)
                                 { 
-                                    roomsToUsed[i+k][j+l] = true;
-                                    SpawnPrefab(_roomsTotal[i*_cutRoomVertically+j],_prefabSmallRoom[Random.Range(0, _prefabSmallRoom.Count)]);
+                                    roomsToUse[i+k][j+l] = true;
+                                    if (i == 0) {roomHeightCheck = E_RoomHeight.Low;}
+                                    if (i == 1) { roomHeightCheck = E_RoomHeight.High;}
+                                    if (i + k > 0 && j + l == 0) { needLeftWall = true;}
+                                    if (i + k > 0 && j + l == roomsToUse[i].Count - 1) { needRightWall = true;}
+                                    SpawnPrefab(_roomsTotal[i*_cutRoomVertically+j],_prefabSmallRoom[Random.Range(0, _prefabSmallRoom.Count)], needLeftWall, needRightWall, roomHeightCheck);
                                 }
                             }
                         }
                         else if (randomNumber >= _prefabSmallRoomDropRate && randomNumber < _prefabSmallRoomDropRate + _prefabMediumRoomDropRate)
                         {
+                            bool needRightWall = false;
+                            bool needLeftWall = false;
+                            E_RoomHeight roomHeightCheck = E_RoomHeight.None;
                             for (int k = 0; k < _prefabMediumRoomSize.y; k++)
                             {
                                 for (int l = 0; l < _prefabMediumRoomSize.x; l++)
                                 {
-                                    if (i+k > roomsToUsed.Count - 1 || j+l > roomsToUsed[i].Count - 1)
+                                    if (i+k > roomsToUse.Count - 1 || j+l > roomsToUse[i].Count - 1)
                                     { 
                                         continue;
                                     }
                                     numberVerify++;
+                                    if (i == 0) {roomHeightCheck = E_RoomHeight.Low;}
+                                    if (i == 1) { roomHeightCheck = E_RoomHeight.High;}
+                                    if (i+k > 0 && j+l == 0) { needLeftWall = true; }
+                                    if (i+k > 0 && j+l == roomsToUse[i].Count - 1) { needRightWall = true; }
                                 }
                             }
                             if (numberVerify == _prefabMediumRoomSize.y * _prefabMediumRoomSize.x)
@@ -172,22 +186,28 @@ public class S_BaseSpawnProcedural : MonoBehaviour
                                  {
                                      for (int l = 0; l < _prefabMediumRoomSize.x; l++)
                                      {
-                                         roomsToUsed[i+k][j+l] = true;
+                                         roomsToUse[i+k][j+l] = true;
                                      }
                                  }
-                                 SpawnPrefab(_roomsTotal[i*_cutRoomVertically+j],_prefabMediumRoom[Random.Range(0, _prefabMediumRoom.Count)]);
+                                 SpawnPrefab(_roomsTotal[i*_cutRoomVertically+j],_prefabMediumRoom[Random.Range(0, _prefabMediumRoom.Count)], needLeftWall, needRightWall, roomHeightCheck);
                             }
                         }
                         else
                         {
+                            bool needRightWall = false;
+                            bool needLeftWall = false;
+                            E_RoomHeight roomHeightCheck = E_RoomHeight.None;
                             for (int k = 0; k < _prefabBigRoomSize.y; k++)
                             {
                                 for (int l = 0; l < _prefabBigRoomSize.x; l++)
-                                { if (i+k > roomsToUsed.Count - 1 || j+l > roomsToUsed[i].Count - 1) 
+                                { 
+                                    if (i+k > roomsToUse.Count - 1 || j+l > roomsToUse[i].Count - 1) 
                                     {
                                         continue;
                                     }
-                                    numberVerify++; 
+                                    numberVerify++;
+                                    if (i+k > 0 && j+l == 0) { needLeftWall = true; }
+                                    if (i+k > 0 && j+l == roomsToUse[i].Count - 1) { needRightWall = true; }
                                 }
                             }
                             if (numberVerify == _prefabBigRoomSize.y * _prefabBigRoomSize.x)
@@ -196,10 +216,10 @@ public class S_BaseSpawnProcedural : MonoBehaviour
                                 {
                                     for (int l = 0; l < _prefabBigRoomSize.x; l++)
                                     {
-                                        roomsToUsed[i+k][j+l] = true;
+                                        roomsToUse[i+k][j+l] = true;
                                     }
-                                }
-                                SpawnPrefab(_roomsTotal[i*_cutRoomVertically+j],_prefabBigRoom[Random.Range(0, _prefabBigRoom.Count)]);
+                                } 
+                                SpawnPrefab(_roomsTotal[i*_cutRoomVertically+j],_prefabBigRoom[Random.Range(0, _prefabBigRoom.Count)], needLeftWall, needRightWall, roomHeightCheck);
                             }
                         }
                     }
@@ -211,15 +231,20 @@ public class S_BaseSpawnProcedural : MonoBehaviour
             Debug.Log("Impossible to spawn rooms, need a total of 100 in drop rate to begin");
         }
         AddPrefabSpecialRoom(specialRoomToSpawn);
+        Invoke(nameof(AddRoomTeleportRef), 0.5f);
     }
 
-    private void SpawnPrefab(Room roomToSpawn, GameObject prefabToSpawn)
+    private void SpawnPrefab(Room roomToSpawn, GameObject prefabToSpawn, bool leftdoor, bool rightdoor, E_RoomHeight roomHeight)
     {
+        prefabToSpawn.GetComponent<S_RoomScript>()._doorOnLeft = leftdoor;
+        prefabToSpawn.GetComponent<S_RoomScript>()._doorOnRight = rightdoor;
+        prefabToSpawn.GetComponent<S_RoomScript>().roomHeight = roomHeight;
         _roomsThatSpawnRef.Add(Instantiate(prefabToSpawn, new Vector3(roomToSpawn.Center.x - (roomToSpawn.Size.x / 2), roomToSpawn.Center.y - (roomToSpawn.Size.y / 2), roomToSpawn.Center.z), prefabToSpawn.transform.rotation));
     }
 
     private void AddPrefabSpecialRoom(E_SpecialRoom roomTypeToSpawn)
     {
+        if (roomTypeToSpawn == E_SpecialRoom.None){return;}
         bool foundSmallRoom = false;
         Vector3 posRef = new Vector3();
 
@@ -230,6 +255,7 @@ public class S_BaseSpawnProcedural : MonoBehaviour
                 foundSmallRoom = true;
                 posRef = _roomsThatSpawnRef[i].transform.position;
                 Destroy(_roomsThatSpawnRef[i]);
+                _roomsThatSpawnRef.Remove(_roomsThatSpawnRef[i]);
                 break;
             }
         }
@@ -242,6 +268,7 @@ public class S_BaseSpawnProcedural : MonoBehaviour
                 {
                     posRef = _roomsThatSpawnRef[i].transform.position;
                     Destroy(_roomsThatSpawnRef[i]);
+                    _roomsThatSpawnRef.Remove(_roomsThatSpawnRef[i]);
                     break;
                 }
             }
@@ -265,6 +292,15 @@ public class S_BaseSpawnProcedural : MonoBehaviour
         _roomsThatSpawnRef.Add(Instantiate(_prefabSmallRoom[randomNumber],new Vector3(posRef.x + 9f, posRef.y, posRef.z) , _prefabSmallRoom[randomNumber].transform.rotation));
     }
 
+    private void AddRoomTeleportRef()
+    {
+        foreach (GameObject room in _roomsThatSpawnRef)
+        {
+            if (room.GetComponent<S_RoomScript>()._tpInRoom == null) {continue;}
+            room.GetComponent<S_RoomScript>()._tpInRoom.SearchForCloseTp();
+        }
+    }
+    
     public void DestroyPrefab()
     {
         foreach (GameObject roomToDestroy in _roomsThatSpawnRef)

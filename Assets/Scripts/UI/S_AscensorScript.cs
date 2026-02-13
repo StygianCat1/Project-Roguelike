@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class S_AscensorScript : MonoBehaviour
 {
-    public Teleporter teleporterUsed;
+    public S_Teleporter teleporterUsed;
     private GameObject _mainHandler;
     private S_TeleporterHandler _sTeleporterHandler;
     private S_BaseSpawnProcedural _sBaseSpawnProcedural; 

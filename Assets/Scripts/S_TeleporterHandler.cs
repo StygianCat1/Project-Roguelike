@@ -23,7 +23,7 @@ public class S_TeleporterHandler : MonoBehaviour
         foreach (GameObject teleporter in teleporters)
         {
             canvasToSpawn = null;
-            teleporter.GetComponent<Teleporter>().tpLocation = lastTpLocation;
+            teleporter.GetComponent<S_Teleporter>().tpLocation = lastTpLocation;
         }
     }
 
@@ -31,7 +31,7 @@ public class S_TeleporterHandler : MonoBehaviour
     {
         foreach (GameObject teleporter in teleporters)
         {
-            teleporter.GetComponent<Teleporter>()._teleporterHandler = this;
+            teleporter.GetComponent<S_Teleporter>()._teleporterHandler = this;
         }
     }
 }
