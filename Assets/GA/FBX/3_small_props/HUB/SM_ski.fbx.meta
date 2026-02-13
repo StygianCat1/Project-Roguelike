@@ -3,7 +3,12 @@ guid: c0cb3dd883d8a6e46ac6f34be80a506d
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ski
+    second: {fileID: 2100000, guid: 326a377805702fd4eb676e5fd3874d34, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
