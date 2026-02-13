@@ -247,13 +247,16 @@ public class S_BaseSpawnProcedural : MonoBehaviour
         if (roomTypeToSpawn == E_SpecialRoom.None){return;}
         bool foundSmallRoom = false;
         Vector3 posRef = new Vector3();
-
+        bool leftdoor = false;
+        bool rightdoor = false;
         for (int i = _roomsThatSpawnRef.Count - 1; i >= 0; i--)
         {
             if (_roomsThatSpawnRef[i].GetComponent<S_RoomScript>().roomType == E_RoomType.SmallRoom)
             {
                 foundSmallRoom = true;
                 posRef = _roomsThatSpawnRef[i].transform.position;
+                leftdoor = _roomsThatSpawnRef[i].GetComponent<S_RoomScript>()._doorOnLeft;
+                rightdoor = _roomsThatSpawnRef[i].GetComponent<S_RoomScript>()._doorOnRight;
                 Destroy(_roomsThatSpawnRef[i]);
                 _roomsThatSpawnRef.Remove(_roomsThatSpawnRef[i]);
                 break;
@@ -267,6 +270,8 @@ public class S_BaseSpawnProcedural : MonoBehaviour
                 if (_roomsThatSpawnRef[i].GetComponent<S_RoomScript>().roomType == E_RoomType.MediumRoom)
                 {
                     posRef = _roomsThatSpawnRef[i].transform.position;
+                    leftdoor = _roomsThatSpawnRef[i].GetComponent<S_RoomScript>()._doorOnLeft;
+                    rightdoor = _roomsThatSpawnRef[i].GetComponent<S_RoomScript>()._doorOnRight;
                     Destroy(_roomsThatSpawnRef[i]);
                     _roomsThatSpawnRef.Remove(_roomsThatSpawnRef[i]);
                     break;
@@ -284,11 +289,15 @@ public class S_BaseSpawnProcedural : MonoBehaviour
         }
         if (foundSmallRoom)
         {
+            specialroom.GetComponent<S_RoomScript>()._doorOnLeft = leftdoor; 
+            specialroom.GetComponent<S_RoomScript>()._doorOnRight = rightdoor;
             _roomsThatSpawnRef.Add(Instantiate(specialroom, posRef, specialroom.transform.rotation)); 
             return;
         }
+        specialroom.GetComponent<S_RoomScript>()._doorOnLeft = leftdoor;
         _roomsThatSpawnRef.Add(Instantiate(specialroom, posRef, specialroom.transform.rotation));
         int randomNumber = Random.Range(0, _prefabSmallRoom.Count);
+        _prefabSmallRoom[randomNumber].GetComponent<S_RoomScript>()._doorOnRight = rightdoor;
         _roomsThatSpawnRef.Add(Instantiate(_prefabSmallRoom[randomNumber],new Vector3(posRef.x + 9f, posRef.y, posRef.z) , _prefabSmallRoom[randomNumber].transform.rotation));
     }
 
