@@ -51,11 +51,15 @@ MonoBehaviour:
   _prefabSpawnDown: {fileID: 0}
   _prefabSmallRoom:
   - {fileID: 3697634670085439748, guid: 4084352a20ab20347b262810bb977f69, type: 3}
-  _prefabSpecialRoom: []
+  _prefabSpecialRoom:
+  - {fileID: 9200620580989844448, guid: 452f4c34391f9d044808c75b6785ac02, type: 3}
+  - {fileID: 355610856607035933, guid: f305da61cea3bb243b42cfd3a49f22c7, type: 3}
+  - {fileID: 2842173185276042973, guid: 8260fb911852d7d4190adf84f49d7a57, type: 3}
   _prefabMediumRoom:
   - {fileID: 7531643388676799007, guid: 932501b203acd224882a6c6d039478b7, type: 3}
   _prefabBigRoom:
   - {fileID: 6707820838551246390, guid: bbb0a715ad95315438be49d5b122898c, type: 3}
+  - {fileID: 3660000346378509593, guid: b9d1ed3dcaed2d84684afe9667d2bcb9, type: 3}
   _prefabSmallRoomSize: {x: 1, y: 1}
   _prefabMediumRoomSize: {x: 2, y: 1}
   _prefabBigRoomSize: {x: 3, y: 2}
@@ -64,6 +68,7 @@ MonoBehaviour:
   _prefabBigRoomDropRate: 40
   _sizeRoomSize: {x: 45, y: 10, z: 0}
   _offsetRoomSize: {x: 0, y: 0.33, z: -1.5}
+  specialRoomToSpawn: 1
 --- !u!114 &951323786889169275
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -82,3 +87,4 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   lastTpLocation: {fileID: 0}
+  canvasToSpawn: {fileID: 2196621134018844819, guid: ef24ad3f385a2c24f88ad94d50665dfb, type: 3}
