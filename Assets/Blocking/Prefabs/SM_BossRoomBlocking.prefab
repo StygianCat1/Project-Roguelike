@@ -856,6 +856,10 @@ PrefabInstance:
       value: SM_BossRoomBlocking
       objectReference: {fileID: 0}
     - target: {fileID: 1116080355560865054, guid: 46a3d66438046be40b1a030e3b3da723, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 8c65d709f5efedd4d8e93bc18a05e026, type: 2}
+    - target: {fileID: 1116080355560865054, guid: 46a3d66438046be40b1a030e3b3da723, type: 3}
       propertyPath: 'm_Materials.Array.data[1]'
       value: 
       objectReference: {fileID: 2100000, guid: 7d65e2dcb583ca84d9e17a3e70348bfa, type: 2}
