@@ -35,16 +35,20 @@ public class S_BaseSpawnProcedural : MonoBehaviour
     [SerializeField][Tooltip("Use it as an offset to align to the place with the perfect point")] private Vector3 _offsetRoomSize;
     
     private List<GameObject> _roomsThatSpawnRef;
+    private S_TeleporterHandler teleporterHandler;
     
     public E_SpecialRoom specialRoomToSpawn = E_SpecialRoom.None; 
     private GameObject _prefabToDestroy;
     
     private List<Room> _roomsToCut;
     private List<Room> _roomsTotal;
+
+    public List<GameObject> totalEnemySpawned;
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        teleporterHandler = GetComponent<S_TeleporterHandler>();
         if (_prefabSpawnUp == null || _prefabSpawnDown == null)
         {
             Debug.LogError("Prefab Spawn Up or Spawn Down is missing, or even both prefabs are missing.");
@@ -231,7 +235,8 @@ public class S_BaseSpawnProcedural : MonoBehaviour
             Debug.Log("Impossible to spawn rooms, need a total of 100 in drop rate to begin");
         }
         AddPrefabSpecialRoom(specialRoomToSpawn);
-        Invoke(nameof(AddRoomTeleportRef), 0.5f);
+        AddEnemyRef();
+        Invoke(nameof(AddRoomTeleportRef), 0.2f);
     }
 
     private void SpawnPrefab(Room roomToSpawn, GameObject prefabToSpawn, bool leftdoor, bool rightdoor, E_RoomHeight roomHeight)
@@ -307,6 +312,17 @@ public class S_BaseSpawnProcedural : MonoBehaviour
         {
             if (room.GetComponent<S_RoomScript>()._tpInRoom == null) {continue;}
             room.GetComponent<S_RoomScript>()._tpInRoom.SearchForCloseTp();
+        }
+    }
+
+    private void AddEnemyRef()
+    {
+        foreach (GameObject room in _roomsThatSpawnRef)
+        {
+            if (room.GetComponent<S_RoomScript>()._enemyInRoom.Count == 0) {continue;}
+            totalEnemySpawned.AddRange(room.GetComponent<S_RoomScript>()._enemyInRoom);
+            Debug.Log(totalEnemySpawned.Count);
+            teleporterHandler.AddEnemyRefToTeleport();
         }
     }
     

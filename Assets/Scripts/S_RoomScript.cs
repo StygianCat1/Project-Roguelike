@@ -8,6 +8,8 @@ public class S_RoomScript : MonoBehaviour
     public List<GameObject> _rightDoor ;
     public List<GameObject> _leftUpDoor ;
     public List<GameObject> _rightUpDoor ;
+    
+    public List<GameObject> _enemyInRoom ;
 
     public E_RoomHeight roomHeight;
     public E_RoomType roomType;

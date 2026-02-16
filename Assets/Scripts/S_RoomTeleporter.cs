@@ -73,7 +73,7 @@ public class S_RoomTeleporter : MonoBehaviour
     {
         if (_player != null && collision.gameObject.GameObject() == _player)
         {
-            _collisionHandler.teleporterRef = null;
+            _collisionHandler.roomTeleporterRef = null;
         }
     }
     

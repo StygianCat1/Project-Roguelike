@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Net;
+using NUnit.Framework.Constraints;
 using Unity.VisualScripting;
 using UnityEngine;
 
@@ -8,8 +9,6 @@ public class S_Teleporter : MonoBehaviour
 {
     public GameObject tpLocation;
     [HideInInspector] public S_TeleporterHandler _teleporterHandler;
-
-    [SerializeField] private List<GameObject> _enemiesInZone;
     
     [SerializeField] private GameObject _roomToSpawn;
     
@@ -17,6 +16,8 @@ public class S_Teleporter : MonoBehaviour
     
     private GameObject _player;
     private S_CharacterCollisionHandler _collisionHandler;
+
+    public List<GameObject> enemyList;
 
     
 
@@ -46,6 +47,8 @@ public class S_Teleporter : MonoBehaviour
 
     private void OnTriggerEnter(Collider collision)
     {
+        enemyList.RemoveAll(x => x == null);
+        if (enemyList.Count != 0 ) {return;}
         if (_player != null && collision.gameObject.GameObject() == _player)
         {
             _collisionHandler.teleporterRef = this;
