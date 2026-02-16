@@ -47,7 +47,7 @@ namespace AwesomeToon {
 
         void Start() {
             Init();
-            GetLights();
+            
         }
 
         void OnValidate() {
@@ -104,7 +104,7 @@ namespace AwesomeToon {
             if (Application.isEditor && !Application.isPlaying) {
                 GetLights();
             }
-
+            GetLights();
             UpdateMaterial();
         }
 
@@ -159,6 +159,11 @@ namespace AwesomeToon {
             float inView = 1.1f;
             float dist;
 
+            if (!light == null) 
+            {
+                Debug.Log("aled");
+         
+            }
             if (!light.isActiveAndEnabled) {
                 lightSet.atten = 0f;
                 return lightSet;

@@ -1,16 +1,14 @@
 using System;
 using System.Collections.Generic;
 using System.Net;
+using NUnit.Framework.Constraints;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class Teleporter : MonoBehaviour
+public class S_Teleporter : MonoBehaviour
 {
-
     public GameObject tpLocation;
     [HideInInspector] public S_TeleporterHandler _teleporterHandler;
-
-    [SerializeField] private List<GameObject> _enemiesInZone;
     
     [SerializeField] private GameObject _roomToSpawn;
     
@@ -18,6 +16,9 @@ public class Teleporter : MonoBehaviour
     
     private GameObject _player;
     private S_CharacterCollisionHandler _collisionHandler;
+
+    public List<GameObject> enemyList;
+
     
 
     private void Start()
@@ -31,7 +32,6 @@ public class Teleporter : MonoBehaviour
     public void IncrementTeleporter()
     {
         _teleporterHandler.floorNumber += 1;
-        SpawnRoomAndDestroyOther();
         if (_teleporterHandler.floorNumber == _teleporterHandler.numberOfFloorToReach)
         {
             Debug.Log("Teleporter: Reached the end of the floor");
@@ -47,6 +47,8 @@ public class Teleporter : MonoBehaviour
 
     private void OnTriggerEnter(Collider collision)
     {
+        enemyList.RemoveAll(x => x == null);
+        if (enemyList.Count != 0 ) {return;}
         if (_player != null && collision.gameObject.GameObject() == _player)
         {
             _collisionHandler.teleporterRef = this;

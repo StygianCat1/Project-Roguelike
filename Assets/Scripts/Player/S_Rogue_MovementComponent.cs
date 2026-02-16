@@ -18,9 +18,12 @@ public class S_Rogue_MovementComponent : MonoBehaviour
     [SerializeField] private float _dashDuration = 0.2f;
     [SerializeField] private float _dashCooldown = 1.0f;
     
+    [SerializeField] private GameObject _characterRef;
+    
     
     private S_Rogue_Inputs _inputsManager;
     private Rigidbody _rigidbody;
+    private Animator _animator;
     
     private Vector3 _currentMoveVelocity;
     private Vector3 _moveDampVelocity;
@@ -39,12 +42,14 @@ public class S_Rogue_MovementComponent : MonoBehaviour
     {
         _rigidbody = GetComponent<Rigidbody>();
         _inputsManager = GetComponent<S_Rogue_Inputs>();
+        _animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
     private void Update()
     {
         GetCharacterDirection();
+        CharacterFaceDirection();
         if (_isDashing)
         {
             return;
@@ -59,7 +64,13 @@ public class S_Rogue_MovementComponent : MonoBehaviour
     {
         Vector3 MoveVector = transform.TransformDirection(new Vector3 (_inputsManager.moveX, 0, 0));
         _currentMoveVelocity = Vector3.SmoothDamp(_currentMoveVelocity, MoveVector * _movementSpeed, ref _moveDampVelocity, _moveSmoothTime);
+        _animator.SetFloat("MoveX", _inputsManager.moveX);
         transform.Translate(_currentMoveVelocity * Time.deltaTime, Space.World);
+    }
+
+    private void CharacterFaceDirection()
+    {
+        _characterRef.transform.LookAt(new Vector3(_characterRef.transform.position.x + _directionCharacter, _characterRef.transform.position.y, _characterRef.transform.position.z));
     }
 
     private void Jump()
@@ -76,6 +87,7 @@ public class S_Rogue_MovementComponent : MonoBehaviour
         }
         if (_inputsManager.jump && _canJump)
         {
+            _animator.SetTrigger("Jump");
             _jumpVelocity = Mathf.Sqrt(_jumpHeight * -2.5f * ( Physics.gravity.y * _gravityScale));
             _canJump = false;
         } 
@@ -86,24 +98,6 @@ public class S_Rogue_MovementComponent : MonoBehaviour
     {
         _canJump = true;
     }
-    /*
-    private void Jump()
-    {
-        //_jumpVelocity += Physics.gravity.y * _gravityScale * Time.deltaTime;
-        Ray groundCheckRay = new Ray(transform.position, Vector3.down);
-        if (Physics.Raycast(groundCheckRay, out RaycastHit groundHit, 1.1f))
-        {
-            _jumpSecurityTimer = Mathf.Clamp(_jumpSecurityTimer - Time.deltaTime, 0, _jumpSecurity);
-            _jumpVelocity = 0;
-            if (_inputsManager.jump && _jumpSecurityTimer == 0)
-            {
-                _jumpVelocity = Mathf.Sqrt(_jumpHeight * -2f * ( Physics.gravity.y * _gravityScale));
-                _jumpSecurityTimer = _jumpSecurity;
-            }
-        }
-        transform.Translate(new Vector3 (0, _jumpVelocity, 0) * Time.deltaTime, Space.World);
-    }
-    */
 
     private void Dash()
     {
@@ -138,6 +132,7 @@ public class S_Rogue_MovementComponent : MonoBehaviour
         if (_inputsManager.moveX == 0)
         {
             _rigidbody.linearVelocity = new Vector3(- _directionCharacter * _backDashPower, 0.1f, 0f);
+            _animator.SetTrigger("BackDash");
             yield return new WaitForSeconds(_backDashDuration);
             _rigidbody.linearVelocity = new Vector3(0f, 0f, 0f);
             _isDashing = false;
@@ -146,6 +141,7 @@ public class S_Rogue_MovementComponent : MonoBehaviour
         else
         {
             _rigidbody.linearVelocity = new Vector3(_inputsManager.moveX * _dashPower, 0.1f, 0f);
+            _animator.SetTrigger("Dash");
             yield return new WaitForSeconds(_dashDuration);
             _rigidbody.linearVelocity = new Vector3(0f, 0f, 0f);
             _isDashing = false;

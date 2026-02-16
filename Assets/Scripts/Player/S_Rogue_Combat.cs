@@ -7,7 +7,7 @@ public class S_Rogue_Combat : MonoBehaviour
     private S_HP_Component _characterHealthRef;
     private S_Rogue_Inputs _inputsManager;
     private S_Rogue_MovementComponent _movementComponent;
-    private S_Rogue_Bonus _movementBonus;
+    private S_Rogue_Bonus _rogueBonus;
 
     [SerializeField] private List<Collider> _attackHitBoxes;
 
@@ -28,13 +28,23 @@ public class S_Rogue_Combat : MonoBehaviour
         _characterHealthRef = GetComponent<S_HP_Component>();
         _inputsManager = GetComponent<S_Rogue_Inputs>();
         _movementComponent = GetComponent<S_Rogue_MovementComponent>();
-        _movementBonus = GetComponent<S_Rogue_Bonus>();
+        _rogueBonus = GetComponent<S_Rogue_Bonus>();
     }
 
     // Update is called once per frame
     void Update()
     {
+        UseAttack();
         UseGun();
+        UseCapacity();
+    }
+
+    private void UseAttack()
+    {
+        if (_inputsManager.attack)
+        {
+            
+        }
     }
 
     private void UseGun()
@@ -50,10 +60,8 @@ public class S_Rogue_Combat : MonoBehaviour
                     enemyHit.collider.GameObject().GetComponent<S_HP_Component>().TakeDamage(_gunAttackDamage);
                     return;
                 }
-                Debug.Log("potato");
             }
-            
-            gunAmmunitions--;
+            if (100 - _rogueBonus.luckyshotRate <= Random.Range(0,100)){gunAmmunitions--;}
             return;
         }
         _inputsManager.shoot = false;
@@ -67,9 +75,7 @@ public class S_Rogue_Combat : MonoBehaviour
             _inputsManager.useCapacity = false;
             return;
         }
-
         _inputsManager.useCapacity = false;
-
     }
 }
 
