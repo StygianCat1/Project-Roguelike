@@ -683,9 +683,14 @@ MonoBehaviour:
   - {fileID: 3093221947141229293}
   _leftUpDoor: []
   _rightUpDoor: []
+  _enemyInRoom: []
+  roomHeight: 0
   roomType: 0
   specialRoomtype: 3
   _stairsRef: []
+  _tpInRoom: {fileID: 0}
+  _doorOnLeft: 0
+  _doorOnRight: 0
 --- !u!114 &7174833595686839557
 MonoBehaviour:
   m_ObjectHideFlags: 0
