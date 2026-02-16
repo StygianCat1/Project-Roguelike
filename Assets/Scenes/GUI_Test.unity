@@ -822,6 +822,7 @@ GameObject:
   - component: {fileID: 366908060}
   - component: {fileID: 366908062}
   - component: {fileID: 366908061}
+  - component: {fileID: 366908063}
   m_Layer: 5
   m_Name: HammerBackRed
   m_TagString: Untagged
@@ -886,6 +887,28 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 366908059}
   m_CullTransparentMesh: 1
+--- !u!95 &366908063
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 366908059}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 18252a754220f9f4fbc44123d3d72000, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &402753631
 GameObject:
   m_ObjectHideFlags: 0
@@ -2084,7 +2107,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1201138694}
-  - component: {fileID: 1201138693}
   m_Layer: 0
   m_Name: HammerManager
   m_TagString: Untagged
@@ -2092,20 +2114,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1201138693
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1201138692}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 04d715d99f2b9d641b43e18824c2fdb2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sp1: {fileID: 21300000, guid: baf43024dc246894aafc31bd33c838e8, type: 3}
-  sp2: {fileID: 21300000, guid: 49759995c1d977f4caa3bc5ff7a0af46, type: 3}
 --- !u!4 &1201138694
 Transform:
   m_ObjectHideFlags: 0
@@ -2153,6 +2161,7 @@ MonoBehaviour:
   ultBar: 0
   maxUltBar: 100
   ultBarImage: {fileID: 875405830}
+  _animator: {fileID: 1803358397}
 --- !u!4 &1268301676
 Transform:
   m_ObjectHideFlags: 0
@@ -3253,6 +3262,7 @@ GameObject:
   - component: {fileID: 1803358396}
   - component: {fileID: 1803358395}
   - component: {fileID: 1803358397}
+  - component: {fileID: 1803358398}
   m_Layer: 5
   m_Name: HammerBackYellow
   m_TagString: Untagged
@@ -3339,6 +3349,18 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1803358398
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1803358393}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 949887bb058e69f40b99b18014b7f0a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1945599250
 GameObject:
   m_ObjectHideFlags: 0

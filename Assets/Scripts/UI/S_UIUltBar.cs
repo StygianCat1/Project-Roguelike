@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -10,7 +11,13 @@ public class S_UIUltBar : MonoBehaviour
     [SerializeField] public float maxUltBar = 100f;
     public Image ultBarImage;
     
-    
+    [SerializeField] private Animator _animator;
+
+    private void Start()
+    {
+       
+    }
+
     // Update is called once per frame
     void Update()
     {
