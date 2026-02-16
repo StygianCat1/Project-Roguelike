@@ -185,9 +185,14 @@ MonoBehaviour:
   - {fileID: 2437211065308954106}
   _leftUpDoor: []
   _rightUpDoor: []
+  _enemyInRoom: []
+  roomHeight: 0
   roomType: 0
   specialRoomtype: 1
   _stairsRef: []
+  _tpInRoom: {fileID: 0}
+  _doorOnLeft: 0
+  _doorOnRight: 0
 --- !u!114 &1477798685260802332
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -365,7 +370,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: ea5cdade920e9ed4c8cc2368342a7875, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 09307320a57db484085b2d07525a9c54, type: 2}
+      objectReference: {fileID: 2100000, guid: c1b9427d9dbb97846a8d8f664d8258e6, type: 2}
     - target: {fileID: 919132149155446097, guid: ea5cdade920e9ed4c8cc2368342a7875, type: 3}
       propertyPath: m_Name
       value: SM_Gacha (4)
@@ -443,7 +448,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: ea5cdade920e9ed4c8cc2368342a7875, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 1834ff4bd8e3188428ac95a6891fa823, type: 2}
+      objectReference: {fileID: 2100000, guid: 794f4ef50f90bc546aa9b5a2a2b2818c, type: 2}
     - target: {fileID: 919132149155446097, guid: ea5cdade920e9ed4c8cc2368342a7875, type: 3}
       propertyPath: m_Name
       value: SM_Gacha
@@ -654,10 +659,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1127222190788700327}
     m_Modifications:
+    - target: {fileID: 5231171312871876666, guid: e9a7cd0f8eefcb1429d584212b525819, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: c4581ffee6a11704ea3012fc2abed229, type: 2}
+    - target: {fileID: 5242271353475507561, guid: e9a7cd0f8eefcb1429d584212b525819, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: c4581ffee6a11704ea3012fc2abed229, type: 2}
     - target: {fileID: 5536406448054549974, guid: e9a7cd0f8eefcb1429d584212b525819, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 9b3bed7e87419e74c94b427483cc8e59, type: 2}
+      objectReference: {fileID: 2100000, guid: c4581ffee6a11704ea3012fc2abed229, type: 2}
     - target: {fileID: 8371067877628125462, guid: e9a7cd0f8eefcb1429d584212b525819, type: 3}
       propertyPath: m_Name
       value: p_ Gacha (1)
@@ -937,6 +950,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: ea5cdade920e9ed4c8cc2368342a7875, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: c4581ffee6a11704ea3012fc2abed229, type: 2}
     - target: {fileID: 919132149155446097, guid: ea5cdade920e9ed4c8cc2368342a7875, type: 3}
       propertyPath: m_Name
       value: SM_Gacha (3)
@@ -1014,7 +1031,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: ea5cdade920e9ed4c8cc2368342a7875, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 1834ff4bd8e3188428ac95a6891fa823, type: 2}
+      objectReference: {fileID: 2100000, guid: 794f4ef50f90bc546aa9b5a2a2b2818c, type: 2}
     - target: {fileID: 919132149155446097, guid: ea5cdade920e9ed4c8cc2368342a7875, type: 3}
       propertyPath: m_Name
       value: SM_Gacha (1)
@@ -1089,6 +1106,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: ea5cdade920e9ed4c8cc2368342a7875, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: c4581ffee6a11704ea3012fc2abed229, type: 2}
     - target: {fileID: 919132149155446097, guid: ea5cdade920e9ed4c8cc2368342a7875, type: 3}
       propertyPath: m_Name
       value: SM_Gacha (5)
@@ -1111,14 +1132,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1127222190788700327}
     m_Modifications:
+    - target: {fileID: 5231171312871876666, guid: e9a7cd0f8eefcb1429d584212b525819, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: c4581ffee6a11704ea3012fc2abed229, type: 2}
     - target: {fileID: 5242271353475507561, guid: e9a7cd0f8eefcb1429d584212b525819, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 1834ff4bd8e3188428ac95a6891fa823, type: 2}
+      objectReference: {fileID: 2100000, guid: 794f4ef50f90bc546aa9b5a2a2b2818c, type: 2}
     - target: {fileID: 5536406448054549974, guid: e9a7cd0f8eefcb1429d584212b525819, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 09307320a57db484085b2d07525a9c54, type: 2}
+      objectReference: {fileID: 2100000, guid: c1b9427d9dbb97846a8d8f664d8258e6, type: 2}
     - target: {fileID: 8371067877628125462, guid: e9a7cd0f8eefcb1429d584212b525819, type: 3}
       propertyPath: m_Name
       value: p_ Gacha
@@ -1253,7 +1278,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: ea5cdade920e9ed4c8cc2368342a7875, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 09307320a57db484085b2d07525a9c54, type: 2}
+      objectReference: {fileID: 2100000, guid: c1b9427d9dbb97846a8d8f664d8258e6, type: 2}
     - target: {fileID: 919132149155446097, guid: ea5cdade920e9ed4c8cc2368342a7875, type: 3}
       propertyPath: m_Name
       value: SM_Gacha (8)
@@ -1435,6 +1460,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: ea5cdade920e9ed4c8cc2368342a7875, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: c4581ffee6a11704ea3012fc2abed229, type: 2}
     - target: {fileID: 919132149155446097, guid: ea5cdade920e9ed4c8cc2368342a7875, type: 3}
       propertyPath: m_Name
       value: SM_Gacha (12)
@@ -1509,6 +1538,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: ea5cdade920e9ed4c8cc2368342a7875, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: c4581ffee6a11704ea3012fc2abed229, type: 2}
     - target: {fileID: 919132149155446097, guid: ea5cdade920e9ed4c8cc2368342a7875, type: 3}
       propertyPath: m_Name
       value: SM_Gacha (7)
@@ -1583,6 +1616,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: ea5cdade920e9ed4c8cc2368342a7875, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: c4581ffee6a11704ea3012fc2abed229, type: 2}
     - target: {fileID: 919132149155446097, guid: ea5cdade920e9ed4c8cc2368342a7875, type: 3}
       propertyPath: m_Name
       value: SM_Gacha (2)
@@ -1657,6 +1694,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: ea5cdade920e9ed4c8cc2368342a7875, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: c4581ffee6a11704ea3012fc2abed229, type: 2}
     - target: {fileID: 919132149155446097, guid: ea5cdade920e9ed4c8cc2368342a7875, type: 3}
       propertyPath: m_Name
       value: SM_Gacha (11)
@@ -1734,7 +1775,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: ea5cdade920e9ed4c8cc2368342a7875, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 1834ff4bd8e3188428ac95a6891fa823, type: 2}
+      objectReference: {fileID: 2100000, guid: 794f4ef50f90bc546aa9b5a2a2b2818c, type: 2}
     - target: {fileID: 919132149155446097, guid: ea5cdade920e9ed4c8cc2368342a7875, type: 3}
       propertyPath: m_Name
       value: SM_Gacha (9)
@@ -1886,7 +1927,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: ea5cdade920e9ed4c8cc2368342a7875, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 1834ff4bd8e3188428ac95a6891fa823, type: 2}
+      objectReference: {fileID: 2100000, guid: 794f4ef50f90bc546aa9b5a2a2b2818c, type: 2}
     - target: {fileID: 919132149155446097, guid: ea5cdade920e9ed4c8cc2368342a7875, type: 3}
       propertyPath: m_Name
       value: SM_Gacha (10)

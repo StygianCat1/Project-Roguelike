@@ -20,7 +20,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: M_Bois2
+  m_Name: M_Pachinko
   m_Shader: {fileID: -6465566751694194690, guid: 99ab74da28b0bb346a44615cdc84d207, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -38,7 +38,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _base_color:
-        m_Texture: {fileID: 2800000, guid: 73b499bf2b8fd144d80b48905a2bc4ba, type: 3}
+        m_Texture: {fileID: 2800000, guid: 3be357226bdc42a4293478b677af29aa, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _emissive:
@@ -50,7 +50,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _normal_map:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: 83a3d3c898cfb4f4398e1bbf865146ef, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _smoothness:
