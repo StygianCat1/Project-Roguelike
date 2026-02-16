@@ -3,7 +3,12 @@ guid: 03116d19dcedd5040a46fb3cae667df2
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Colt_Python_357
+    second: {fileID: 2100000, guid: c30f644fa4d37f74ab28efe3ec733ff3, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

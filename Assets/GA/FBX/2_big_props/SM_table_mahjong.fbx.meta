@@ -3,7 +3,12 @@ guid: b5443a5eca67fd749a266ab925738b5e
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mahjong
+    second: {fileID: 2100000, guid: aa8ef7354936817469d052a7e50d5d86, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
