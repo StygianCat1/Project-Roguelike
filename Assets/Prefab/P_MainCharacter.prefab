@@ -376,6 +376,8 @@ MonoBehaviour:
   _dashCooldown: 1
   _characterRef: {fileID: 4607565150053790547}
   _directionCharacter: 1
+  _canJump: 1
+  isDashing: 0
 --- !u!114 &2689831106235062904
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -388,13 +390,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98c30e42836efe144875e152eb6f2d19, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _attackHandler: {fileID: 0}
   _attackHitBoxes: []
   _capacityCooldown: 11
   _gunRange: 10
   gunAmmunitions: 20
+  _attackCollider: {fileID: 9024759954558340306}
   _basicAttackDamage: 0
   _gunAttackDamage: 50
   _capacityAttackDamage: 0
+  isAttacking: 0
+  isShooting: 0
+  isUsingCapacity: 0
+  canUseCapacity: 0
 --- !u!114 &7743065372922853247
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -538,6 +546,9 @@ PrefabInstance:
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 912e063f18d3f4544884f246367b3d8a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 9024759954558340306}
     - targetCorrespondingSourceObject: {fileID: -7412528413914776854, guid: 912e063f18d3f4544884f246367b3d8a, type: 3}
       insertIndex: -1
       addedObject: {fileID: 4008840820864990071}
@@ -578,3 +589,24 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 912e063f18d3f4544884f246367b3d8a, type: 3}
   m_PrefabInstance: {fileID: 3688507221288799746}
   m_PrefabAsset: {fileID: 0}
+--- !u!65 &9024759954558340306
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4607565150053790547}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 0
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1.2666006, z: 1.4418494}
+  m_Center: {x: 6.908648e-15, y: 1.0087366, z: 1.4861526}

@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class S_CharacterCollisionHandler : MonoBehaviour
 {
     public S_Teleporter teleporterRef;  
-    public  S_RoomTeleporter roomTeleporterRef;
+    public S_RoomTeleporter roomTeleporterRef;
     public S_TeleportToGameScene teleportToGameSceneRef;
     
     private S_Rogue_Inputs _inputsManager;
@@ -15,6 +15,7 @@ public class S_CharacterCollisionHandler : MonoBehaviour
     private void Start()
     {
         _inputsManager = GetComponentInParent<S_Rogue_Inputs>();
+        _rogueCombat = GetComponentInParent<S_Rogue_Combat>();
     }
 
     private void Update()
@@ -52,7 +53,7 @@ public class S_CharacterCollisionHandler : MonoBehaviour
             }
         }
     }
-
+    
 
     private void OnCollisionEnter(Collision collision)
     {

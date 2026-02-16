@@ -13,11 +13,15 @@ public class S_EnemyAi : MonoBehaviour
     
     [SerializeField] private float _timeBetweenAttacks;
     
-    [SerializeField] private float _sightRange = 10f, _attackRange = 1f;
+    [SerializeField] private float _sightRange = 10f, _attackRange = 0.5f;
+    
+    [SerializeField] private int _enemyAttackDamage = 10;
+    [SerializeField] private S_EnemyAttack _enemyAttack;
+    [SerializeField] private Collider _attackCollider;
+    [SerializeField] private Animator _animator;
     
     private  NavMeshAgent _agent; 
     private Transform _player;
-    private S_HP_Component _playerHealth;
     private Rigidbody _rb;
     
     private bool _walkPointSet;
@@ -28,8 +32,14 @@ public class S_EnemyAi : MonoBehaviour
     {
         _player = GameObject.FindGameObjectWithTag("MainCharacter").transform;
         _rb = GetComponent<Rigidbody>();
-        _playerHealth = _player.GetComponent<S_HP_Component>();   
         _agent = GetComponent<NavMeshAgent>();
+        _animator = GetComponent<Animator>();
+        
+    }
+
+    private void Start()
+    {
+        _enemyAttack.damage = _enemyAttackDamage;
     }
 
     private void Update()
@@ -41,9 +51,23 @@ public class S_EnemyAi : MonoBehaviour
         }
         _playerInAttackRange = Physics.CheckSphere(transform.position, _attackRange, LayerMask.GetMask("Player"));
 
-        if (!_playerInSight && !_playerInAttackRange) Patroling();
-        if (_playerInSight && !_playerInAttackRange) ChasePlayer();
-        if (_playerInSight && _playerInAttackRange) AttackPlayer();
+        if (!_playerInSight && !_playerInAttackRange)
+        {
+            _animator.SetBool("Walking", true);
+            Patroling();
+        }
+
+        if (_playerInSight && !_playerInAttackRange)
+        {
+            _animator.SetBool("Walking", true);
+            ChasePlayer();
+        }
+
+        if (_playerInSight && _playerInAttackRange)
+        {
+            _animator.SetBool("Walking", false);
+            AttackPlayer();
+        }
     }
 
     private void Patroling()
@@ -57,7 +81,7 @@ public class S_EnemyAi : MonoBehaviour
         {
             _walkPointSet = false;
         }
-        
+        //_characterPrefab.transform.LookAt(new Vector3(transform.position.x, _walkPoint.y, transform.position.z));
     }
 
     private void SearchWalkPoint()
@@ -76,6 +100,7 @@ public class S_EnemyAi : MonoBehaviour
     private void ChasePlayer()
     {
         _agent.SetDestination(_player.position);
+        //_characterPrefab.transform.LookAt(new Vector3(transform.position.x + _player, transform.position.y, transform.position.z));
     }
     
     private void AttackPlayer()
@@ -83,17 +108,27 @@ public class S_EnemyAi : MonoBehaviour
         _agent.SetDestination(transform.position);
         
         transform.LookAt(new Vector3(_player.position.x, transform.position.y, transform.position.z));
+        //_characterPrefab.transform.LookAt(new Vector3(transform.position.x, transform.position.y, transform.position.z));
 
         if (!_alreadyAttacked)
         {
-            //AttackCodeHere
-            
-            
-            
-            //
+            _animator.SetTrigger("Attack");
             _alreadyAttacked = true;
+            Invoke(nameof(BeginCollisionAttacking),0.5f);
             Invoke(nameof(ResetAttack), _timeBetweenAttacks);
         }
+    }
+
+    private void BeginCollisionAttacking()
+    {
+        Debug.Log("Begin Collision Attacking");
+        _attackCollider.enabled = true;
+        Invoke(nameof(StopCollisionAttacking),0.1f);
+    }
+
+    private void StopCollisionAttacking()
+    {
+        _attackCollider.enabled = false;
     }
 
     private void ResetAttack()
@@ -101,8 +136,8 @@ public class S_EnemyAi : MonoBehaviour
         _alreadyAttacked = false;
     }
 
-    public void OnTriggerEnter(Collider other)
+    public void TakeHit()
     {
-        //if (other.tag != "Enemy") Debug.Log("aled"); _rb.AddForce(Vector3.up * 10f, ForceMode.Impulse);
+        
     }
 }
