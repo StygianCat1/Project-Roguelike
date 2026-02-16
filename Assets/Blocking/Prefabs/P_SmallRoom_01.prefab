@@ -245,6 +245,7 @@ GameObject:
   - component: {fileID: 403282506796770967}
   - component: {fileID: 9123932110560100774}
   - component: {fileID: 3789122308971550257}
+  - component: {fileID: 600705521874582133}
   m_Layer: 0
   m_Name: SM_L_Small_Room
   m_TagString: Untagged
@@ -321,6 +322,27 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &600705521874582133
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5125963075449989766}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 22.542786, y: 323.62067, z: 174.53531}
+  m_Center: {x: -888.72864, y: 181.4797, z: -174.55278}
 --- !u!1 &5597874078583617715
 GameObject:
   m_ObjectHideFlags: 0
@@ -771,6 +793,7 @@ GameObject:
   - component: {fileID: 2159346904485669266}
   - component: {fileID: 7453807636693874074}
   - component: {fileID: 1745640933284478978}
+  - component: {fileID: 2424328844387720919}
   m_Layer: 0
   m_Name: SM_R_Small_Room
   m_TagString: Untagged
@@ -847,6 +870,27 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &2424328844387720919
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9000421921212961722}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 22.542786, y: 323.62067, z: 174.53531}
+  m_Center: {x: -888.72864, y: 181.4797, z: -174.55278}
 --- !u!1001 &528544039091681563
 PrefabInstance:
   m_ObjectHideFlags: 0
