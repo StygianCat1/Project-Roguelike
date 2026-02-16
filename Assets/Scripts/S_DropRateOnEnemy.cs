@@ -15,17 +15,15 @@ public class ObjectDrop
 }
 public class S_DropRateOnEnemy : MonoBehaviour
 {
-    
     public List<ObjectDrop> objectDrops;
-    private List<GameObject> _objectsToDrop;
+    private List<GameObject> _objectsToDropAtDeath;
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     private void Start()
     {
-        //DropRateChoice();
+        DropRateChoice();
     }
-
-
+    
     private void DropRateChoice()
     {
         int _randomDropRate;
@@ -35,14 +33,8 @@ public class S_DropRateOnEnemy : MonoBehaviour
             if (_randomDropRate <= objectDrop.dropRate)
             {
                 Debug.Log(objectDrop.gameObject.name);
-                _objectsToDrop.Add(objectDrop.gameObject);
+                _objectsToDropAtDeath.Add(objectDrop.gameObject);
             }
         }
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }

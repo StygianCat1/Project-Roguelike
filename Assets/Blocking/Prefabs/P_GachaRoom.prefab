@@ -60,9 +60,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_L_Small_Room
       objectReference: {fileID: 0}
+    - target: {fileID: -3919892316688577499, guid: 139ae1a97e1a1f34fa95921f6b7733be, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 139ae1a97e1a1f34fa95921f6b7733be, type: 3}
       propertyPath: m_Name
       value: P_GachaRoom
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 139ae1a97e1a1f34fa95921f6b7733be, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2260141651959478438, guid: 139ae1a97e1a1f34fa95921f6b7733be, type: 3}
       propertyPath: 'm_Materials.Array.data[1]'
@@ -145,6 +153,12 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 139ae1a97e1a1f34fa95921f6b7733be, type: 3}
       insertIndex: -1
       addedObject: {fileID: 8207284069591497368}
+    - targetCorrespondingSourceObject: {fileID: 4781542017793515580, guid: 139ae1a97e1a1f34fa95921f6b7733be, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4353925736447980182}
+    - targetCorrespondingSourceObject: {fileID: -3919892316688577499, guid: 139ae1a97e1a1f34fa95921f6b7733be, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2693256611629543738}
   m_SourcePrefab: {fileID: 100100000, guid: 139ae1a97e1a1f34fa95921f6b7733be, type: 3}
 --- !u!1 &355610856607035933 stripped
 GameObject:
@@ -241,11 +255,53 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: -3919892316688577499, guid: 139ae1a97e1a1f34fa95921f6b7733be, type: 3}
   m_PrefabInstance: {fileID: 589421663407869772}
   m_PrefabAsset: {fileID: 0}
+--- !u!65 &2693256611629543738
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4735452912558670697}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 22.542786, y: 323.62067, z: 174.53531}
+  m_Center: {x: 888.7287, y: 181.4797, z: -174.55278}
 --- !u!1 &5365327301128449904 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4781542017793515580, guid: 139ae1a97e1a1f34fa95921f6b7733be, type: 3}
   m_PrefabInstance: {fileID: 589421663407869772}
   m_PrefabAsset: {fileID: 0}
+--- !u!65 &4353925736447980182
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5365327301128449904}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 22.542786, y: 323.62067, z: 174.53531}
+  m_Center: {x: -888.72864, y: 181.4797, z: -174.55278}
 --- !u!1001 &1027669914962540235
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -465,6 +521,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 26ae37c80a739144c9ed8523bd6de948, type: 3}
       propertyPath: m_Name
       value: SM_SpecialRoom
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 26ae37c80a739144c9ed8523bd6de948, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1661819960441242254, guid: 26ae37c80a739144c9ed8523bd6de948, type: 3}
       propertyPath: 'm_Materials.Array.data[1]'
