@@ -1,3 +1,4 @@
+using System;
 using Unity.VisualScripting;
 using UnityEngine;
 
@@ -8,19 +9,20 @@ public class S_TeleportToGameScene : MonoBehaviour
     
     public string levelToLoadName;
 
+
+    private void Start()
+    {
+        _player = GameObject.FindGameObjectWithTag("MainCharacter");
+        
+    }
+
     private void OnTriggerEnter(Collider collision)
     {
-        if (_player != null && collision.gameObject.GameObject() == _player)
-        {
-            _collisionHandler.teleportToGameSceneRef = this;
-            return;
-        }
-
         if (collision.gameObject.tag == "MainCharacter")
         {
-            _player = collision.gameObject;
             _collisionHandler = _player.GetComponent<S_CharacterCollisionHandler>();
             _collisionHandler.teleportToGameSceneRef = this;
+            S_GameManager.outGameMoneySave = _player.GetComponent<S_Resources>()._resourcesOutGame;
         }
     }
     

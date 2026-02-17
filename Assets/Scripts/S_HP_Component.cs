@@ -2,7 +2,8 @@ using UnityEngine;
 
 public class S_HP_Component : MonoBehaviour
 {
-    public int _currentHealth;    
+    public int _currentHealth;
+    [SerializeField] private GameObject GameOverCanvas;
     
     [SerializeField] private int _maxHealth = 100;
     
@@ -15,6 +16,7 @@ public class S_HP_Component : MonoBehaviour
     public void TakeDamage(int damage)
     {
         _currentHealth = Mathf.Clamp(_currentHealth - damage, 0, _maxHealth);
+        Debug.Log(_currentHealth);
         if (_currentHealth <= 0)
         {
             Death();
@@ -28,11 +30,17 @@ public class S_HP_Component : MonoBehaviour
 
     private void Death()
     {
-        if (gameObject.tag == "Player")
+        if (gameObject.tag == "MainCharacter")
         {
-            /// add UI + death screen + stop time, etc...
+            Instantiate(GameOverCanvas);
             return;
         }
+        //gameObject.GetComponent<S_DropRateOnEnemy>().DropMoney();
+        Invoke(nameof(DestroyGameObject), 0.1f);
+    }
+
+    private void DestroyGameObject()
+    {
         Destroy(gameObject);
     }
 }
