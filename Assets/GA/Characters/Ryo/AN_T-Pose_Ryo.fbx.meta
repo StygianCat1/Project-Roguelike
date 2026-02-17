@@ -3,7 +3,22 @@ guid: 912e063f18d3f4544884f246367b3d8a
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Retopo_nicky02_M_Body_eyes
+    second: {fileID: 2100000, guid: d6dd98083afd8234d896fb1f80770c97, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Retopo_nicky02_M_Clothes
+    second: {fileID: 2100000, guid: 2207ca9fc32c440408a346cff9509563, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Retopo_nicky02_M_hair
+    second: {fileID: 2100000, guid: c4218a976308a4244ada6712a24eba84, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

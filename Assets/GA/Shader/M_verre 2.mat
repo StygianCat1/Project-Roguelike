@@ -20,7 +20,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: M_Gacha_3
+  m_Name: M_verre 2
   m_Shader: {fileID: -6465566751694194690, guid: f65702583acdce143b2e443af2e9ffba, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -50,7 +50,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Texture2D:
-        m_Texture: {fileID: 2800000, guid: 468172e30c398ca4aa3524a51c36ac07, type: 3}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Texture2D_1:
@@ -86,13 +86,19 @@ Material:
     - _fresnel_size: 50
     - _gloss_size: 200
     m_Colors:
-    - _Color: {r: 1, g: 1, b: 1, a: 0}
-    - _L10_color: {r: 1, g: 1, b: 1, a: 0}
-    - _L10_dir: {r: 0, g: 0, b: 0, a: 0}
-    - _L1_color: {r: 1.2929441, g: 1.2929441, b: 1.2929441, a: 0.095533036}
-    - _L1_dir: {r: -0.9816649, g: -0.1906146, b: 0, a: 0}
-    - _L2_color: {r: 0.20218039, g: 0.20218039, b: 0.20218039, a: 0.06269159}
-    - _L2_dir: {r: -0.9915653, g: 0.11088973, b: -0.067095, a: 0}
+    - _Color: {r: 0.7604378, g: 1.8409874, b: 2.270603, a: 0}
+    - _L10_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L10_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L11_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L11_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L12_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L12_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L13_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L13_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L1_color: {r: 0.754717, g: 0.754717, b: 0.754717, a: 0.14105739}
+    - _L1_dir: {r: -0.62, g: 0.5917803, b: -0.061015464, a: 0}
+    - _L2_color: {r: 0.6226415, g: 0.6226415, b: 0.6226415, a: 0.14277712}
+    - _L2_dir: {r: 0.79, g: 0.4, b: 2.2, a: 0}
     - _L3_color: {r: 0, g: 0, b: 0, a: 1}
     - _L3_dir: {r: 0, g: 1, b: 0, a: 0}
     - _L4_color: {r: 0, g: 0, b: 0, a: 1}
@@ -101,12 +107,12 @@ Material:
     - _L5_dir: {r: 0, g: 1, b: 0, a: 0}
     - _L6_color: {r: 0, g: 0, b: 0, a: 1}
     - _L6_dir: {r: 0, g: 1, b: 0, a: 0}
-    - _L7_color: {r: 1, g: 1, b: 1, a: 0}
-    - _L7_dir: {r: 0, g: 0, b: 0, a: 0}
-    - _L8_color: {r: 1, g: 1, b: 1, a: 0}
-    - _L8_dir: {r: 0, g: 0, b: 0, a: 0}
-    - _L9_color: {r: 1, g: 1, b: 1, a: 0}
-    - _L9_dir: {r: 0, g: 0, b: 0, a: 0}
+    - _L7_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L7_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L8_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L8_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L9_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L9_dir: {r: 0, g: 1, b: 0, a: 0}
     - _fresnel_intensity: {r: 1, g: 1, b: 1, a: 0}
     - _gloss_intensity: {r: 1, g: 1, b: 1, a: 0}
     - _light_2_color: {r: 1, g: 1, b: 1, a: 0}
