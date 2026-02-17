@@ -2,27 +2,31 @@ using System;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.TextCore.Text;
 using Random = Unity.Mathematics.Random;
 
 public class S_EnemyAi : MonoBehaviour
 {
     [SerializeField] private GameObject _characterPrefab;
-    
+
     [SerializeField] private Vector3 _walkPoint;
     [SerializeField] private float _walkPointRange = 1f;
-    
+
     [SerializeField] private float _timeBetweenAttacks;
-    
+
     [SerializeField] private float _sightRange = 10f, _attackRange = 0.5f;
-    
+
     [SerializeField] private int _enemyAttackDamage = 10;
     [SerializeField] private S_EnemyAttack _enemyAttack;
     [SerializeField] private Collider _attackCollider;
-    [SerializeField] private Animator _animator;
+     
     
-    private  NavMeshAgent _agent; 
+    [SerializeField] private Collider _jumpCollider;
+
+    private NavMeshAgent _agent;
     private Transform _player;
     private Rigidbody _rb;
+    private Animator _animator;
     
     private bool _walkPointSet;
     private bool _alreadyAttacked;
@@ -34,7 +38,7 @@ public class S_EnemyAi : MonoBehaviour
         _rb = GetComponent<Rigidbody>();
         _agent = GetComponent<NavMeshAgent>();
         _animator = GetComponent<Animator>();
-        
+
     }
 
     private void Start()
@@ -47,10 +51,12 @@ public class S_EnemyAi : MonoBehaviour
         bool checkSight = Physics.CheckSphere(transform.position, _sightRange, LayerMask.GetMask("Player"));
         if (checkSight)
         {
-            if (transform.position.y <= _player.position.y + 3f && transform.position.y >= _player.position.y - 3f) _playerInSight = checkSight;
+            if (transform.position.y <= _player.position.y + 3f || transform.position.y >= _player.position.y - 3f)
+                _playerInSight = checkSight;
         }
-        _playerInAttackRange = Physics.CheckSphere(transform.position, _attackRange, LayerMask.GetMask("Player"));
 
+        _playerInAttackRange = Physics.CheckSphere(transform.position, _attackRange, LayerMask.GetMask("Player"));
+        
         if (!_playerInSight && !_playerInAttackRange)
         {
             _animator.SetBool("Walking", true);
@@ -72,9 +78,9 @@ public class S_EnemyAi : MonoBehaviour
 
     private void Patroling()
     {
-        if (!_walkPointSet) SearchWalkPoint(); 
-        else _agent.SetDestination(_walkPoint); 
-        
+        if (!_walkPointSet) SearchWalkPoint();
+        else _agent.SetDestination(_walkPoint);
+
         Vector3 distanceToWalkPoint = transform.position - _walkPoint;
 
         if (distanceToWalkPoint.magnitude < 1f)
@@ -87,34 +93,33 @@ public class S_EnemyAi : MonoBehaviour
     private void SearchWalkPoint()
     {
         float randomX = UnityEngine.Random.Range(-_walkPointRange, _walkPointRange);
-        
+
         _walkPoint = new Vector3(transform.position.x + randomX, transform.position.y, transform.position.z);
-        
+
         if (Physics.Raycast(_walkPoint, -transform.up, 2f))
         {
             _walkPointSet = true;
         }
+
         transform.LookAt(new Vector3(_walkPoint.x, transform.position.y, transform.position.z));
     }
-    
+
     private void ChasePlayer()
     {
         _agent.SetDestination(_player.position);
-        //_characterPrefab.transform.LookAt(new Vector3(transform.position.x + _player, transform.position.y, transform.position.z));
     }
-    
+
     private void AttackPlayer()
     {
         _agent.SetDestination(transform.position);
-        
+
         transform.LookAt(new Vector3(_player.position.x, transform.position.y, transform.position.z));
-        //_characterPrefab.transform.LookAt(new Vector3(transform.position.x, transform.position.y, transform.position.z));
 
         if (!_alreadyAttacked)
         {
             _animator.SetTrigger("Attack");
             _alreadyAttacked = true;
-            Invoke(nameof(BeginCollisionAttacking),0.5f);
+            Invoke(nameof(BeginCollisionAttacking), 0.5f);
             Invoke(nameof(ResetAttack), _timeBetweenAttacks);
         }
     }
@@ -123,7 +128,7 @@ public class S_EnemyAi : MonoBehaviour
     {
         Debug.Log("Begin Collision Attacking");
         _attackCollider.enabled = true;
-        Invoke(nameof(StopCollisionAttacking),0.1f);
+        Invoke(nameof(StopCollisionAttacking), 0.1f);
     }
 
     private void StopCollisionAttacking()
@@ -136,8 +141,17 @@ public class S_EnemyAi : MonoBehaviour
         _alreadyAttacked = false;
     }
 
-    public void TakeHit()
+    private void OnTriggerEnter(Collider other)
     {
-        
+        if (other.GetComponent<S_EnemyAi>() != null || other.tag == "MainCharacter")
+        {
+            return;
+        }
+        Debug.Log(other.tag);
+        if (other.tag == "Obstacles")
+        {
+            Debug.Log("canJump");
+            transform.Translate(new Vector3 (-1, 10, 0) * Time.deltaTime, Space.World);
+        }
     }
 }

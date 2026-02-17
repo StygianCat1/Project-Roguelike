@@ -18,7 +18,7 @@ public class S_Rogue_MovementComponent : MonoBehaviour
     [SerializeField] private float _dashDuration = 0.2f;
     [SerializeField] private float _dashCooldown = 1.0f;
     
-    [SerializeField] private GameObject _characterRef;
+    public GameObject _characterRef;
     
     private S_Rogue_Inputs _inputsManager;
     private Rigidbody _rigidbody;

@@ -8,6 +8,8 @@ public class S_CharacterCollisionHandler : MonoBehaviour
     public S_Teleporter teleporterRef;  
     public S_RoomTeleporter roomTeleporterRef;
     public S_TeleportToGameScene teleportToGameSceneRef;
+    public S_InteractibleElement interactibleElementRef;
+    public S_MerchantInteractible merchantInteractionRef;
     
     private S_Rogue_Inputs _inputsManager;
     private S_Rogue_Combat _rogueCombat;
@@ -43,6 +45,18 @@ public class S_CharacterCollisionHandler : MonoBehaviour
                 roomTeleporterRef = null;
                 _inputsManager.interact = false;
                 return;
+            }
+
+            if (merchantInteractionRef != null)
+            {
+                merchantInteractionRef.ShowMerchantUi();
+                _inputsManager.interact = false;
+            }
+
+            if (interactibleElementRef != null)
+            {
+                interactibleElementRef.LaunchInteraction();
+                _inputsManager.interact = false;
             }
 
             if (teleportToGameSceneRef != null && teleportToGameSceneRef.levelToLoadName != null)

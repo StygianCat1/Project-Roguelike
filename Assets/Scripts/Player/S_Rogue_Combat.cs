@@ -4,14 +4,11 @@ using UnityEngine;
 
 public class S_Rogue_Combat : MonoBehaviour
 {
-    private S_HP_Component _characterHealthRef;
     private S_Rogue_Inputs _inputsManager;
     private S_Rogue_MovementComponent _movementComponent;
     [SerializeField] private S_AttackHandler _attackHandler;
     private S_Rogue_Bonus _rogueBonus;
     private Animator _animator;
-
-    [SerializeField] private List<Collider> _attackHitBoxes;
 
     [SerializeField] private float _capacityCooldown;
     private float _capacityTimer;
@@ -23,6 +20,7 @@ public class S_Rogue_Combat : MonoBehaviour
     
     [SerializeField] private int _basicAttackDamage;
     [SerializeField] private int _gunAttackDamage;
+    [SerializeField] private GameObject _kaoriForCapacity;
     [SerializeField] private int _capacityAttackDamage;
     
     public bool isAttacking;
@@ -35,7 +33,6 @@ public class S_Rogue_Combat : MonoBehaviour
     private void Start()
     {
         _attackHandler._basiAttackDamage = _basicAttackDamage; 
-        _characterHealthRef = GetComponent<S_HP_Component>();
         _inputsManager = GetComponent<S_Rogue_Inputs>();
         _movementComponent = GetComponent<S_Rogue_MovementComponent>();
         _rogueBonus = GetComponent<S_Rogue_Bonus>();
@@ -43,7 +40,7 @@ public class S_Rogue_Combat : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
         if (!canUseCapacity)
         {
@@ -115,6 +112,7 @@ public class S_Rogue_Combat : MonoBehaviour
         {
             Debug.Log("capacityUsed");
             canUseCapacity = false;
+            Instantiate(_kaoriForCapacity, transform.position, _movementComponent._characterRef.transform.rotation);
             _inputsManager.useCapacity = false;
             _capacityTimer = _capacityCooldown;
             return;

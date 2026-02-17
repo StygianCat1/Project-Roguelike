@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 7115040653560754244}
   - component: {fileID: 8278602152906395410}
   - component: {fileID: 6875225658129670006}
+  - component: {fileID: 2789221202665602667}
   - component: {fileID: 764585568245675653}
   - component: {fileID: 7350938913571358066}
   - component: {fileID: 4874227306776157714}
@@ -111,13 +112,34 @@ CapsuleCollider:
     m_Bits: 0
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
-  m_ProvidesContacts: 0
+  m_ProvidesContacts: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.5
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!65 &2789221202665602667
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7766878793093973515}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 0.3787008, z: 1}
+  m_Center: {x: 0, y: -0.7, z: 0.5}
 --- !u!54 &764585568245675653
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -202,6 +224,7 @@ MonoBehaviour:
   _enemyAttackDamage: 10
   _enemyAttack: {fileID: 1335024679748012496}
   _attackCollider: {fileID: 3401802597032016795}
+  _jumpCollider: {fileID: 2789221202665602667}
 --- !u!114 &1434045583463372048
 MonoBehaviour:
   m_ObjectHideFlags: 0
