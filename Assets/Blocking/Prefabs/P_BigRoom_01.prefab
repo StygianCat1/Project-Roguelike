@@ -1666,6 +1666,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 6223173346142391436}
     m_Modifications:
     - target: {fileID: 2052645167265392471, guid: 88161475737baaa4bbd45603ae29a81b, type: 3}
+      propertyPath: m_RenderingLayerMask
+      value: 32
+      objectReference: {fileID: 0}
+    - target: {fileID: 2052645167265392471, guid: 88161475737baaa4bbd45603ae29a81b, type: 3}
       propertyPath: 'm_Materials.Array.data[1]'
       value: 
       objectReference: {fileID: 2100000, guid: 3c49c2c6468f42a4dadaa2a83e9b895d, type: 2}
@@ -2453,6 +2457,18 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: 8c65d709f5efedd4d8e93bc18a05e026, type: 2}
+    - target: {fileID: 6784648108743415934, guid: 70b87f2ecdf351547a2c37be0d53e3db, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 6784648108743415934, guid: 70b87f2ecdf351547a2c37be0d53e3db, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.52
+      objectReference: {fileID: 0}
+    - target: {fileID: 6784648108743415934, guid: 70b87f2ecdf351547a2c37be0d53e3db, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2.7
+      objectReference: {fileID: 0}
     - target: {fileID: 7070966988649348609, guid: 70b87f2ecdf351547a2c37be0d53e3db, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -2530,7 +2546,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 8c65d709f5efedd4d8e93bc18a05e026, type: 2}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 1825258284309629507, guid: 70b87f2ecdf351547a2c37be0d53e3db, type: 3}
+    - {fileID: 3779299028668316489, guid: 70b87f2ecdf351547a2c37be0d53e3db, type: 3}
+    - {fileID: 1216710051156924089, guid: 70b87f2ecdf351547a2c37be0d53e3db, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 70b87f2ecdf351547a2c37be0d53e3db, type: 3}
@@ -2929,6 +2948,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 6223173346142391436}
     m_Modifications:
+    - target: {fileID: 2052645167265392471, guid: 88161475737baaa4bbd45603ae29a81b, type: 3}
+      propertyPath: m_RenderingLayerMask
+      value: 32
+      objectReference: {fileID: 0}
     - target: {fileID: 2052645167265392471, guid: 88161475737baaa4bbd45603ae29a81b, type: 3}
       propertyPath: 'm_Materials.Array.data[1]'
       value: 
@@ -3484,6 +3507,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 6223173346142391436}
     m_Modifications:
     - target: {fileID: 2052645167265392471, guid: 88161475737baaa4bbd45603ae29a81b, type: 3}
+      propertyPath: m_RenderingLayerMask
+      value: 32
+      objectReference: {fileID: 0}
+    - target: {fileID: 2052645167265392471, guid: 88161475737baaa4bbd45603ae29a81b, type: 3}
       propertyPath: 'm_Materials.Array.data[1]'
       value: 
       objectReference: {fileID: 2100000, guid: 1ca01aff565abea488a7cc84ed77e634, type: 2}
@@ -4013,6 +4040,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 6223173346142391436}
     m_Modifications:
+    - target: {fileID: 2052645167265392471, guid: 88161475737baaa4bbd45603ae29a81b, type: 3}
+      propertyPath: m_RenderingLayerMask
+      value: 32
+      objectReference: {fileID: 0}
     - target: {fileID: 2052645167265392471, guid: 88161475737baaa4bbd45603ae29a81b, type: 3}
       propertyPath: 'm_Materials.Array.data[1]'
       value: 
@@ -4782,6 +4813,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 6223173346142391436}
     m_Modifications:
+    - target: {fileID: 2052645167265392471, guid: 88161475737baaa4bbd45603ae29a81b, type: 3}
+      propertyPath: m_RenderingLayerMask
+      value: 32
+      objectReference: {fileID: 0}
     - target: {fileID: 2052645167265392471, guid: 88161475737baaa4bbd45603ae29a81b, type: 3}
       propertyPath: 'm_Materials.Array.data[1]'
       value: 
