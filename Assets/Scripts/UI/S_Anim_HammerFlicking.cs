@@ -5,6 +5,7 @@ public class S_Anim_HammerFlicking : MonoBehaviour
 {
    
     private Animator anim;
+    public bool Test;
 
     private void Start()
     {
@@ -13,7 +14,7 @@ public class S_Anim_HammerFlicking : MonoBehaviour
 
     void Update()
     {
-            if (Input.GetKeyDown(KeyCode.Space))
+            if (Test)
             {
                 anim.SetTrigger("UltReady");
             }

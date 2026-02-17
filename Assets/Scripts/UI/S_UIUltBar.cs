@@ -13,9 +13,11 @@ public class S_UIUltBar : MonoBehaviour
     
     [SerializeField] private Animator _animator;
 
+    public bool Test;
+
     private void Start()
     {
-       
+        _animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -24,6 +26,10 @@ public class S_UIUltBar : MonoBehaviour
         {
             ultBar = Mathf.Clamp(ultBar, 0f, maxUltBar);
             ultBarImage.fillAmount = ultBar / maxUltBar;
+        }
+        if (Test)
+        {
+            _animator.SetTrigger("UltReady");
         }
     }
     
