@@ -3,7 +3,12 @@ guid: cbd709ae6009a4f4686a4bac06422823
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_TableauPris
+    second: {fileID: 2100000, guid: 760718a6494a03a468d7a5a8d6b0a559, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
