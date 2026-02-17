@@ -242,7 +242,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: cbd709ae6009a4f4686a4bac06422823, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 114
+      value: 153
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: cbd709ae6009a4f4686a4bac06422823, type: 3}
       propertyPath: m_LocalPosition.z
@@ -276,6 +276,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -6974423349747107294, guid: cbd709ae6009a4f4686a4bac06422823, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: da332811dba5d4a4e9cd3a229a872763, type: 2}
     - target: {fileID: 919132149155446097, guid: cbd709ae6009a4f4686a4bac06422823, type: 3}
       propertyPath: m_Name
       value: SM_Tableau_01
@@ -930,6 +934,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 8931328285647570227}
     m_Modifications:
+    - target: {fileID: 4649167071223935610, guid: 33b2f0c28393743499e1d840e049eb52, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.01
+      objectReference: {fileID: 0}
     - target: {fileID: 8371067877628125462, guid: 33b2f0c28393743499e1d840e049eb52, type: 3}
       propertyPath: m_Name
       value: p_ canapes

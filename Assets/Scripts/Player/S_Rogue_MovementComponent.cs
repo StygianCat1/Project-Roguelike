@@ -18,12 +18,12 @@ public class S_Rogue_MovementComponent : MonoBehaviour
     [SerializeField] private float _dashDuration = 0.2f;
     [SerializeField] private float _dashCooldown = 1.0f;
     
-    [SerializeField] private GameObject _characterRef;
-    
+    public GameObject _characterRef;
     
     private S_Rogue_Inputs _inputsManager;
     private Rigidbody _rigidbody;
     private Animator _animator;
+    private S_Rogue_Combat _combat;
     
     private Vector3 _currentMoveVelocity;
     private Vector3 _moveDampVelocity;
@@ -32,10 +32,10 @@ public class S_Rogue_MovementComponent : MonoBehaviour
     private float _jumpVelocity;
     [HideInInspector] public float _directionCharacter = 1;
     
-    private bool _canJump = true;
+    [HideInInspector]public bool _canJump = true;
 
     private bool _canDash = true;
-    private bool _isDashing;
+    [HideInInspector] public bool isDashing;
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     private void Start()
@@ -43,6 +43,7 @@ public class S_Rogue_MovementComponent : MonoBehaviour
         _rigidbody = GetComponent<Rigidbody>();
         _inputsManager = GetComponent<S_Rogue_Inputs>();
         _animator = GetComponent<Animator>();
+        _combat = GetComponent<S_Rogue_Combat>();
     }
 
     // Update is called once per frame
@@ -50,7 +51,7 @@ public class S_Rogue_MovementComponent : MonoBehaviour
     {
         GetCharacterDirection();
         CharacterFaceDirection();
-        if (_isDashing)
+        if (isDashing || _combat.isAttacking || _combat.isShooting || _combat.isUsingCapacity)
         {
             return;
         }
@@ -128,14 +129,14 @@ public class S_Rogue_MovementComponent : MonoBehaviour
     private IEnumerator DashCoroutine()
     {
         _canDash = false;
-        _isDashing = true;
+        isDashing = true;
         if (_inputsManager.moveX == 0)
         {
             _rigidbody.linearVelocity = new Vector3(- _directionCharacter * _backDashPower, 0.1f, 0f);
             _animator.SetTrigger("BackDash");
             yield return new WaitForSeconds(_backDashDuration);
             _rigidbody.linearVelocity = new Vector3(0f, 0f, 0f);
-            _isDashing = false;
+            isDashing = false;
             yield return new WaitForSeconds(_backDashCooldown);
         }
         else
@@ -144,7 +145,7 @@ public class S_Rogue_MovementComponent : MonoBehaviour
             _animator.SetTrigger("Dash");
             yield return new WaitForSeconds(_dashDuration);
             _rigidbody.linearVelocity = new Vector3(0f, 0f, 0f);
-            _isDashing = false;
+            isDashing = false;
             yield return new WaitForSeconds(_dashCooldown);
         }
         _canDash = true; 
