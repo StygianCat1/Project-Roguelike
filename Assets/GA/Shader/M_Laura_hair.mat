@@ -20,7 +20,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: M_tabouret
+  m_Name: M_Laura_hair
   m_Shader: {fileID: -6465566751694194690, guid: f65702583acdce143b2e443af2e9ffba, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -37,8 +37,12 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
-    - _NormalMap:
+    - _FlatNormal:
         m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NormalMap:
+        m_Texture: {fileID: 2800000, guid: 91401bb2263881746bc81eeb0e6c6521, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _SampleTexture2D_2846928ad0ea4ea2a665a43b1961f3c4_Texture_1_Texture2D:
@@ -46,7 +50,15 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Texture2D:
-        m_Texture: {fileID: 2800000, guid: 788004d376360884f960541a88ea793b, type: 3}
+        m_Texture: {fileID: 2800000, guid: 1233ce550c33e6a4b84a09c7471b6013, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Texture2D_1:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Texture2D_2:
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _shading_gadrient:
@@ -75,52 +87,32 @@ Material:
     - _gloss_size: 200
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 0}
-    - _L10_color: {r: 0, g: 0, b: 0, a: 1}
-    - _L10_dir: {r: 0, g: 1, b: 0, a: 0}
-    - _L11_color: {r: 0, g: 0, b: 0, a: 1}
-    - _L11_dir: {r: 0, g: 1, b: 0, a: 0}
-    - _L12_color: {r: 0, g: 0, b: 0, a: 1}
-    - _L12_dir: {r: 0, g: 1, b: 0, a: 0}
-    - _L13_color: {r: 0, g: 0, b: 0, a: 1}
-    - _L13_dir: {r: 0, g: 1, b: 0, a: 0}
-    - _L14_color: {r: 0, g: 0, b: 0, a: 1}
-    - _L14_dir: {r: 0, g: 1, b: 0, a: 0}
-    - _L15_color: {r: 0, g: 0, b: 0, a: 1}
-    - _L15_dir: {r: 0, g: 1, b: 0, a: 0}
-    - _L16_color: {r: 0, g: 0, b: 0, a: 1}
-    - _L16_dir: {r: 0, g: 1, b: 0, a: 0}
-    - _L17_color: {r: 0, g: 0, b: 0, a: 1}
-    - _L17_dir: {r: 0, g: 1, b: 0, a: 0}
-    - _L18_color: {r: 0, g: 0, b: 0, a: 1}
-    - _L18_dir: {r: 0, g: 1, b: 0, a: 0}
-    - _L19_color: {r: 0, g: 0, b: 0, a: 1}
-    - _L19_dir: {r: 0, g: 1, b: 0, a: 0}
-    - _L1_color: {r: 0.18490566, g: 0.11576451, b: 0.035760056, a: 0.99}
-    - _L1_dir: {r: -0, g: -0, b: 1, a: 0}
-    - _L20_color: {r: 0, g: 0, b: 0, a: 1}
-    - _L20_dir: {r: 0, g: 1, b: 0, a: 0}
-    - _L21_color: {r: 0, g: 0, b: 0, a: 1}
-    - _L21_dir: {r: 0, g: 1, b: 0, a: 0}
-    - _L22_color: {r: 0, g: 0, b: 0, a: 1}
-    - _L22_dir: {r: 0, g: 1, b: 0, a: 0}
-    - _L23_color: {r: 0, g: 0, b: 0, a: 1}
-    - _L23_dir: {r: 0, g: 1, b: 0, a: 0}
-    - _L24_color: {r: 0, g: 0, b: 0, a: 1}
-    - _L24_dir: {r: 0, g: 1, b: 0, a: 0}
-    - _L25_color: {r: 0, g: 0, b: 0, a: 1}
-    - _L25_dir: {r: 0, g: 1, b: 0, a: 0}
-    - _L26_color: {r: 0, g: 0, b: 0, a: 1}
-    - _L26_dir: {r: 0, g: 1, b: 0, a: 0}
-    - _L27_color: {r: 0, g: 0, b: 0, a: 1}
-    - _L27_dir: {r: 0, g: 1, b: 0, a: 0}
-    - _L28_color: {r: 0, g: 0, b: 0, a: 1}
-    - _L28_dir: {r: 0, g: 1, b: 0, a: 0}
-    - _L29_color: {r: 0, g: 0, b: 0, a: 1}
-    - _L29_dir: {r: 0, g: 1, b: 0, a: 0}
-    - _L2_color: {r: 0, g: 0, b: 0, a: 1}
-    - _L2_dir: {r: 0, g: 1, b: 0, a: 0}
-    - _L30_color: {r: 0, g: 0, b: 0, a: 1}
-    - _L30_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L10_color: {r: 1, g: 1, b: 1, a: 0}
+    - _L10_dir: {r: 0, g: 0, b: 0, a: 0}
+    - _L11_color: {r: 1, g: 1, b: 1, a: 0}
+    - _L11_dir: {r: 0, g: 0, b: 0, a: 0}
+    - _L12_color: {r: 1, g: 1, b: 1, a: 0}
+    - _L12_dir: {r: 0, g: 0, b: 0, a: 0}
+    - _L13_color: {r: 1, g: 1, b: 1, a: 0}
+    - _L13_dir: {r: 0, g: 0, b: 0, a: 0}
+    - _L14_color: {r: 1, g: 1, b: 1, a: 0}
+    - _L14_dir: {r: 0, g: 0, b: 0, a: 0}
+    - _L15_color: {r: 1, g: 1, b: 1, a: 0}
+    - _L15_dir: {r: 0, g: 0, b: 0, a: 0}
+    - _L16_color: {r: 1, g: 1, b: 1, a: 0}
+    - _L16_dir: {r: 0, g: 0, b: 0, a: 0}
+    - _L17_color: {r: 1, g: 1, b: 1, a: 0}
+    - _L17_dir: {r: 0, g: 0, b: 0, a: 0}
+    - _L18_color: {r: 1, g: 1, b: 1, a: 0}
+    - _L18_dir: {r: 0, g: 0, b: 0, a: 0}
+    - _L19_color: {r: 1, g: 1, b: 1, a: 0}
+    - _L19_dir: {r: 0, g: 0, b: 0, a: 0}
+    - _L1_color: {r: 1.2929441, g: 1.2929441, b: 1.2929441, a: 0.095533036}
+    - _L1_dir: {r: -0.9816649, g: -0.1906146, b: 0, a: 0}
+    - _L20_color: {r: 1, g: 1, b: 1, a: 0}
+    - _L20_dir: {r: 0, g: 0, b: 0, a: 0}
+    - _L2_color: {r: 0.20218039, g: 0.20218039, b: 0.20218039, a: 0.06269159}
+    - _L2_dir: {r: -0.9915653, g: 0.11088973, b: -0.067095, a: 0}
     - _L3_color: {r: 0, g: 0, b: 0, a: 1}
     - _L3_dir: {r: 0, g: 1, b: 0, a: 0}
     - _L4_color: {r: 0, g: 0, b: 0, a: 1}
@@ -129,12 +121,12 @@ Material:
     - _L5_dir: {r: 0, g: 1, b: 0, a: 0}
     - _L6_color: {r: 0, g: 0, b: 0, a: 1}
     - _L6_dir: {r: 0, g: 1, b: 0, a: 0}
-    - _L7_color: {r: 0, g: 0, b: 0, a: 1}
-    - _L7_dir: {r: 0, g: 1, b: 0, a: 0}
-    - _L8_color: {r: 0, g: 0, b: 0, a: 1}
-    - _L8_dir: {r: 0, g: 1, b: 0, a: 0}
-    - _L9_color: {r: 0, g: 0, b: 0, a: 1}
-    - _L9_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L7_color: {r: 1, g: 1, b: 1, a: 0}
+    - _L7_dir: {r: 0, g: 0, b: 0, a: 0}
+    - _L8_color: {r: 1, g: 1, b: 1, a: 0}
+    - _L8_dir: {r: 0, g: 0, b: 0, a: 0}
+    - _L9_color: {r: 1, g: 1, b: 1, a: 0}
+    - _L9_dir: {r: 0, g: 0, b: 0, a: 0}
     - _fresnel_intensity: {r: 1, g: 1, b: 1, a: 0}
     - _gloss_intensity: {r: 1, g: 1, b: 1, a: 0}
     - _light_2_color: {r: 1, g: 1, b: 1, a: 0}
