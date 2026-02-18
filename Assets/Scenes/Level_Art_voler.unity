@@ -256,441 +256,33 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: -0.862, y: -180, z: 0}
---- !u!21 &489521146
-Material:
-  serializedVersion: 8
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Instance of M_Nicky_clothe
-  m_Shader: {fileID: -6465566751694194690, guid: f65702583acdce143b2e443af2e9ffba, type: 3}
-  m_Parent: {fileID: 0}
-  m_ModifiedSerializedProperties: 0
-  m_ValidKeywords: []
-  m_InvalidKeywords: []
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses:
-  - MOTIONVECTORS
-  m_LockedProperties: 
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _FlatNormal:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _NormalMap:
-        m_Texture: {fileID: 2800000, guid: 91401bb2263881746bc81eeb0e6c6521, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _SampleTexture2D_2846928ad0ea4ea2a665a43b1961f3c4_Texture_1_Texture2D:
-        m_Texture: {fileID: 2800000, guid: 03916d8acea71064a9b546536003c029, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _Texture2D:
-        m_Texture: {fileID: 2800000, guid: ab4ab0f0a50b9874e883282ae0b8c141, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _Texture2D_1:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _Texture2D_2:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _shading_gadrient:
-        m_Texture: {fileID: 2800000, guid: eb606d2fe7fa3e54c8cfc771423e5cbb, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - unity_Lightmaps:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - unity_LightmapsInd:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - unity_ShadowMasks:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Ints: []
-    m_Floats:
-    - _QueueControl: 0
-    - _QueueOffset: 0
-    - _UseNormal: 1
-    - _fresnel_angle: 1
-    - _fresnel_size: 50
-    - _gloss_size: 200
-    m_Colors:
-    - _Color: {r: 1, g: 1, b: 1, a: 0}
-    - _L10_color: {r: 0, g: 0, b: 0, a: 1}
-    - _L10_dir: {r: 0, g: 1, b: 0, a: 0}
-    - _L11_color: {r: 0, g: 0, b: 0, a: 1}
-    - _L11_dir: {r: 0, g: 1, b: 0, a: 0}
-    - _L12_color: {r: 0, g: 0, b: 0, a: 1}
-    - _L12_dir: {r: 0, g: 1, b: 0, a: 0}
-    - _L13_color: {r: 0, g: 0, b: 0, a: 1}
-    - _L13_dir: {r: 0, g: 1, b: 0, a: 0}
-    - _L14_color: {r: 1, g: 1, b: 1, a: 0}
-    - _L14_dir: {r: 0, g: 0, b: 0, a: 0}
-    - _L15_color: {r: 1, g: 1, b: 1, a: 0}
-    - _L15_dir: {r: 0, g: 0, b: 0, a: 0}
-    - _L16_color: {r: 1, g: 1, b: 1, a: 0}
-    - _L16_dir: {r: 0, g: 0, b: 0, a: 0}
-    - _L17_color: {r: 1, g: 1, b: 1, a: 0}
-    - _L17_dir: {r: 0, g: 0, b: 0, a: 0}
-    - _L18_color: {r: 1, g: 1, b: 1, a: 0}
-    - _L18_dir: {r: 0, g: 0, b: 0, a: 0}
-    - _L19_color: {r: 1, g: 1, b: 1, a: 0}
-    - _L19_dir: {r: 0, g: 0, b: 0, a: 0}
-    - _L1_color: {r: 2.3559883, g: 2.1806645, b: 1.3002388, a: 0.7853294}
-    - _L1_dir: {r: -0.09658776, g: 0.38444626, b: -0.91808057, a: 0}
-    - _L20_color: {r: 1, g: 1, b: 1, a: 0}
-    - _L20_dir: {r: 0, g: 0, b: 0, a: 0}
-    - _L2_color: {r: 0.4915062, g: 0.45493016, b: 0.2712558, a: 0.49150622}
-    - _L2_dir: {r: -0.08046722, g: 0.9951052, b: 0.05736406, a: 0}
-    - _L3_color: {r: 0.18490566, g: 0.11576451, b: 0.035760056, a: 0.99}
-    - _L3_dir: {r: -0, g: -0, b: 1, a: 0}
-    - _L4_color: {r: 0.011494691, g: 0.011494691, b: 0.011494691, a: 0.1149469}
-    - _L4_dir: {r: -0.59451807, g: 0.8038476, b: 0.01942183, a: 0}
-    - _L5_color: {r: 0, g: 0, b: 0, a: 1}
-    - _L5_dir: {r: 0, g: 1, b: 0, a: 0}
-    - _L6_color: {r: 0, g: 0, b: 0, a: 1}
-    - _L6_dir: {r: 0, g: 1, b: 0, a: 0}
-    - _L7_color: {r: 0, g: 0, b: 0, a: 1}
-    - _L7_dir: {r: 0, g: 1, b: 0, a: 0}
-    - _L8_color: {r: 0, g: 0, b: 0, a: 1}
-    - _L8_dir: {r: 0, g: 1, b: 0, a: 0}
-    - _L9_color: {r: 0, g: 0, b: 0, a: 1}
-    - _L9_dir: {r: 0, g: 1, b: 0, a: 0}
-    - _fresnel_intensity: {r: 1, g: 1, b: 1, a: 0}
-    - _gloss_intensity: {r: 1, g: 1, b: 1, a: 0}
-    - _light_2_color: {r: 1, g: 1, b: 1, a: 0}
-    - _light_3_color: {r: 1, g: 1, b: 1, a: 0}
-    - _light_3_dir: {r: 0, g: 0, b: 0, a: 0}
-    - _light_4_color: {r: 1, g: 1, b: 1, a: 0}
-    - _light_4_dir: {r: 0, g: 0, b: 0, a: 0}
-    - _light_5_color: {r: 1, g: 1, b: 1, a: 0}
-    - _light_5_dir: {r: 0, g: 0, b: 0, a: 0}
-    - _light_6_color: {r: 1, g: 1, b: 1, a: 0}
-    - _light_6_dir: {r: 0, g: 0, b: 0, a: 0}
-    - light_Color: {r: 1, g: 1, b: 1, a: 0}
-    - light_Color_1: {r: 1, g: 1, b: 1, a: 0}
-    - light_Color_2: {r: 1, g: 1, b: 1, a: 0}
-    - light_Color_3: {r: 1, g: 1, b: 1, a: 0}
-    - light_Color_4: {r: 1, g: 1, b: 1, a: 0}
-    - light_Color_5: {r: 1, g: 1, b: 1, a: 0}
-    - light_Dir: {r: 0, g: 0, b: 0, a: 0}
-    - light_Dir_1: {r: 0, g: 0, b: 0, a: 0}
-    - light_Dir_2: {r: 0, g: 0, b: 0, a: 0}
-    - light_Dir_3: {r: 0, g: 0, b: 0, a: 0}
-    - light_Dir_4: {r: 0, g: 0, b: 0, a: 0}
-    - light_Dir_5: {r: 0, g: 0, b: 0, a: 0}
-  m_BuildTextureStacks: []
-  m_AllowLocking: 1
---- !u!1001 &854579948
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: -8679921383154817045, guid: 912e063f18d3f4544884f246367b3d8a, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -142.69
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 912e063f18d3f4544884f246367b3d8a, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 3.58
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 912e063f18d3f4544884f246367b3d8a, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0.99
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 912e063f18d3f4544884f246367b3d8a, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.68626285
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 912e063f18d3f4544884f246367b3d8a, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 912e063f18d3f4544884f246367b3d8a, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0.7273537
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 912e063f18d3f4544884f246367b3d8a, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 912e063f18d3f4544884f246367b3d8a, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 912e063f18d3f4544884f246367b3d8a, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: -93.33
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 912e063f18d3f4544884f246367b3d8a, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -2287430351313163456, guid: 912e063f18d3f4544884f246367b3d8a, type: 3}
-      propertyPath: 'm_Materials.Array.data[0]'
-      value: 
-      objectReference: {fileID: 1134237718}
-    - target: {fileID: 919132149155446097, guid: 912e063f18d3f4544884f246367b3d8a, type: 3}
-      propertyPath: m_Name
-      value: AN_T-Pose_Ryo
-      objectReference: {fileID: 0}
-    - target: {fileID: 3738851496483545730, guid: 912e063f18d3f4544884f246367b3d8a, type: 3}
-      propertyPath: 'm_Materials.Array.data[0]'
-      value: 
-      objectReference: {fileID: 489521146}
-    - target: {fileID: 8277607572658817708, guid: 912e063f18d3f4544884f246367b3d8a, type: 3}
-      propertyPath: 'm_Materials.Array.data[0]'
-      value: 
-      objectReference: {fileID: 1200335882}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: -4617755408129784853, guid: 912e063f18d3f4544884f246367b3d8a, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 854579954}
-    - targetCorrespondingSourceObject: {fileID: -7412528413914776854, guid: 912e063f18d3f4544884f246367b3d8a, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 854579953}
-    - targetCorrespondingSourceObject: {fileID: -7495326351936497184, guid: 912e063f18d3f4544884f246367b3d8a, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 854579952}
-  m_SourcePrefab: {fileID: 100100000, guid: 912e063f18d3f4544884f246367b3d8a, type: 3}
---- !u!1 &854579949 stripped
+--- !u!1 &24614701 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: -7495326351936497184, guid: 912e063f18d3f4544884f246367b3d8a, type: 3}
-  m_PrefabInstance: {fileID: 854579948}
+  m_CorrespondingSourceObject: {fileID: 7764480370204961418, guid: f305da61cea3bb243b42cfd3a49f22c7, type: 3}
+  m_PrefabInstance: {fileID: 635292038}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &854579950 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: -7412528413914776854, guid: 912e063f18d3f4544884f246367b3d8a, type: 3}
-  m_PrefabInstance: {fileID: 854579948}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &854579951 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: -4617755408129784853, guid: 912e063f18d3f4544884f246367b3d8a, type: 3}
-  m_PrefabInstance: {fileID: 854579948}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &854579952
+--- !u!114 &24614705
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 854579949}
+  m_GameObject: {fileID: 24614701}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1a134d33e4b83384cb8a08f70560bcf5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  material: {fileID: 2100000, guid: c4218a976308a4244ada6712a24eba84, type: 2}
+  material: {fileID: 2100000, guid: d65d670c8d6cdff4aabbb8ad78556c8a, type: 2}
   instanceMaterial: 1
-  meshCenter: {x: 0, y: 2, z: 0}
+  meshCenter: {x: 0, y: 0, z: 0}
   maxLights: 6
   raycast: 1
   raycastMask:
     serializedVersion: 2
     m_Bits: 0
   raycastFadeSpeed: 10
---- !u!114 &854579953
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 854579950}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1a134d33e4b83384cb8a08f70560bcf5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  material: {fileID: 2100000, guid: 2207ca9fc32c440408a346cff9509563, type: 2}
-  instanceMaterial: 1
-  meshCenter: {x: 0, y: 2, z: 0}
-  maxLights: 13
-  raycast: 1
-  raycastMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  raycastFadeSpeed: 10
---- !u!114 &854579954
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 854579951}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1a134d33e4b83384cb8a08f70560bcf5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  material: {fileID: 2100000, guid: d6dd98083afd8234d896fb1f80770c97, type: 2}
-  instanceMaterial: 1
-  meshCenter: {x: 0, y: 2, z: 0}
-  maxLights: 6
-  raycast: 1
-  raycastMask:
-    serializedVersion: 2
-    m_Bits: 0
-  raycastFadeSpeed: 10
---- !u!21 &1134237718
-Material:
-  serializedVersion: 8
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Instance of M_Nicky_hair
-  m_Shader: {fileID: -6465566751694194690, guid: f65702583acdce143b2e443af2e9ffba, type: 3}
-  m_Parent: {fileID: 0}
-  m_ModifiedSerializedProperties: 0
-  m_ValidKeywords: []
-  m_InvalidKeywords: []
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses:
-  - MOTIONVECTORS
-  m_LockedProperties: 
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _FlatNormal:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _NormalMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _SampleTexture2D_2846928ad0ea4ea2a665a43b1961f3c4_Texture_1_Texture2D:
-        m_Texture: {fileID: 2800000, guid: 03916d8acea71064a9b546536003c029, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _Texture2D:
-        m_Texture: {fileID: 2800000, guid: 971e769eb62cd7444bdc8c93081f0697, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _Texture2D_1:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _Texture2D_2:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _shading_gadrient:
-        m_Texture: {fileID: 2800000, guid: eb606d2fe7fa3e54c8cfc771423e5cbb, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - unity_Lightmaps:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - unity_LightmapsInd:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - unity_ShadowMasks:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Ints: []
-    m_Floats:
-    - _QueueControl: 0
-    - _QueueOffset: 0
-    - _UseNormal: 0
-    - _fresnel_angle: 1
-    - _fresnel_size: 50
-    - _gloss_size: 200
-    m_Colors:
-    - _Color: {r: 1, g: 1, b: 1, a: 0}
-    - _L10_color: {r: 1, g: 1, b: 1, a: 0}
-    - _L10_dir: {r: 0, g: 0, b: 0, a: 0}
-    - _L11_color: {r: 1, g: 1, b: 1, a: 0}
-    - _L11_dir: {r: 0, g: 0, b: 0, a: 0}
-    - _L12_color: {r: 1, g: 1, b: 1, a: 0}
-    - _L12_dir: {r: 0, g: 0, b: 0, a: 0}
-    - _L13_color: {r: 1, g: 1, b: 1, a: 0}
-    - _L13_dir: {r: 0, g: 0, b: 0, a: 0}
-    - _L14_color: {r: 1, g: 1, b: 1, a: 0}
-    - _L14_dir: {r: 0, g: 0, b: 0, a: 0}
-    - _L15_color: {r: 1, g: 1, b: 1, a: 0}
-    - _L15_dir: {r: 0, g: 0, b: 0, a: 0}
-    - _L16_color: {r: 1, g: 1, b: 1, a: 0}
-    - _L16_dir: {r: 0, g: 0, b: 0, a: 0}
-    - _L17_color: {r: 1, g: 1, b: 1, a: 0}
-    - _L17_dir: {r: 0, g: 0, b: 0, a: 0}
-    - _L18_color: {r: 1, g: 1, b: 1, a: 0}
-    - _L18_dir: {r: 0, g: 0, b: 0, a: 0}
-    - _L19_color: {r: 1, g: 1, b: 1, a: 0}
-    - _L19_dir: {r: 0, g: 0, b: 0, a: 0}
-    - _L1_color: {r: 2.3559883, g: 2.1806645, b: 1.3002388, a: 0.7853294}
-    - _L1_dir: {r: -0.09658776, g: 0.38444626, b: -0.91808057, a: 0}
-    - _L20_color: {r: 1, g: 1, b: 1, a: 0}
-    - _L20_dir: {r: 0, g: 0, b: 0, a: 0}
-    - _L2_color: {r: 0.4915062, g: 0.45493016, b: 0.2712558, a: 0.49150622}
-    - _L2_dir: {r: -0.08046722, g: 0.9951052, b: 0.05736406, a: 0}
-    - _L3_color: {r: 0.18490566, g: 0.11576451, b: 0.035760056, a: 0.99}
-    - _L3_dir: {r: -0, g: -0, b: 1, a: 0}
-    - _L4_color: {r: 0.011494691, g: 0.011494691, b: 0.011494691, a: 0.1149469}
-    - _L4_dir: {r: -0.59451807, g: 0.8038476, b: 0.01942183, a: 0}
-    - _L5_color: {r: 0, g: 0, b: 0, a: 1}
-    - _L5_dir: {r: 0, g: 1, b: 0, a: 0}
-    - _L6_color: {r: 0, g: 0, b: 0, a: 1}
-    - _L6_dir: {r: 0, g: 1, b: 0, a: 0}
-    - _L7_color: {r: 1, g: 1, b: 1, a: 0}
-    - _L7_dir: {r: 0, g: 0, b: 0, a: 0}
-    - _L8_color: {r: 1, g: 1, b: 1, a: 0}
-    - _L8_dir: {r: 0, g: 0, b: 0, a: 0}
-    - _L9_color: {r: 1, g: 1, b: 1, a: 0}
-    - _L9_dir: {r: 0, g: 0, b: 0, a: 0}
-    - _fresnel_intensity: {r: 1, g: 1, b: 1, a: 0}
-    - _gloss_intensity: {r: 1, g: 1, b: 1, a: 0}
-    - _light_2_color: {r: 1, g: 1, b: 1, a: 0}
-    - _light_3_color: {r: 1, g: 1, b: 1, a: 0}
-    - _light_3_dir: {r: 0, g: 0, b: 0, a: 0}
-    - _light_4_color: {r: 1, g: 1, b: 1, a: 0}
-    - _light_4_dir: {r: 0, g: 0, b: 0, a: 0}
-    - _light_5_color: {r: 1, g: 1, b: 1, a: 0}
-    - _light_5_dir: {r: 0, g: 0, b: 0, a: 0}
-    - _light_6_color: {r: 1, g: 1, b: 1, a: 0}
-    - _light_6_dir: {r: 0, g: 0, b: 0, a: 0}
-    - light_Color: {r: 1, g: 1, b: 1, a: 0}
-    - light_Color_1: {r: 1, g: 1, b: 1, a: 0}
-    - light_Color_2: {r: 1, g: 1, b: 1, a: 0}
-    - light_Color_3: {r: 1, g: 1, b: 1, a: 0}
-    - light_Color_4: {r: 1, g: 1, b: 1, a: 0}
-    - light_Color_5: {r: 1, g: 1, b: 1, a: 0}
-    - light_Dir: {r: 0, g: 0, b: 0, a: 0}
-    - light_Dir_1: {r: 0, g: 0, b: 0, a: 0}
-    - light_Dir_2: {r: 0, g: 0, b: 0, a: 0}
-    - light_Dir_3: {r: 0, g: 0, b: 0, a: 0}
-    - light_Dir_4: {r: 0, g: 0, b: 0, a: 0}
-    - light_Dir_5: {r: 0, g: 0, b: 0, a: 0}
-  m_BuildTextureStacks: []
-  m_AllowLocking: 1
---- !u!21 &1200335882
+--- !u!21 &29140538
 Material:
   serializedVersion: 8
   m_ObjectHideFlags: 0
@@ -784,16 +376,36 @@ Material:
     - _L18_dir: {r: 0, g: 0, b: 0, a: 0}
     - _L19_color: {r: 1, g: 1, b: 1, a: 0}
     - _L19_dir: {r: 0, g: 0, b: 0, a: 0}
-    - _L1_color: {r: 2.3559883, g: 2.1806645, b: 1.3002388, a: 0.7853294}
-    - _L1_dir: {r: -0.09658776, g: 0.38444626, b: -0.91808057, a: 0}
+    - _L1_color: {r: 4.9522862, g: 3.4117131, b: 2.2191849, a: 0.5605304}
+    - _L1_dir: {r: 0.32084846, g: 0.80975634, b: -0.49127477, a: 0}
     - _L20_color: {r: 1, g: 1, b: 1, a: 0}
     - _L20_dir: {r: 0, g: 0, b: 0, a: 0}
-    - _L2_color: {r: 0.4915062, g: 0.45493016, b: 0.2712558, a: 0.49150622}
-    - _L2_dir: {r: -0.08046722, g: 0.9951052, b: 0.05736406, a: 0}
-    - _L3_color: {r: 0.18490566, g: 0.11576451, b: 0.035760056, a: 0.99}
-    - _L3_dir: {r: -0, g: -0, b: 1, a: 0}
-    - _L4_color: {r: 0.011494691, g: 0.011494691, b: 0.011494691, a: 0.1149469}
-    - _L4_dir: {r: -0.59451807, g: 0.8038476, b: 0.01942183, a: 0}
+    - _L21_color: {r: 1, g: 1, b: 1, a: 0}
+    - _L21_dir: {r: 0, g: 0, b: 0, a: 0}
+    - _L22_color: {r: 1, g: 1, b: 1, a: 0}
+    - _L22_dir: {r: 0, g: 0, b: 0, a: 0}
+    - _L23_color: {r: 1, g: 1, b: 1, a: 0}
+    - _L23_dir: {r: 0, g: 0, b: 0, a: 0}
+    - _L24_color: {r: 1, g: 1, b: 1, a: 0}
+    - _L24_dir: {r: 0, g: 0, b: 0, a: 0}
+    - _L25_color: {r: 1, g: 1, b: 1, a: 0}
+    - _L25_dir: {r: 0, g: 0, b: 0, a: 0}
+    - _L26_color: {r: 1, g: 1, b: 1, a: 0}
+    - _L26_dir: {r: 0, g: 0, b: 0, a: 0}
+    - _L27_color: {r: 1, g: 1, b: 1, a: 0}
+    - _L27_dir: {r: 0, g: 0, b: 0, a: 0}
+    - _L28_color: {r: 1, g: 1, b: 1, a: 0}
+    - _L28_dir: {r: 0, g: 0, b: 0, a: 0}
+    - _L29_color: {r: 1, g: 1, b: 1, a: 0}
+    - _L29_dir: {r: 0, g: 0, b: 0, a: 0}
+    - _L2_color: {r: 0.18490566, g: 0.11576451, b: 0.035760056, a: 0.99}
+    - _L2_dir: {r: -0, g: -0, b: 1, a: 0}
+    - _L30_color: {r: 1, g: 1, b: 1, a: 0}
+    - _L30_dir: {r: 0, g: 0, b: 0, a: 0}
+    - _L3_color: {r: 0.40320426, g: 0.27777418, b: 0.18068115, a: 0.40320426}
+    - _L3_dir: {r: 0.24580508, g: 0.93270624, b: -0.26389182, a: 0}
+    - _L4_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L4_dir: {r: 0, g: 1, b: 0, a: 0}
     - _L5_color: {r: 0, g: 0, b: 0, a: 1}
     - _L5_dir: {r: 0, g: 1, b: 0, a: 0}
     - _L6_color: {r: 0, g: 0, b: 0, a: 1}
@@ -804,6 +416,3083 @@ Material:
     - _L8_dir: {r: 0, g: 0, b: 0, a: 0}
     - _L9_color: {r: 1, g: 1, b: 1, a: 0}
     - _L9_dir: {r: 0, g: 0, b: 0, a: 0}
+    - _fresnel_intensity: {r: 1, g: 1, b: 1, a: 0}
+    - _gloss_intensity: {r: 1, g: 1, b: 1, a: 0}
+    - _light_2_color: {r: 1, g: 1, b: 1, a: 0}
+    - _light_3_color: {r: 1, g: 1, b: 1, a: 0}
+    - _light_3_dir: {r: 0, g: 0, b: 0, a: 0}
+    - _light_4_color: {r: 1, g: 1, b: 1, a: 0}
+    - _light_4_dir: {r: 0, g: 0, b: 0, a: 0}
+    - _light_5_color: {r: 1, g: 1, b: 1, a: 0}
+    - _light_5_dir: {r: 0, g: 0, b: 0, a: 0}
+    - _light_6_color: {r: 1, g: 1, b: 1, a: 0}
+    - _light_6_dir: {r: 0, g: 0, b: 0, a: 0}
+    - light_Color: {r: 1, g: 1, b: 1, a: 0}
+    - light_Color_1: {r: 1, g: 1, b: 1, a: 0}
+    - light_Color_2: {r: 1, g: 1, b: 1, a: 0}
+    - light_Color_3: {r: 1, g: 1, b: 1, a: 0}
+    - light_Color_4: {r: 1, g: 1, b: 1, a: 0}
+    - light_Color_5: {r: 1, g: 1, b: 1, a: 0}
+    - light_Dir: {r: 0, g: 0, b: 0, a: 0}
+    - light_Dir_1: {r: 0, g: 0, b: 0, a: 0}
+    - light_Dir_2: {r: 0, g: 0, b: 0, a: 0}
+    - light_Dir_3: {r: 0, g: 0, b: 0, a: 0}
+    - light_Dir_4: {r: 0, g: 0, b: 0, a: 0}
+    - light_Dir_5: {r: 0, g: 0, b: 0, a: 0}
+  m_BuildTextureStacks: []
+  m_AllowLocking: 1
+--- !u!21 &44473745
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Instance of M_gachatest
+  m_Shader: {fileID: -6465566751694194690, guid: f65702583acdce143b2e443af2e9ffba, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses:
+  - MOTIONVECTORS
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _FlatNormal:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NormalMap:
+        m_Texture: {fileID: 2800000, guid: 91401bb2263881746bc81eeb0e6c6521, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_2846928ad0ea4ea2a665a43b1961f3c4_Texture_1_Texture2D:
+        m_Texture: {fileID: 2800000, guid: 03916d8acea71064a9b546536003c029, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Texture2D:
+        m_Texture: {fileID: 2800000, guid: cc9436e4ca598524cbc83edad93a9335, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Texture2D_1:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Texture2D_2:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _shading_gadrient:
+        m_Texture: {fileID: 2800000, guid: eb606d2fe7fa3e54c8cfc771423e5cbb, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_Lightmaps:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_LightmapsInd:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_ShadowMasks:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _QueueControl: 0
+    - _QueueOffset: 0
+    - _UseNormal: 1
+    - _fresnel_angle: 1
+    - _fresnel_size: 50
+    - _gloss_size: 200
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 0}
+    - _L10_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L10_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L11_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L11_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L12_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L12_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L13_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L13_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L14_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L14_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L15_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L15_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L16_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L16_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L17_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L17_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L18_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L18_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L19_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L19_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L1_color: {r: 1.5436556, g: 1.0634502, b: 0.6917324, a: 0.1747205}
+    - _L1_dir: {r: -0.91262996, g: 0.21133734, b: 0.3499187, a: 0}
+    - _L20_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L20_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L21_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L21_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L22_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L22_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L23_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L23_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L24_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L24_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L25_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L25_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L26_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L26_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L27_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L27_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L28_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L28_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L29_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L29_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L2_color: {r: 0.18490566, g: 0.11576451, b: 0.035760056, a: 0.99}
+    - _L2_dir: {r: -0, g: -0, b: 1, a: 0}
+    - _L30_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L30_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L3_color: {r: 0.1431972, g: 0.098650955, b: 0.06416855, a: 0.1431972}
+    - _L3_dir: {r: -0.8535452, g: 0.3530048, b: 0.38320765, a: 0}
+    - _L4_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L4_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L5_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L5_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L6_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L6_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L7_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L7_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L8_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L8_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L9_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L9_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _fresnel_intensity: {r: 1, g: 1, b: 1, a: 0}
+    - _gloss_intensity: {r: 1, g: 1, b: 1, a: 0}
+    - _light_2_color: {r: 1, g: 1, b: 1, a: 0}
+    - _light_3_color: {r: 1, g: 1, b: 1, a: 0}
+    - _light_3_dir: {r: 0, g: 0, b: 0, a: 0}
+    - _light_4_color: {r: 1, g: 1, b: 1, a: 0}
+    - _light_4_dir: {r: 0, g: 0, b: 0, a: 0}
+    - _light_5_color: {r: 1, g: 1, b: 1, a: 0}
+    - _light_5_dir: {r: 0, g: 0, b: 0, a: 0}
+    - _light_6_color: {r: 1, g: 1, b: 1, a: 0}
+    - _light_6_dir: {r: 0, g: 0, b: 0, a: 0}
+    - light_Color: {r: 1, g: 1, b: 1, a: 0}
+    - light_Color_1: {r: 1, g: 1, b: 1, a: 0}
+    - light_Color_2: {r: 1, g: 1, b: 1, a: 0}
+    - light_Color_3: {r: 1, g: 1, b: 1, a: 0}
+    - light_Color_4: {r: 1, g: 1, b: 1, a: 0}
+    - light_Color_5: {r: 1, g: 1, b: 1, a: 0}
+    - light_Dir: {r: 0, g: 0, b: 0, a: 0}
+    - light_Dir_1: {r: 0, g: 0, b: 0, a: 0}
+    - light_Dir_2: {r: 0, g: 0, b: 0, a: 0}
+    - light_Dir_3: {r: 0, g: 0, b: 0, a: 0}
+    - light_Dir_4: {r: 0, g: 0, b: 0, a: 0}
+    - light_Dir_5: {r: 0, g: 0, b: 0, a: 0}
+  m_BuildTextureStacks: []
+  m_AllowLocking: 1
+--- !u!21 &83085418
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Instance of M_gachatest
+  m_Shader: {fileID: -6465566751694194690, guid: f65702583acdce143b2e443af2e9ffba, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses:
+  - MOTIONVECTORS
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _FlatNormal:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NormalMap:
+        m_Texture: {fileID: 2800000, guid: 91401bb2263881746bc81eeb0e6c6521, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_2846928ad0ea4ea2a665a43b1961f3c4_Texture_1_Texture2D:
+        m_Texture: {fileID: 2800000, guid: 03916d8acea71064a9b546536003c029, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Texture2D:
+        m_Texture: {fileID: 2800000, guid: cc9436e4ca598524cbc83edad93a9335, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Texture2D_1:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Texture2D_2:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _shading_gadrient:
+        m_Texture: {fileID: 2800000, guid: eb606d2fe7fa3e54c8cfc771423e5cbb, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_Lightmaps:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_LightmapsInd:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_ShadowMasks:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _QueueControl: 0
+    - _QueueOffset: 0
+    - _UseNormal: 1
+    - _fresnel_angle: 1
+    - _fresnel_size: 50
+    - _gloss_size: 200
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 0}
+    - _L10_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L10_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L11_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L11_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L12_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L12_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L13_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L13_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L14_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L14_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L15_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L15_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L16_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L16_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L17_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L17_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L18_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L18_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L19_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L19_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L1_color: {r: 1.8816369, g: 1.2962912, b: 0.8431863, a: 0.21297531}
+    - _L1_dir: {r: 0.2835597, g: 0.76365376, b: 0.58002317, a: 0}
+    - _L20_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L20_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L21_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L21_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L22_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L22_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L23_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L23_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L24_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L24_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L25_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L25_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L26_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L26_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L27_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L27_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L28_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L28_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L29_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L29_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L2_color: {r: 0.18490566, g: 0.11576451, b: 0.035760056, a: 0.99}
+    - _L2_dir: {r: -0, g: -0, b: 1, a: 0}
+    - _L30_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L30_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L3_color: {r: 0.1480747, g: 0.10201116, b: 0.06635423, a: 0.1480747}
+    - _L3_dir: {r: 0.23921594, g: 0.80265653, b: 0.54636824, a: 0}
+    - _L4_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L4_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L5_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L5_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L6_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L6_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L7_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L7_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L8_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L8_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L9_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L9_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _fresnel_intensity: {r: 1, g: 1, b: 1, a: 0}
+    - _gloss_intensity: {r: 1, g: 1, b: 1, a: 0}
+    - _light_2_color: {r: 1, g: 1, b: 1, a: 0}
+    - _light_3_color: {r: 1, g: 1, b: 1, a: 0}
+    - _light_3_dir: {r: 0, g: 0, b: 0, a: 0}
+    - _light_4_color: {r: 1, g: 1, b: 1, a: 0}
+    - _light_4_dir: {r: 0, g: 0, b: 0, a: 0}
+    - _light_5_color: {r: 1, g: 1, b: 1, a: 0}
+    - _light_5_dir: {r: 0, g: 0, b: 0, a: 0}
+    - _light_6_color: {r: 1, g: 1, b: 1, a: 0}
+    - _light_6_dir: {r: 0, g: 0, b: 0, a: 0}
+    - light_Color: {r: 1, g: 1, b: 1, a: 0}
+    - light_Color_1: {r: 1, g: 1, b: 1, a: 0}
+    - light_Color_2: {r: 1, g: 1, b: 1, a: 0}
+    - light_Color_3: {r: 1, g: 1, b: 1, a: 0}
+    - light_Color_4: {r: 1, g: 1, b: 1, a: 0}
+    - light_Color_5: {r: 1, g: 1, b: 1, a: 0}
+    - light_Dir: {r: 0, g: 0, b: 0, a: 0}
+    - light_Dir_1: {r: 0, g: 0, b: 0, a: 0}
+    - light_Dir_2: {r: 0, g: 0, b: 0, a: 0}
+    - light_Dir_3: {r: 0, g: 0, b: 0, a: 0}
+    - light_Dir_4: {r: 0, g: 0, b: 0, a: 0}
+    - light_Dir_5: {r: 0, g: 0, b: 0, a: 0}
+  m_BuildTextureStacks: []
+  m_AllowLocking: 1
+--- !u!1 &213750785 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5876131435979641700, guid: f305da61cea3bb243b42cfd3a49f22c7, type: 3}
+  m_PrefabInstance: {fileID: 635292038}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &213750789
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 213750785}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a134d33e4b83384cb8a08f70560bcf5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  material: {fileID: 2100000, guid: d65d670c8d6cdff4aabbb8ad78556c8a, type: 2}
+  instanceMaterial: 1
+  meshCenter: {x: 0, y: 0, z: 0}
+  maxLights: 6
+  raycast: 1
+  raycastMask:
+    serializedVersion: 2
+    m_Bits: 0
+  raycastFadeSpeed: 10
+--- !u!1 &265836810 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8902123217092148192, guid: f305da61cea3bb243b42cfd3a49f22c7, type: 3}
+  m_PrefabInstance: {fileID: 635292038}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &265836814
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 265836810}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a134d33e4b83384cb8a08f70560bcf5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  material: {fileID: 2100000, guid: d65d670c8d6cdff4aabbb8ad78556c8a, type: 2}
+  instanceMaterial: 1
+  meshCenter: {x: 0, y: 0, z: 0}
+  maxLights: 6
+  raycast: 1
+  raycastMask:
+    serializedVersion: 2
+    m_Bits: 0
+  raycastFadeSpeed: 10
+--- !u!21 &363868002
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Instance of M_gachatest
+  m_Shader: {fileID: -6465566751694194690, guid: f65702583acdce143b2e443af2e9ffba, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses:
+  - MOTIONVECTORS
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _FlatNormal:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NormalMap:
+        m_Texture: {fileID: 2800000, guid: 91401bb2263881746bc81eeb0e6c6521, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_2846928ad0ea4ea2a665a43b1961f3c4_Texture_1_Texture2D:
+        m_Texture: {fileID: 2800000, guid: 03916d8acea71064a9b546536003c029, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Texture2D:
+        m_Texture: {fileID: 2800000, guid: cc9436e4ca598524cbc83edad93a9335, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Texture2D_1:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Texture2D_2:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _shading_gadrient:
+        m_Texture: {fileID: 2800000, guid: eb606d2fe7fa3e54c8cfc771423e5cbb, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_Lightmaps:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_LightmapsInd:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_ShadowMasks:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _QueueControl: 0
+    - _QueueOffset: 0
+    - _UseNormal: 1
+    - _fresnel_angle: 1
+    - _fresnel_size: 50
+    - _gloss_size: 200
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 0}
+    - _L10_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L10_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L11_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L11_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L12_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L12_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L13_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L13_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L14_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L14_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L15_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L15_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L16_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L16_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L17_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L17_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L18_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L18_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L19_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L19_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L1_color: {r: 2.2094781, g: 1.5221467, b: 0.9900964, a: 0.25008243}
+    - _L1_dir: {r: -0.07818975, g: 0.76111484, b: 0.64388704, a: 0}
+    - _L20_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L20_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L21_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L21_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L22_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L22_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L23_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L23_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L24_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L24_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L25_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L25_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L26_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L26_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L27_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L27_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L28_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L28_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L29_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L29_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L2_color: {r: 0.18490566, g: 0.11576451, b: 0.035760056, a: 0.99}
+    - _L2_dir: {r: -0, g: -0, b: 1, a: 0}
+    - _L30_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L30_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L3_color: {r: 0.17060818, g: 0.11753484, b: 0.07645178, a: 0.17060818}
+    - _L3_dir: {r: -0.064641505, g: 0.8015804, b: 0.5943822, a: 0}
+    - _L4_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L4_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L5_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L5_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L6_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L6_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L7_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L7_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L8_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L8_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L9_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L9_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _fresnel_intensity: {r: 1, g: 1, b: 1, a: 0}
+    - _gloss_intensity: {r: 1, g: 1, b: 1, a: 0}
+    - _light_2_color: {r: 1, g: 1, b: 1, a: 0}
+    - _light_3_color: {r: 1, g: 1, b: 1, a: 0}
+    - _light_3_dir: {r: 0, g: 0, b: 0, a: 0}
+    - _light_4_color: {r: 1, g: 1, b: 1, a: 0}
+    - _light_4_dir: {r: 0, g: 0, b: 0, a: 0}
+    - _light_5_color: {r: 1, g: 1, b: 1, a: 0}
+    - _light_5_dir: {r: 0, g: 0, b: 0, a: 0}
+    - _light_6_color: {r: 1, g: 1, b: 1, a: 0}
+    - _light_6_dir: {r: 0, g: 0, b: 0, a: 0}
+    - light_Color: {r: 1, g: 1, b: 1, a: 0}
+    - light_Color_1: {r: 1, g: 1, b: 1, a: 0}
+    - light_Color_2: {r: 1, g: 1, b: 1, a: 0}
+    - light_Color_3: {r: 1, g: 1, b: 1, a: 0}
+    - light_Color_4: {r: 1, g: 1, b: 1, a: 0}
+    - light_Color_5: {r: 1, g: 1, b: 1, a: 0}
+    - light_Dir: {r: 0, g: 0, b: 0, a: 0}
+    - light_Dir_1: {r: 0, g: 0, b: 0, a: 0}
+    - light_Dir_2: {r: 0, g: 0, b: 0, a: 0}
+    - light_Dir_3: {r: 0, g: 0, b: 0, a: 0}
+    - light_Dir_4: {r: 0, g: 0, b: 0, a: 0}
+    - light_Dir_5: {r: 0, g: 0, b: 0, a: 0}
+  m_BuildTextureStacks: []
+  m_AllowLocking: 1
+--- !u!21 &495486150
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Instance of M_gachatest
+  m_Shader: {fileID: -6465566751694194690, guid: f65702583acdce143b2e443af2e9ffba, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses:
+  - MOTIONVECTORS
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _FlatNormal:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NormalMap:
+        m_Texture: {fileID: 2800000, guid: 91401bb2263881746bc81eeb0e6c6521, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_2846928ad0ea4ea2a665a43b1961f3c4_Texture_1_Texture2D:
+        m_Texture: {fileID: 2800000, guid: 03916d8acea71064a9b546536003c029, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Texture2D:
+        m_Texture: {fileID: 2800000, guid: cc9436e4ca598524cbc83edad93a9335, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Texture2D_1:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Texture2D_2:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _shading_gadrient:
+        m_Texture: {fileID: 2800000, guid: eb606d2fe7fa3e54c8cfc771423e5cbb, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_Lightmaps:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_LightmapsInd:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_ShadowMasks:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _QueueControl: 0
+    - _QueueOffset: 0
+    - _UseNormal: 1
+    - _fresnel_angle: 1
+    - _fresnel_size: 50
+    - _gloss_size: 200
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 0}
+    - _L10_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L10_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L11_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L11_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L12_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L12_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L13_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L13_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L14_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L14_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L15_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L15_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L16_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L16_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L17_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L17_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L18_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L18_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L19_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L19_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L1_color: {r: 0.18490566, g: 0.11576451, b: 0.035760056, a: 0.99}
+    - _L1_dir: {r: -0, g: -0, b: 1, a: 0}
+    - _L20_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L20_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L21_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L21_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L22_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L22_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L23_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L23_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L24_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L24_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L25_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L25_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L26_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L26_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L27_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L27_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L28_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L28_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L29_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L29_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L2_color: {r: 1.2049758, g: 0.830128, b: 0.53996557, a: 0.13638662}
+    - _L2_dir: {r: 0.78551626, g: 0.5799271, b: 0.21598342, a: 0}
+    - _L30_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L30_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L3_color: {r: 0.10522635, g: 0.072492205, b: 0.04715332, a: 0.10522635}
+    - _L3_dir: {r: 0.7135281, g: 0.6570935, b: 0.24311702, a: 0}
+    - _L4_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L4_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L5_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L5_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L6_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L6_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L7_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L7_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L8_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L8_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L9_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L9_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _fresnel_intensity: {r: 1, g: 1, b: 1, a: 0}
+    - _gloss_intensity: {r: 1, g: 1, b: 1, a: 0}
+    - _light_2_color: {r: 1, g: 1, b: 1, a: 0}
+    - _light_3_color: {r: 1, g: 1, b: 1, a: 0}
+    - _light_3_dir: {r: 0, g: 0, b: 0, a: 0}
+    - _light_4_color: {r: 1, g: 1, b: 1, a: 0}
+    - _light_4_dir: {r: 0, g: 0, b: 0, a: 0}
+    - _light_5_color: {r: 1, g: 1, b: 1, a: 0}
+    - _light_5_dir: {r: 0, g: 0, b: 0, a: 0}
+    - _light_6_color: {r: 1, g: 1, b: 1, a: 0}
+    - _light_6_dir: {r: 0, g: 0, b: 0, a: 0}
+    - light_Color: {r: 1, g: 1, b: 1, a: 0}
+    - light_Color_1: {r: 1, g: 1, b: 1, a: 0}
+    - light_Color_2: {r: 1, g: 1, b: 1, a: 0}
+    - light_Color_3: {r: 1, g: 1, b: 1, a: 0}
+    - light_Color_4: {r: 1, g: 1, b: 1, a: 0}
+    - light_Color_5: {r: 1, g: 1, b: 1, a: 0}
+    - light_Dir: {r: 0, g: 0, b: 0, a: 0}
+    - light_Dir_1: {r: 0, g: 0, b: 0, a: 0}
+    - light_Dir_2: {r: 0, g: 0, b: 0, a: 0}
+    - light_Dir_3: {r: 0, g: 0, b: 0, a: 0}
+    - light_Dir_4: {r: 0, g: 0, b: 0, a: 0}
+    - light_Dir_5: {r: 0, g: 0, b: 0, a: 0}
+  m_BuildTextureStacks: []
+  m_AllowLocking: 1
+--- !u!21 &561423075
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Instance of M_Nicky_hair
+  m_Shader: {fileID: -6465566751694194690, guid: f65702583acdce143b2e443af2e9ffba, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses:
+  - MOTIONVECTORS
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _FlatNormal:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NormalMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_2846928ad0ea4ea2a665a43b1961f3c4_Texture_1_Texture2D:
+        m_Texture: {fileID: 2800000, guid: 03916d8acea71064a9b546536003c029, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Texture2D:
+        m_Texture: {fileID: 2800000, guid: 971e769eb62cd7444bdc8c93081f0697, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Texture2D_1:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Texture2D_2:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _shading_gadrient:
+        m_Texture: {fileID: 2800000, guid: eb606d2fe7fa3e54c8cfc771423e5cbb, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_Lightmaps:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_LightmapsInd:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_ShadowMasks:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _QueueControl: 0
+    - _QueueOffset: 0
+    - _UseNormal: 0
+    - _fresnel_angle: 1
+    - _fresnel_size: 50
+    - _gloss_size: 200
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 0}
+    - _L10_color: {r: 1, g: 1, b: 1, a: 0}
+    - _L10_dir: {r: 0, g: 0, b: 0, a: 0}
+    - _L11_color: {r: 1, g: 1, b: 1, a: 0}
+    - _L11_dir: {r: 0, g: 0, b: 0, a: 0}
+    - _L12_color: {r: 1, g: 1, b: 1, a: 0}
+    - _L12_dir: {r: 0, g: 0, b: 0, a: 0}
+    - _L13_color: {r: 1, g: 1, b: 1, a: 0}
+    - _L13_dir: {r: 0, g: 0, b: 0, a: 0}
+    - _L14_color: {r: 1, g: 1, b: 1, a: 0}
+    - _L14_dir: {r: 0, g: 0, b: 0, a: 0}
+    - _L15_color: {r: 1, g: 1, b: 1, a: 0}
+    - _L15_dir: {r: 0, g: 0, b: 0, a: 0}
+    - _L16_color: {r: 1, g: 1, b: 1, a: 0}
+    - _L16_dir: {r: 0, g: 0, b: 0, a: 0}
+    - _L17_color: {r: 1, g: 1, b: 1, a: 0}
+    - _L17_dir: {r: 0, g: 0, b: 0, a: 0}
+    - _L18_color: {r: 1, g: 1, b: 1, a: 0}
+    - _L18_dir: {r: 0, g: 0, b: 0, a: 0}
+    - _L19_color: {r: 1, g: 1, b: 1, a: 0}
+    - _L19_dir: {r: 0, g: 0, b: 0, a: 0}
+    - _L1_color: {r: 4.9522862, g: 3.4117131, b: 2.2191849, a: 0.5605304}
+    - _L1_dir: {r: 0.32084846, g: 0.80975634, b: -0.49127477, a: 0}
+    - _L20_color: {r: 1, g: 1, b: 1, a: 0}
+    - _L20_dir: {r: 0, g: 0, b: 0, a: 0}
+    - _L21_color: {r: 1, g: 1, b: 1, a: 0}
+    - _L21_dir: {r: 0, g: 0, b: 0, a: 0}
+    - _L22_color: {r: 1, g: 1, b: 1, a: 0}
+    - _L22_dir: {r: 0, g: 0, b: 0, a: 0}
+    - _L23_color: {r: 1, g: 1, b: 1, a: 0}
+    - _L23_dir: {r: 0, g: 0, b: 0, a: 0}
+    - _L24_color: {r: 1, g: 1, b: 1, a: 0}
+    - _L24_dir: {r: 0, g: 0, b: 0, a: 0}
+    - _L25_color: {r: 1, g: 1, b: 1, a: 0}
+    - _L25_dir: {r: 0, g: 0, b: 0, a: 0}
+    - _L26_color: {r: 1, g: 1, b: 1, a: 0}
+    - _L26_dir: {r: 0, g: 0, b: 0, a: 0}
+    - _L27_color: {r: 1, g: 1, b: 1, a: 0}
+    - _L27_dir: {r: 0, g: 0, b: 0, a: 0}
+    - _L28_color: {r: 1, g: 1, b: 1, a: 0}
+    - _L28_dir: {r: 0, g: 0, b: 0, a: 0}
+    - _L29_color: {r: 1, g: 1, b: 1, a: 0}
+    - _L29_dir: {r: 0, g: 0, b: 0, a: 0}
+    - _L2_color: {r: 0.18490566, g: 0.11576451, b: 0.035760056, a: 0.99}
+    - _L2_dir: {r: -0, g: -0, b: 1, a: 0}
+    - _L30_color: {r: 1, g: 1, b: 1, a: 0}
+    - _L30_dir: {r: 0, g: 0, b: 0, a: 0}
+    - _L3_color: {r: 0.40320426, g: 0.27777418, b: 0.18068115, a: 0.40320426}
+    - _L3_dir: {r: 0.24580508, g: 0.93270624, b: -0.26389182, a: 0}
+    - _L4_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L4_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L5_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L5_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L6_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L6_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L7_color: {r: 1, g: 1, b: 1, a: 0}
+    - _L7_dir: {r: 0, g: 0, b: 0, a: 0}
+    - _L8_color: {r: 1, g: 1, b: 1, a: 0}
+    - _L8_dir: {r: 0, g: 0, b: 0, a: 0}
+    - _L9_color: {r: 1, g: 1, b: 1, a: 0}
+    - _L9_dir: {r: 0, g: 0, b: 0, a: 0}
+    - _fresnel_intensity: {r: 1, g: 1, b: 1, a: 0}
+    - _gloss_intensity: {r: 1, g: 1, b: 1, a: 0}
+    - _light_2_color: {r: 1, g: 1, b: 1, a: 0}
+    - _light_3_color: {r: 1, g: 1, b: 1, a: 0}
+    - _light_3_dir: {r: 0, g: 0, b: 0, a: 0}
+    - _light_4_color: {r: 1, g: 1, b: 1, a: 0}
+    - _light_4_dir: {r: 0, g: 0, b: 0, a: 0}
+    - _light_5_color: {r: 1, g: 1, b: 1, a: 0}
+    - _light_5_dir: {r: 0, g: 0, b: 0, a: 0}
+    - _light_6_color: {r: 1, g: 1, b: 1, a: 0}
+    - _light_6_dir: {r: 0, g: 0, b: 0, a: 0}
+    - light_Color: {r: 1, g: 1, b: 1, a: 0}
+    - light_Color_1: {r: 1, g: 1, b: 1, a: 0}
+    - light_Color_2: {r: 1, g: 1, b: 1, a: 0}
+    - light_Color_3: {r: 1, g: 1, b: 1, a: 0}
+    - light_Color_4: {r: 1, g: 1, b: 1, a: 0}
+    - light_Color_5: {r: 1, g: 1, b: 1, a: 0}
+    - light_Dir: {r: 0, g: 0, b: 0, a: 0}
+    - light_Dir_1: {r: 0, g: 0, b: 0, a: 0}
+    - light_Dir_2: {r: 0, g: 0, b: 0, a: 0}
+    - light_Dir_3: {r: 0, g: 0, b: 0, a: 0}
+    - light_Dir_4: {r: 0, g: 0, b: 0, a: 0}
+    - light_Dir_5: {r: 0, g: 0, b: 0, a: 0}
+  m_BuildTextureStacks: []
+  m_AllowLocking: 1
+--- !u!1001 &635292038
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 355610856607035933, guid: f305da61cea3bb243b42cfd3a49f22c7, type: 3}
+      propertyPath: m_Name
+      value: P_GachaRoom
+      objectReference: {fileID: 0}
+    - target: {fileID: 1127222190788700327, guid: f305da61cea3bb243b42cfd3a49f22c7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -137.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1127222190788700327, guid: f305da61cea3bb243b42cfd3a49f22c7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1127222190788700327, guid: f305da61cea3bb243b42cfd3a49f22c7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1127222190788700327, guid: f305da61cea3bb243b42cfd3a49f22c7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1127222190788700327, guid: f305da61cea3bb243b42cfd3a49f22c7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1127222190788700327, guid: f305da61cea3bb243b42cfd3a49f22c7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1127222190788700327, guid: f305da61cea3bb243b42cfd3a49f22c7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1127222190788700327, guid: f305da61cea3bb243b42cfd3a49f22c7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1127222190788700327, guid: f305da61cea3bb243b42cfd3a49f22c7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1127222190788700327, guid: f305da61cea3bb243b42cfd3a49f22c7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1836624459849252044, guid: f305da61cea3bb243b42cfd3a49f22c7, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 900284427}
+    - target: {fileID: 1838192083954838095, guid: f305da61cea3bb243b42cfd3a49f22c7, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 83085418}
+    - target: {fileID: 2107400309424535941, guid: f305da61cea3bb243b42cfd3a49f22c7, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 1364111947}
+    - target: {fileID: 2118501590336812246, guid: f305da61cea3bb243b42cfd3a49f22c7, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 926375089}
+    - target: {fileID: 2448299594197051531, guid: f305da61cea3bb243b42cfd3a49f22c7, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 856079740}
+    - target: {fileID: 2477829989056843117, guid: f305da61cea3bb243b42cfd3a49f22c7, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 918253085}
+    - target: {fileID: 2486605295331616193, guid: f305da61cea3bb243b42cfd3a49f22c7, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 495486150}
+    - target: {fileID: 5267920326769693857, guid: f305da61cea3bb243b42cfd3a49f22c7, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 1393637817}
+    - target: {fileID: 5371890661479756465, guid: f305da61cea3bb243b42cfd3a49f22c7, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 1701674079}
+    - target: {fileID: 5865003124661124275, guid: f305da61cea3bb243b42cfd3a49f22c7, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2115699606}
+    - target: {fileID: 6279293842165749264, guid: f305da61cea3bb243b42cfd3a49f22c7, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 44473745}
+    - target: {fileID: 6303940964473527107, guid: f305da61cea3bb243b42cfd3a49f22c7, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 1443794989}
+    - target: {fileID: 6956457884073286197, guid: f305da61cea3bb243b42cfd3a49f22c7, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 652127076}
+    - target: {fileID: 7536852350439443028, guid: f305da61cea3bb243b42cfd3a49f22c7, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 1532071049}
+    - target: {fileID: 7666712743931108080, guid: f305da61cea3bb243b42cfd3a49f22c7, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 363868002}
+    - target: {fileID: 8124499990058945375, guid: f305da61cea3bb243b42cfd3a49f22c7, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2014739963}
+    - target: {fileID: 8499556806800443313, guid: f305da61cea3bb243b42cfd3a49f22c7, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 1981249762}
+    - target: {fileID: 8755008810121401672, guid: f305da61cea3bb243b42cfd3a49f22c7, type: 3}
+      propertyPath: meshCenter.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9153594717574726603, guid: f305da61cea3bb243b42cfd3a49f22c7, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 747720760}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 179576942401690905, guid: f305da61cea3bb243b42cfd3a49f22c7, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1582817295}
+    - targetCorrespondingSourceObject: {fileID: 5360498743434337638, guid: f305da61cea3bb243b42cfd3a49f22c7, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1663356353}
+    - targetCorrespondingSourceObject: {fileID: 4249964226714962270, guid: f305da61cea3bb243b42cfd3a49f22c7, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1389075435}
+    - targetCorrespondingSourceObject: {fileID: 8171041478824885029, guid: f305da61cea3bb243b42cfd3a49f22c7, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1152821158}
+    - targetCorrespondingSourceObject: {fileID: 7764480370204961418, guid: f305da61cea3bb243b42cfd3a49f22c7, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 24614705}
+    - targetCorrespondingSourceObject: {fileID: 7995157703346857572, guid: f305da61cea3bb243b42cfd3a49f22c7, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1628052117}
+    - targetCorrespondingSourceObject: {fileID: 7208263635481698846, guid: f305da61cea3bb243b42cfd3a49f22c7, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 722972576}
+    - targetCorrespondingSourceObject: {fileID: 4135423000573160632, guid: f305da61cea3bb243b42cfd3a49f22c7, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1105239193}
+    - targetCorrespondingSourceObject: {fileID: 5876131435979641700, guid: f305da61cea3bb243b42cfd3a49f22c7, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 213750789}
+    - targetCorrespondingSourceObject: {fileID: 5916487257417938292, guid: f305da61cea3bb243b42cfd3a49f22c7, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 930068252}
+    - targetCorrespondingSourceObject: {fileID: 180827358008150938, guid: f305da61cea3bb243b42cfd3a49f22c7, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 669625991}
+    - targetCorrespondingSourceObject: {fileID: 8902123217092148192, guid: f305da61cea3bb243b42cfd3a49f22c7, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 265836814}
+  m_SourcePrefab: {fileID: 100100000, guid: f305da61cea3bb243b42cfd3a49f22c7, type: 3}
+--- !u!21 &652127076
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Instance of M_gachatest
+  m_Shader: {fileID: -6465566751694194690, guid: f65702583acdce143b2e443af2e9ffba, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses:
+  - MOTIONVECTORS
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _FlatNormal:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NormalMap:
+        m_Texture: {fileID: 2800000, guid: 91401bb2263881746bc81eeb0e6c6521, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_2846928ad0ea4ea2a665a43b1961f3c4_Texture_1_Texture2D:
+        m_Texture: {fileID: 2800000, guid: 03916d8acea71064a9b546536003c029, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Texture2D:
+        m_Texture: {fileID: 2800000, guid: cc9436e4ca598524cbc83edad93a9335, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Texture2D_1:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Texture2D_2:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _shading_gadrient:
+        m_Texture: {fileID: 2800000, guid: eb606d2fe7fa3e54c8cfc771423e5cbb, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_Lightmaps:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_LightmapsInd:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_ShadowMasks:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _QueueControl: 0
+    - _QueueOffset: 0
+    - _UseNormal: 1
+    - _fresnel_angle: 1
+    - _fresnel_size: 50
+    - _gloss_size: 200
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 0}
+    - _L10_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L10_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L11_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L11_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L12_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L12_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L13_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L13_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L14_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L14_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L15_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L15_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L16_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L16_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L17_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L17_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L18_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L18_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L19_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L19_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L1_color: {r: 1.7387669, g: 1.1978658, b: 0.77916443, a: 0.1968044}
+    - _L1_dir: {r: -0.40906984, g: 0.7266626, b: 0.551927, a: 0}
+    - _L20_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L20_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L21_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L21_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L22_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L22_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L23_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L23_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L24_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L24_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L25_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L25_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L26_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L26_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L27_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L27_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L28_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L28_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L29_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L29_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L2_color: {r: 0.18490566, g: 0.11576451, b: 0.035760056, a: 0.99}
+    - _L2_dir: {r: -0, g: -0, b: 1, a: 0}
+    - _L30_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L30_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L3_color: {r: 0.13925956, g: 0.09593824, b: 0.062404044, a: 0.13925955}
+    - _L3_dir: {r: -0.34989962, g: 0.774402, b: 0.5271354, a: 0}
+    - _L4_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L4_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L5_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L5_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L6_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L6_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L7_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L7_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L8_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L8_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L9_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L9_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _fresnel_intensity: {r: 1, g: 1, b: 1, a: 0}
+    - _gloss_intensity: {r: 1, g: 1, b: 1, a: 0}
+    - _light_2_color: {r: 1, g: 1, b: 1, a: 0}
+    - _light_3_color: {r: 1, g: 1, b: 1, a: 0}
+    - _light_3_dir: {r: 0, g: 0, b: 0, a: 0}
+    - _light_4_color: {r: 1, g: 1, b: 1, a: 0}
+    - _light_4_dir: {r: 0, g: 0, b: 0, a: 0}
+    - _light_5_color: {r: 1, g: 1, b: 1, a: 0}
+    - _light_5_dir: {r: 0, g: 0, b: 0, a: 0}
+    - _light_6_color: {r: 1, g: 1, b: 1, a: 0}
+    - _light_6_dir: {r: 0, g: 0, b: 0, a: 0}
+    - light_Color: {r: 1, g: 1, b: 1, a: 0}
+    - light_Color_1: {r: 1, g: 1, b: 1, a: 0}
+    - light_Color_2: {r: 1, g: 1, b: 1, a: 0}
+    - light_Color_3: {r: 1, g: 1, b: 1, a: 0}
+    - light_Color_4: {r: 1, g: 1, b: 1, a: 0}
+    - light_Color_5: {r: 1, g: 1, b: 1, a: 0}
+    - light_Dir: {r: 0, g: 0, b: 0, a: 0}
+    - light_Dir_1: {r: 0, g: 0, b: 0, a: 0}
+    - light_Dir_2: {r: 0, g: 0, b: 0, a: 0}
+    - light_Dir_3: {r: 0, g: 0, b: 0, a: 0}
+    - light_Dir_4: {r: 0, g: 0, b: 0, a: 0}
+    - light_Dir_5: {r: 0, g: 0, b: 0, a: 0}
+  m_BuildTextureStacks: []
+  m_AllowLocking: 1
+--- !u!21 &664602348
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Instance of M_Nicky_clothe
+  m_Shader: {fileID: -6465566751694194690, guid: f65702583acdce143b2e443af2e9ffba, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses:
+  - MOTIONVECTORS
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _FlatNormal:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NormalMap:
+        m_Texture: {fileID: 2800000, guid: 91401bb2263881746bc81eeb0e6c6521, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_2846928ad0ea4ea2a665a43b1961f3c4_Texture_1_Texture2D:
+        m_Texture: {fileID: 2800000, guid: 03916d8acea71064a9b546536003c029, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Texture2D:
+        m_Texture: {fileID: 2800000, guid: ab4ab0f0a50b9874e883282ae0b8c141, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Texture2D_1:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Texture2D_2:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _shading_gadrient:
+        m_Texture: {fileID: 2800000, guid: eb606d2fe7fa3e54c8cfc771423e5cbb, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_Lightmaps:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_LightmapsInd:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_ShadowMasks:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _QueueControl: 0
+    - _QueueOffset: 0
+    - _UseNormal: 1
+    - _fresnel_angle: 1
+    - _fresnel_size: 50
+    - _gloss_size: 200
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 0}
+    - _L10_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L10_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L11_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L11_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L12_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L12_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L13_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L13_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L14_color: {r: 1, g: 1, b: 1, a: 0}
+    - _L14_dir: {r: 0, g: 0, b: 0, a: 0}
+    - _L15_color: {r: 1, g: 1, b: 1, a: 0}
+    - _L15_dir: {r: 0, g: 0, b: 0, a: 0}
+    - _L16_color: {r: 1, g: 1, b: 1, a: 0}
+    - _L16_dir: {r: 0, g: 0, b: 0, a: 0}
+    - _L17_color: {r: 1, g: 1, b: 1, a: 0}
+    - _L17_dir: {r: 0, g: 0, b: 0, a: 0}
+    - _L18_color: {r: 1, g: 1, b: 1, a: 0}
+    - _L18_dir: {r: 0, g: 0, b: 0, a: 0}
+    - _L19_color: {r: 1, g: 1, b: 1, a: 0}
+    - _L19_dir: {r: 0, g: 0, b: 0, a: 0}
+    - _L1_color: {r: 4.9522862, g: 3.4117131, b: 2.2191849, a: 0.5605304}
+    - _L1_dir: {r: 0.32084846, g: 0.80975634, b: -0.49127477, a: 0}
+    - _L20_color: {r: 1, g: 1, b: 1, a: 0}
+    - _L20_dir: {r: 0, g: 0, b: 0, a: 0}
+    - _L21_color: {r: 1, g: 1, b: 1, a: 0}
+    - _L21_dir: {r: 0, g: 0, b: 0, a: 0}
+    - _L22_color: {r: 1, g: 1, b: 1, a: 0}
+    - _L22_dir: {r: 0, g: 0, b: 0, a: 0}
+    - _L23_color: {r: 1, g: 1, b: 1, a: 0}
+    - _L23_dir: {r: 0, g: 0, b: 0, a: 0}
+    - _L24_color: {r: 1, g: 1, b: 1, a: 0}
+    - _L24_dir: {r: 0, g: 0, b: 0, a: 0}
+    - _L25_color: {r: 1, g: 1, b: 1, a: 0}
+    - _L25_dir: {r: 0, g: 0, b: 0, a: 0}
+    - _L26_color: {r: 1, g: 1, b: 1, a: 0}
+    - _L26_dir: {r: 0, g: 0, b: 0, a: 0}
+    - _L27_color: {r: 1, g: 1, b: 1, a: 0}
+    - _L27_dir: {r: 0, g: 0, b: 0, a: 0}
+    - _L28_color: {r: 1, g: 1, b: 1, a: 0}
+    - _L28_dir: {r: 0, g: 0, b: 0, a: 0}
+    - _L29_color: {r: 1, g: 1, b: 1, a: 0}
+    - _L29_dir: {r: 0, g: 0, b: 0, a: 0}
+    - _L2_color: {r: 0.18490566, g: 0.11576451, b: 0.035760056, a: 0.99}
+    - _L2_dir: {r: -0, g: -0, b: 1, a: 0}
+    - _L30_color: {r: 1, g: 1, b: 1, a: 0}
+    - _L30_dir: {r: 0, g: 0, b: 0, a: 0}
+    - _L3_color: {r: 0.40320426, g: 0.27777418, b: 0.18068115, a: 0.40320426}
+    - _L3_dir: {r: 0.24580508, g: 0.93270624, b: -0.26389182, a: 0}
+    - _L4_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L4_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L5_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L5_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L6_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L6_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L7_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L7_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L8_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L8_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L9_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L9_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _fresnel_intensity: {r: 1, g: 1, b: 1, a: 0}
+    - _gloss_intensity: {r: 1, g: 1, b: 1, a: 0}
+    - _light_2_color: {r: 1, g: 1, b: 1, a: 0}
+    - _light_3_color: {r: 1, g: 1, b: 1, a: 0}
+    - _light_3_dir: {r: 0, g: 0, b: 0, a: 0}
+    - _light_4_color: {r: 1, g: 1, b: 1, a: 0}
+    - _light_4_dir: {r: 0, g: 0, b: 0, a: 0}
+    - _light_5_color: {r: 1, g: 1, b: 1, a: 0}
+    - _light_5_dir: {r: 0, g: 0, b: 0, a: 0}
+    - _light_6_color: {r: 1, g: 1, b: 1, a: 0}
+    - _light_6_dir: {r: 0, g: 0, b: 0, a: 0}
+    - light_Color: {r: 1, g: 1, b: 1, a: 0}
+    - light_Color_1: {r: 1, g: 1, b: 1, a: 0}
+    - light_Color_2: {r: 1, g: 1, b: 1, a: 0}
+    - light_Color_3: {r: 1, g: 1, b: 1, a: 0}
+    - light_Color_4: {r: 1, g: 1, b: 1, a: 0}
+    - light_Color_5: {r: 1, g: 1, b: 1, a: 0}
+    - light_Dir: {r: 0, g: 0, b: 0, a: 0}
+    - light_Dir_1: {r: 0, g: 0, b: 0, a: 0}
+    - light_Dir_2: {r: 0, g: 0, b: 0, a: 0}
+    - light_Dir_3: {r: 0, g: 0, b: 0, a: 0}
+    - light_Dir_4: {r: 0, g: 0, b: 0, a: 0}
+    - light_Dir_5: {r: 0, g: 0, b: 0, a: 0}
+  m_BuildTextureStacks: []
+  m_AllowLocking: 1
+--- !u!1 &669625987 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 180827358008150938, guid: f305da61cea3bb243b42cfd3a49f22c7, type: 3}
+  m_PrefabInstance: {fileID: 635292038}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &669625991
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 669625987}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a134d33e4b83384cb8a08f70560bcf5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  material: {fileID: 2100000, guid: d65d670c8d6cdff4aabbb8ad78556c8a, type: 2}
+  instanceMaterial: 1
+  meshCenter: {x: 0, y: 0, z: 0}
+  maxLights: 6
+  raycast: 1
+  raycastMask:
+    serializedVersion: 2
+    m_Bits: 0
+  raycastFadeSpeed: 10
+--- !u!1 &722972572 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7208263635481698846, guid: f305da61cea3bb243b42cfd3a49f22c7, type: 3}
+  m_PrefabInstance: {fileID: 635292038}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &722972576
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 722972572}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a134d33e4b83384cb8a08f70560bcf5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  material: {fileID: 2100000, guid: d65d670c8d6cdff4aabbb8ad78556c8a, type: 2}
+  instanceMaterial: 1
+  meshCenter: {x: 0, y: 0, z: 0}
+  maxLights: 6
+  raycast: 1
+  raycastMask:
+    serializedVersion: 2
+    m_Bits: 0
+  raycastFadeSpeed: 10
+--- !u!21 &747720760
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Instance of M_gachatest
+  m_Shader: {fileID: -6465566751694194690, guid: f65702583acdce143b2e443af2e9ffba, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses:
+  - MOTIONVECTORS
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _FlatNormal:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NormalMap:
+        m_Texture: {fileID: 2800000, guid: 91401bb2263881746bc81eeb0e6c6521, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_2846928ad0ea4ea2a665a43b1961f3c4_Texture_1_Texture2D:
+        m_Texture: {fileID: 2800000, guid: 03916d8acea71064a9b546536003c029, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Texture2D:
+        m_Texture: {fileID: 2800000, guid: cc9436e4ca598524cbc83edad93a9335, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Texture2D_1:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Texture2D_2:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _shading_gadrient:
+        m_Texture: {fileID: 2800000, guid: eb606d2fe7fa3e54c8cfc771423e5cbb, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_Lightmaps:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_LightmapsInd:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_ShadowMasks:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _QueueControl: 0
+    - _QueueOffset: 0
+    - _UseNormal: 1
+    - _fresnel_angle: 1
+    - _fresnel_size: 50
+    - _gloss_size: 200
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 0}
+    - _L10_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L10_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L11_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L11_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L12_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L12_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L13_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L13_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L14_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L14_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L15_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L15_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L16_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L16_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L17_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L17_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L18_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L18_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L19_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L19_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L1_color: {r: 1.9286495, g: 1.328679, b: 0.86425334, a: 0.2182965}
+    - _L1_dir: {r: -0.22586207, g: 0.77576184, b: 0.5892197, a: 0}
+    - _L20_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L20_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L21_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L21_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L22_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L22_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L23_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L23_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L24_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L24_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L25_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L25_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L26_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L26_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L27_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L27_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L28_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L28_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L29_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L29_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L2_color: {r: 0.18490566, g: 0.11576451, b: 0.035760056, a: 0.99}
+    - _L2_dir: {r: -0, g: -0, b: 1, a: 0}
+    - _L30_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L30_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L3_color: {r: 0.15090857, g: 0.10396345, b: 0.06762412, a: 0.15090857}
+    - _L3_dir: {r: -0.18966931, g: 0.81165195, b: 0.5524914, a: 0}
+    - _L4_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L4_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L5_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L5_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L6_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L6_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L7_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L7_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L8_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L8_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L9_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L9_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _fresnel_intensity: {r: 1, g: 1, b: 1, a: 0}
+    - _gloss_intensity: {r: 1, g: 1, b: 1, a: 0}
+    - _light_2_color: {r: 1, g: 1, b: 1, a: 0}
+    - _light_3_color: {r: 1, g: 1, b: 1, a: 0}
+    - _light_3_dir: {r: 0, g: 0, b: 0, a: 0}
+    - _light_4_color: {r: 1, g: 1, b: 1, a: 0}
+    - _light_4_dir: {r: 0, g: 0, b: 0, a: 0}
+    - _light_5_color: {r: 1, g: 1, b: 1, a: 0}
+    - _light_5_dir: {r: 0, g: 0, b: 0, a: 0}
+    - _light_6_color: {r: 1, g: 1, b: 1, a: 0}
+    - _light_6_dir: {r: 0, g: 0, b: 0, a: 0}
+    - light_Color: {r: 1, g: 1, b: 1, a: 0}
+    - light_Color_1: {r: 1, g: 1, b: 1, a: 0}
+    - light_Color_2: {r: 1, g: 1, b: 1, a: 0}
+    - light_Color_3: {r: 1, g: 1, b: 1, a: 0}
+    - light_Color_4: {r: 1, g: 1, b: 1, a: 0}
+    - light_Color_5: {r: 1, g: 1, b: 1, a: 0}
+    - light_Dir: {r: 0, g: 0, b: 0, a: 0}
+    - light_Dir_1: {r: 0, g: 0, b: 0, a: 0}
+    - light_Dir_2: {r: 0, g: 0, b: 0, a: 0}
+    - light_Dir_3: {r: 0, g: 0, b: 0, a: 0}
+    - light_Dir_4: {r: 0, g: 0, b: 0, a: 0}
+    - light_Dir_5: {r: 0, g: 0, b: 0, a: 0}
+  m_BuildTextureStacks: []
+  m_AllowLocking: 1
+--- !u!1001 &854579948
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 912e063f18d3f4544884f246367b3d8a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -142.69
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 912e063f18d3f4544884f246367b3d8a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.58
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 912e063f18d3f4544884f246367b3d8a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.99
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 912e063f18d3f4544884f246367b3d8a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.68626285
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 912e063f18d3f4544884f246367b3d8a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 912e063f18d3f4544884f246367b3d8a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.7273537
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 912e063f18d3f4544884f246367b3d8a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 912e063f18d3f4544884f246367b3d8a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 912e063f18d3f4544884f246367b3d8a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -93.33
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 912e063f18d3f4544884f246367b3d8a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -2287430351313163456, guid: 912e063f18d3f4544884f246367b3d8a, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 561423075}
+    - target: {fileID: 919132149155446097, guid: 912e063f18d3f4544884f246367b3d8a, type: 3}
+      propertyPath: m_Name
+      value: AN_T-Pose_Ryo
+      objectReference: {fileID: 0}
+    - target: {fileID: 3738851496483545730, guid: 912e063f18d3f4544884f246367b3d8a, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 664602348}
+    - target: {fileID: 8277607572658817708, guid: 912e063f18d3f4544884f246367b3d8a, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 29140538}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: -4617755408129784853, guid: 912e063f18d3f4544884f246367b3d8a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 854579954}
+    - targetCorrespondingSourceObject: {fileID: -7412528413914776854, guid: 912e063f18d3f4544884f246367b3d8a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 854579953}
+    - targetCorrespondingSourceObject: {fileID: -7495326351936497184, guid: 912e063f18d3f4544884f246367b3d8a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 854579952}
+  m_SourcePrefab: {fileID: 100100000, guid: 912e063f18d3f4544884f246367b3d8a, type: 3}
+--- !u!1 &854579949 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -7495326351936497184, guid: 912e063f18d3f4544884f246367b3d8a, type: 3}
+  m_PrefabInstance: {fileID: 854579948}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &854579950 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -7412528413914776854, guid: 912e063f18d3f4544884f246367b3d8a, type: 3}
+  m_PrefabInstance: {fileID: 854579948}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &854579951 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -4617755408129784853, guid: 912e063f18d3f4544884f246367b3d8a, type: 3}
+  m_PrefabInstance: {fileID: 854579948}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &854579952
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 854579949}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a134d33e4b83384cb8a08f70560bcf5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  material: {fileID: 2100000, guid: c4218a976308a4244ada6712a24eba84, type: 2}
+  instanceMaterial: 1
+  meshCenter: {x: 0, y: 2, z: 0}
+  maxLights: 6
+  raycast: 1
+  raycastMask:
+    serializedVersion: 2
+    m_Bits: 0
+  raycastFadeSpeed: 10
+--- !u!114 &854579953
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 854579950}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a134d33e4b83384cb8a08f70560bcf5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  material: {fileID: 2100000, guid: 2207ca9fc32c440408a346cff9509563, type: 2}
+  instanceMaterial: 1
+  meshCenter: {x: 0, y: 2, z: 0}
+  maxLights: 13
+  raycast: 1
+  raycastMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  raycastFadeSpeed: 10
+--- !u!114 &854579954
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 854579951}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a134d33e4b83384cb8a08f70560bcf5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  material: {fileID: 2100000, guid: d6dd98083afd8234d896fb1f80770c97, type: 2}
+  instanceMaterial: 1
+  meshCenter: {x: 0, y: 2, z: 0}
+  maxLights: 6
+  raycast: 1
+  raycastMask:
+    serializedVersion: 2
+    m_Bits: 0
+  raycastFadeSpeed: 10
+--- !u!21 &856079740
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Instance of M_gachatest
+  m_Shader: {fileID: -6465566751694194690, guid: f65702583acdce143b2e443af2e9ffba, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses:
+  - MOTIONVECTORS
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _FlatNormal:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NormalMap:
+        m_Texture: {fileID: 2800000, guid: 91401bb2263881746bc81eeb0e6c6521, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_2846928ad0ea4ea2a665a43b1961f3c4_Texture_1_Texture2D:
+        m_Texture: {fileID: 2800000, guid: 03916d8acea71064a9b546536003c029, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Texture2D:
+        m_Texture: {fileID: 2800000, guid: cc9436e4ca598524cbc83edad93a9335, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Texture2D_1:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Texture2D_2:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _shading_gadrient:
+        m_Texture: {fileID: 2800000, guid: eb606d2fe7fa3e54c8cfc771423e5cbb, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_Lightmaps:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_LightmapsInd:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_ShadowMasks:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _QueueControl: 0
+    - _QueueOffset: 0
+    - _UseNormal: 1
+    - _fresnel_angle: 1
+    - _fresnel_size: 50
+    - _gloss_size: 200
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 0}
+    - _L10_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L10_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L11_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L11_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L12_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L12_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L13_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L13_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L14_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L14_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L15_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L15_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L16_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L16_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L17_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L17_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L18_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L18_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L19_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L19_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L1_color: {r: 1.3769498, g: 0.9486038, b: 0.61702937, a: 0.1558517}
+    - _L1_dir: {r: 0.61040556, g: 0.63077205, b: 0.47909462, a: 0}
+    - _L20_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L20_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L21_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L21_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L22_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L22_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L23_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L23_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L24_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L24_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L25_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L25_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L26_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L26_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L27_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L27_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L28_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L28_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L29_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L29_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L2_color: {r: 0.18490566, g: 0.11576451, b: 0.035760056, a: 0.99}
+    - _L2_dir: {r: -0, g: -0, b: 1, a: 0}
+    - _L30_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L30_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L3_color: {r: 0.11547015, g: 0.07954933, b: 0.051743697, a: 0.11547015}
+    - _L3_dir: {r: 0.5402902, g: 0.69561464, b: 0.4735048, a: 0}
+    - _L4_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L4_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L5_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L5_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L6_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L6_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L7_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L7_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L8_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L8_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L9_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L9_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _fresnel_intensity: {r: 1, g: 1, b: 1, a: 0}
+    - _gloss_intensity: {r: 1, g: 1, b: 1, a: 0}
+    - _light_2_color: {r: 1, g: 1, b: 1, a: 0}
+    - _light_3_color: {r: 1, g: 1, b: 1, a: 0}
+    - _light_3_dir: {r: 0, g: 0, b: 0, a: 0}
+    - _light_4_color: {r: 1, g: 1, b: 1, a: 0}
+    - _light_4_dir: {r: 0, g: 0, b: 0, a: 0}
+    - _light_5_color: {r: 1, g: 1, b: 1, a: 0}
+    - _light_5_dir: {r: 0, g: 0, b: 0, a: 0}
+    - _light_6_color: {r: 1, g: 1, b: 1, a: 0}
+    - _light_6_dir: {r: 0, g: 0, b: 0, a: 0}
+    - light_Color: {r: 1, g: 1, b: 1, a: 0}
+    - light_Color_1: {r: 1, g: 1, b: 1, a: 0}
+    - light_Color_2: {r: 1, g: 1, b: 1, a: 0}
+    - light_Color_3: {r: 1, g: 1, b: 1, a: 0}
+    - light_Color_4: {r: 1, g: 1, b: 1, a: 0}
+    - light_Color_5: {r: 1, g: 1, b: 1, a: 0}
+    - light_Dir: {r: 0, g: 0, b: 0, a: 0}
+    - light_Dir_1: {r: 0, g: 0, b: 0, a: 0}
+    - light_Dir_2: {r: 0, g: 0, b: 0, a: 0}
+    - light_Dir_3: {r: 0, g: 0, b: 0, a: 0}
+    - light_Dir_4: {r: 0, g: 0, b: 0, a: 0}
+    - light_Dir_5: {r: 0, g: 0, b: 0, a: 0}
+  m_BuildTextureStacks: []
+  m_AllowLocking: 1
+--- !u!21 &900284427
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Instance of M_gachatest
+  m_Shader: {fileID: -6465566751694194690, guid: f65702583acdce143b2e443af2e9ffba, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses:
+  - MOTIONVECTORS
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _FlatNormal:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NormalMap:
+        m_Texture: {fileID: 2800000, guid: 91401bb2263881746bc81eeb0e6c6521, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_2846928ad0ea4ea2a665a43b1961f3c4_Texture_1_Texture2D:
+        m_Texture: {fileID: 2800000, guid: 03916d8acea71064a9b546536003c029, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Texture2D:
+        m_Texture: {fileID: 2800000, guid: cc9436e4ca598524cbc83edad93a9335, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Texture2D_1:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Texture2D_2:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _shading_gadrient:
+        m_Texture: {fileID: 2800000, guid: eb606d2fe7fa3e54c8cfc771423e5cbb, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_Lightmaps:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_LightmapsInd:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_ShadowMasks:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _QueueControl: 0
+    - _QueueOffset: 0
+    - _UseNormal: 1
+    - _fresnel_angle: 1
+    - _fresnel_size: 50
+    - _gloss_size: 200
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 0}
+    - _L10_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L10_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L11_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L11_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L12_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L12_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L13_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L13_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L14_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L14_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L15_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L15_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L16_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L16_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L17_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L17_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L18_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L18_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L19_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L19_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L1_color: {r: 0.18490566, g: 0.11576451, b: 0.035760056, a: 0.99}
+    - _L1_dir: {r: -0, g: -0, b: 1, a: 0}
+    - _L20_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L20_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L21_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L21_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L22_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L22_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L23_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L23_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L24_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L24_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L25_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L25_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L26_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L26_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L27_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L27_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L28_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L28_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L29_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L29_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L2_color: {r: 1.2076515, g: 0.83197135, b: 0.5411646, a: 0.13668947}
+    - _L2_dir: {r: 0.67966855, g: 0.58413076, b: 0.4436688, a: 0}
+    - _L30_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L30_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L3_color: {r: 0.103552714, g: 0.0713392, b: 0.046403334, a: 0.10355271}
+    - _L3_dir: {r: 0.61109376, g: 0.6543475, b: 0.44541427, a: 0}
+    - _L4_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L4_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L5_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L5_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L6_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L6_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L7_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L7_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L8_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L8_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L9_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L9_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _fresnel_intensity: {r: 1, g: 1, b: 1, a: 0}
+    - _gloss_intensity: {r: 1, g: 1, b: 1, a: 0}
+    - _light_2_color: {r: 1, g: 1, b: 1, a: 0}
+    - _light_3_color: {r: 1, g: 1, b: 1, a: 0}
+    - _light_3_dir: {r: 0, g: 0, b: 0, a: 0}
+    - _light_4_color: {r: 1, g: 1, b: 1, a: 0}
+    - _light_4_dir: {r: 0, g: 0, b: 0, a: 0}
+    - _light_5_color: {r: 1, g: 1, b: 1, a: 0}
+    - _light_5_dir: {r: 0, g: 0, b: 0, a: 0}
+    - _light_6_color: {r: 1, g: 1, b: 1, a: 0}
+    - _light_6_dir: {r: 0, g: 0, b: 0, a: 0}
+    - light_Color: {r: 1, g: 1, b: 1, a: 0}
+    - light_Color_1: {r: 1, g: 1, b: 1, a: 0}
+    - light_Color_2: {r: 1, g: 1, b: 1, a: 0}
+    - light_Color_3: {r: 1, g: 1, b: 1, a: 0}
+    - light_Color_4: {r: 1, g: 1, b: 1, a: 0}
+    - light_Color_5: {r: 1, g: 1, b: 1, a: 0}
+    - light_Dir: {r: 0, g: 0, b: 0, a: 0}
+    - light_Dir_1: {r: 0, g: 0, b: 0, a: 0}
+    - light_Dir_2: {r: 0, g: 0, b: 0, a: 0}
+    - light_Dir_3: {r: 0, g: 0, b: 0, a: 0}
+    - light_Dir_4: {r: 0, g: 0, b: 0, a: 0}
+    - light_Dir_5: {r: 0, g: 0, b: 0, a: 0}
+  m_BuildTextureStacks: []
+  m_AllowLocking: 1
+--- !u!21 &918253085
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Instance of M_gachatest
+  m_Shader: {fileID: -6465566751694194690, guid: f65702583acdce143b2e443af2e9ffba, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses:
+  - MOTIONVECTORS
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _FlatNormal:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NormalMap:
+        m_Texture: {fileID: 2800000, guid: 91401bb2263881746bc81eeb0e6c6521, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_2846928ad0ea4ea2a665a43b1961f3c4_Texture_1_Texture2D:
+        m_Texture: {fileID: 2800000, guid: 03916d8acea71064a9b546536003c029, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Texture2D:
+        m_Texture: {fileID: 2800000, guid: cc9436e4ca598524cbc83edad93a9335, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Texture2D_1:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Texture2D_2:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _shading_gadrient:
+        m_Texture: {fileID: 2800000, guid: eb606d2fe7fa3e54c8cfc771423e5cbb, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_Lightmaps:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_LightmapsInd:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_ShadowMasks:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _QueueControl: 0
+    - _QueueOffset: 0
+    - _UseNormal: 1
+    - _fresnel_angle: 1
+    - _fresnel_size: 50
+    - _gloss_size: 200
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 0}
+    - _L10_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L10_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L11_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L11_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L12_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L12_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L13_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L13_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L14_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L14_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L15_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L15_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L16_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L16_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L17_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L17_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L18_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L18_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L19_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L19_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L1_color: {r: 1.7335539, g: 1.1942744, b: 0.7768284, a: 0.19621436}
+    - _L1_dir: {r: 0.41284847, g: 0.7253061, b: 0.5508967, a: 0}
+    - _L20_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L20_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L21_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L21_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L22_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L22_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L23_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L23_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L24_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L24_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L25_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L25_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L26_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L26_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L27_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L27_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L28_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L28_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L29_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L29_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L2_color: {r: 0.18490566, g: 0.11576451, b: 0.035760056, a: 0.99}
+    - _L2_dir: {r: -0, g: -0, b: 1, a: 0}
+    - _L30_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L30_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L3_color: {r: 0.13893197, g: 0.09571257, b: 0.062257256, a: 0.13893197}
+    - _L3_dir: {r: 0.3533086, g: 0.77334356, b: 0.52641493, a: 0}
+    - _L4_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L4_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L5_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L5_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L6_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L6_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L7_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L7_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L8_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L8_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L9_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L9_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _fresnel_intensity: {r: 1, g: 1, b: 1, a: 0}
+    - _gloss_intensity: {r: 1, g: 1, b: 1, a: 0}
+    - _light_2_color: {r: 1, g: 1, b: 1, a: 0}
+    - _light_3_color: {r: 1, g: 1, b: 1, a: 0}
+    - _light_3_dir: {r: 0, g: 0, b: 0, a: 0}
+    - _light_4_color: {r: 1, g: 1, b: 1, a: 0}
+    - _light_4_dir: {r: 0, g: 0, b: 0, a: 0}
+    - _light_5_color: {r: 1, g: 1, b: 1, a: 0}
+    - _light_5_dir: {r: 0, g: 0, b: 0, a: 0}
+    - _light_6_color: {r: 1, g: 1, b: 1, a: 0}
+    - _light_6_dir: {r: 0, g: 0, b: 0, a: 0}
+    - light_Color: {r: 1, g: 1, b: 1, a: 0}
+    - light_Color_1: {r: 1, g: 1, b: 1, a: 0}
+    - light_Color_2: {r: 1, g: 1, b: 1, a: 0}
+    - light_Color_3: {r: 1, g: 1, b: 1, a: 0}
+    - light_Color_4: {r: 1, g: 1, b: 1, a: 0}
+    - light_Color_5: {r: 1, g: 1, b: 1, a: 0}
+    - light_Dir: {r: 0, g: 0, b: 0, a: 0}
+    - light_Dir_1: {r: 0, g: 0, b: 0, a: 0}
+    - light_Dir_2: {r: 0, g: 0, b: 0, a: 0}
+    - light_Dir_3: {r: 0, g: 0, b: 0, a: 0}
+    - light_Dir_4: {r: 0, g: 0, b: 0, a: 0}
+    - light_Dir_5: {r: 0, g: 0, b: 0, a: 0}
+  m_BuildTextureStacks: []
+  m_AllowLocking: 1
+--- !u!21 &926375089
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Instance of M_gachatest
+  m_Shader: {fileID: -6465566751694194690, guid: f65702583acdce143b2e443af2e9ffba, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses:
+  - MOTIONVECTORS
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _FlatNormal:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NormalMap:
+        m_Texture: {fileID: 2800000, guid: 91401bb2263881746bc81eeb0e6c6521, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_2846928ad0ea4ea2a665a43b1961f3c4_Texture_1_Texture2D:
+        m_Texture: {fileID: 2800000, guid: 03916d8acea71064a9b546536003c029, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Texture2D:
+        m_Texture: {fileID: 2800000, guid: cc9436e4ca598524cbc83edad93a9335, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Texture2D_1:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Texture2D_2:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _shading_gadrient:
+        m_Texture: {fileID: 2800000, guid: eb606d2fe7fa3e54c8cfc771423e5cbb, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_Lightmaps:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_LightmapsInd:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_ShadowMasks:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _QueueControl: 0
+    - _QueueOffset: 0
+    - _UseNormal: 1
+    - _fresnel_angle: 1
+    - _fresnel_size: 50
+    - _gloss_size: 200
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 0}
+    - _L10_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L10_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L11_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L11_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L12_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L12_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L13_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L13_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L14_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L14_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L15_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L15_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L16_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L16_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L17_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L17_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L18_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L18_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L19_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L19_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L1_color: {r: 1.2553514, g: 0.8648326, b: 0.5625395, a: 0.14208844}
+    - _L1_dir: {r: 0.8044279, g: 0.5938891, b: -0.013839431, a: 0}
+    - _L20_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L20_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L21_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L21_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L22_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L22_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L23_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L23_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L24_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L24_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L25_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L25_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L26_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L26_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L27_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L27_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L28_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L28_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L29_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L29_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L2_color: {r: 0.18490566, g: 0.11576451, b: 0.035760056, a: 0.99}
+    - _L2_dir: {r: -0, g: -0, b: 1, a: 0}
+    - _L30_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L30_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L3_color: {r: 0.11097624, g: 0.0764534, b: 0.04972992, a: 0.11097625}
+    - _L3_dir: {r: 0.7351293, g: 0.6769862, b: 0.03570074, a: 0}
+    - _L4_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L4_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L5_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L5_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L6_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L6_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L7_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L7_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L8_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L8_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L9_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L9_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _fresnel_intensity: {r: 1, g: 1, b: 1, a: 0}
+    - _gloss_intensity: {r: 1, g: 1, b: 1, a: 0}
+    - _light_2_color: {r: 1, g: 1, b: 1, a: 0}
+    - _light_3_color: {r: 1, g: 1, b: 1, a: 0}
+    - _light_3_dir: {r: 0, g: 0, b: 0, a: 0}
+    - _light_4_color: {r: 1, g: 1, b: 1, a: 0}
+    - _light_4_dir: {r: 0, g: 0, b: 0, a: 0}
+    - _light_5_color: {r: 1, g: 1, b: 1, a: 0}
+    - _light_5_dir: {r: 0, g: 0, b: 0, a: 0}
+    - _light_6_color: {r: 1, g: 1, b: 1, a: 0}
+    - _light_6_dir: {r: 0, g: 0, b: 0, a: 0}
+    - light_Color: {r: 1, g: 1, b: 1, a: 0}
+    - light_Color_1: {r: 1, g: 1, b: 1, a: 0}
+    - light_Color_2: {r: 1, g: 1, b: 1, a: 0}
+    - light_Color_3: {r: 1, g: 1, b: 1, a: 0}
+    - light_Color_4: {r: 1, g: 1, b: 1, a: 0}
+    - light_Color_5: {r: 1, g: 1, b: 1, a: 0}
+    - light_Dir: {r: 0, g: 0, b: 0, a: 0}
+    - light_Dir_1: {r: 0, g: 0, b: 0, a: 0}
+    - light_Dir_2: {r: 0, g: 0, b: 0, a: 0}
+    - light_Dir_3: {r: 0, g: 0, b: 0, a: 0}
+    - light_Dir_4: {r: 0, g: 0, b: 0, a: 0}
+    - light_Dir_5: {r: 0, g: 0, b: 0, a: 0}
+  m_BuildTextureStacks: []
+  m_AllowLocking: 1
+--- !u!1 &930068248 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5916487257417938292, guid: f305da61cea3bb243b42cfd3a49f22c7, type: 3}
+  m_PrefabInstance: {fileID: 635292038}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &930068252
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 930068248}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a134d33e4b83384cb8a08f70560bcf5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  material: {fileID: 2100000, guid: d65d670c8d6cdff4aabbb8ad78556c8a, type: 2}
+  instanceMaterial: 1
+  meshCenter: {x: 0, y: 0, z: 0}
+  maxLights: 6
+  raycast: 1
+  raycastMask:
+    serializedVersion: 2
+    m_Bits: 0
+  raycastFadeSpeed: 10
+--- !u!1 &1105239189 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4135423000573160632, guid: f305da61cea3bb243b42cfd3a49f22c7, type: 3}
+  m_PrefabInstance: {fileID: 635292038}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1105239193
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1105239189}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a134d33e4b83384cb8a08f70560bcf5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  material: {fileID: 2100000, guid: d65d670c8d6cdff4aabbb8ad78556c8a, type: 2}
+  instanceMaterial: 1
+  meshCenter: {x: 0, y: 0, z: 0}
+  maxLights: 6
+  raycast: 1
+  raycastMask:
+    serializedVersion: 2
+    m_Bits: 0
+  raycastFadeSpeed: 10
+--- !u!1 &1152821154 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8171041478824885029, guid: f305da61cea3bb243b42cfd3a49f22c7, type: 3}
+  m_PrefabInstance: {fileID: 635292038}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1152821158
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1152821154}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a134d33e4b83384cb8a08f70560bcf5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  material: {fileID: 2100000, guid: d65d670c8d6cdff4aabbb8ad78556c8a, type: 2}
+  instanceMaterial: 1
+  meshCenter: {x: 0, y: 0, z: 0}
+  maxLights: 6
+  raycast: 1
+  raycastMask:
+    serializedVersion: 2
+    m_Bits: 0
+  raycastFadeSpeed: 10
+--- !u!21 &1364111947
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Instance of M_gachatest
+  m_Shader: {fileID: -6465566751694194690, guid: f65702583acdce143b2e443af2e9ffba, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses:
+  - MOTIONVECTORS
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _FlatNormal:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NormalMap:
+        m_Texture: {fileID: 2800000, guid: 91401bb2263881746bc81eeb0e6c6521, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_2846928ad0ea4ea2a665a43b1961f3c4_Texture_1_Texture2D:
+        m_Texture: {fileID: 2800000, guid: 03916d8acea71064a9b546536003c029, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Texture2D:
+        m_Texture: {fileID: 2800000, guid: cc9436e4ca598524cbc83edad93a9335, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Texture2D_1:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Texture2D_2:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _shading_gadrient:
+        m_Texture: {fileID: 2800000, guid: eb606d2fe7fa3e54c8cfc771423e5cbb, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_Lightmaps:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_LightmapsInd:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_ShadowMasks:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _QueueControl: 0
+    - _QueueOffset: 0
+    - _UseNormal: 1
+    - _fresnel_angle: 1
+    - _fresnel_size: 50
+    - _gloss_size: 200
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 0}
+    - _L10_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L10_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L11_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L11_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L12_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L12_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L13_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L13_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L14_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L14_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L15_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L15_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L16_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L16_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L17_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L17_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L18_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L18_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L19_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L19_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L1_color: {r: 1.2441068, g: 0.8570861, b: 0.55750066, a: 0.1408157}
+    - _L1_dir: {r: 0.80022365, g: 0.5907852, b: 0.10302886, a: 0}
+    - _L20_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L20_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L21_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L21_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L22_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L22_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L23_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L23_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L24_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L24_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L25_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L25_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L26_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L26_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L27_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L27_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L28_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L28_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L29_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L29_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L2_color: {r: 0.18490566, g: 0.11576451, b: 0.035760056, a: 0.99}
+    - _L2_dir: {r: -0, g: -0, b: 1, a: 0}
+    - _L30_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L30_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L3_color: {r: 0.10911631, g: 0.07517206, b: 0.048896458, a: 0.10911631}
+    - _L3_dir: {r: 0.72818166, g: 0.6705881, b: 0.14164448, a: 0}
+    - _L4_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L4_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L5_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L5_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L6_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L6_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L7_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L7_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L8_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L8_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L9_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L9_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _fresnel_intensity: {r: 1, g: 1, b: 1, a: 0}
+    - _gloss_intensity: {r: 1, g: 1, b: 1, a: 0}
+    - _light_2_color: {r: 1, g: 1, b: 1, a: 0}
+    - _light_3_color: {r: 1, g: 1, b: 1, a: 0}
+    - _light_3_dir: {r: 0, g: 0, b: 0, a: 0}
+    - _light_4_color: {r: 1, g: 1, b: 1, a: 0}
+    - _light_4_dir: {r: 0, g: 0, b: 0, a: 0}
+    - _light_5_color: {r: 1, g: 1, b: 1, a: 0}
+    - _light_5_dir: {r: 0, g: 0, b: 0, a: 0}
+    - _light_6_color: {r: 1, g: 1, b: 1, a: 0}
+    - _light_6_dir: {r: 0, g: 0, b: 0, a: 0}
+    - light_Color: {r: 1, g: 1, b: 1, a: 0}
+    - light_Color_1: {r: 1, g: 1, b: 1, a: 0}
+    - light_Color_2: {r: 1, g: 1, b: 1, a: 0}
+    - light_Color_3: {r: 1, g: 1, b: 1, a: 0}
+    - light_Color_4: {r: 1, g: 1, b: 1, a: 0}
+    - light_Color_5: {r: 1, g: 1, b: 1, a: 0}
+    - light_Dir: {r: 0, g: 0, b: 0, a: 0}
+    - light_Dir_1: {r: 0, g: 0, b: 0, a: 0}
+    - light_Dir_2: {r: 0, g: 0, b: 0, a: 0}
+    - light_Dir_3: {r: 0, g: 0, b: 0, a: 0}
+    - light_Dir_4: {r: 0, g: 0, b: 0, a: 0}
+    - light_Dir_5: {r: 0, g: 0, b: 0, a: 0}
+  m_BuildTextureStacks: []
+  m_AllowLocking: 1
+--- !u!1 &1389075431 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4249964226714962270, guid: f305da61cea3bb243b42cfd3a49f22c7, type: 3}
+  m_PrefabInstance: {fileID: 635292038}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1389075435
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1389075431}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a134d33e4b83384cb8a08f70560bcf5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  material: {fileID: 2100000, guid: d65d670c8d6cdff4aabbb8ad78556c8a, type: 2}
+  instanceMaterial: 1
+  meshCenter: {x: 0, y: 0, z: 0}
+  maxLights: 6
+  raycast: 1
+  raycastMask:
+    serializedVersion: 2
+    m_Bits: 0
+  raycastFadeSpeed: 10
+--- !u!21 &1393637817
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Instance of M_gachatest
+  m_Shader: {fileID: -6465566751694194690, guid: f65702583acdce143b2e443af2e9ffba, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses:
+  - MOTIONVECTORS
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _FlatNormal:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NormalMap:
+        m_Texture: {fileID: 2800000, guid: 91401bb2263881746bc81eeb0e6c6521, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_2846928ad0ea4ea2a665a43b1961f3c4_Texture_1_Texture2D:
+        m_Texture: {fileID: 2800000, guid: 03916d8acea71064a9b546536003c029, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Texture2D:
+        m_Texture: {fileID: 2800000, guid: cc9436e4ca598524cbc83edad93a9335, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Texture2D_1:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Texture2D_2:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _shading_gadrient:
+        m_Texture: {fileID: 2800000, guid: eb606d2fe7fa3e54c8cfc771423e5cbb, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_Lightmaps:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_LightmapsInd:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_ShadowMasks:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _QueueControl: 0
+    - _QueueOffset: 0
+    - _UseNormal: 1
+    - _fresnel_angle: 1
+    - _fresnel_size: 50
+    - _gloss_size: 200
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 0}
+    - _L10_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L10_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L11_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L11_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L12_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L12_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L13_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L13_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L14_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L14_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L15_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L15_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L16_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L16_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L17_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L17_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L18_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L18_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L19_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L19_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L1_color: {r: 1.9868096, g: 1.3687465, b: 0.89031565, a: 0.22487941}
+    - _L1_dir: {r: -0.11871697, g: 0.79070824, b: 0.60057205, a: 0}
+    - _L20_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L20_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L21_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L21_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L22_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L22_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L23_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L23_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L24_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L24_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L25_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L25_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L26_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L26_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L27_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L27_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L28_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L28_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L29_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L29_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L2_color: {r: 0.18490566, g: 0.11576451, b: 0.035760056, a: 0.99}
+    - _L2_dir: {r: -0, g: -0, b: 1, a: 0}
+    - _L30_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L30_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L3_color: {r: 0.15436995, g: 0.10634805, b: 0.06917521, a: 0.15436995}
+    - _L3_dir: {r: -0.099126585, g: 0.82258594, b: 0.55993414, a: 0}
+    - _L4_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L4_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L5_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L5_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L6_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L6_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L7_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L7_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L8_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L8_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L9_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L9_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _fresnel_intensity: {r: 1, g: 1, b: 1, a: 0}
+    - _gloss_intensity: {r: 1, g: 1, b: 1, a: 0}
+    - _light_2_color: {r: 1, g: 1, b: 1, a: 0}
+    - _light_3_color: {r: 1, g: 1, b: 1, a: 0}
+    - _light_3_dir: {r: 0, g: 0, b: 0, a: 0}
+    - _light_4_color: {r: 1, g: 1, b: 1, a: 0}
+    - _light_4_dir: {r: 0, g: 0, b: 0, a: 0}
+    - _light_5_color: {r: 1, g: 1, b: 1, a: 0}
+    - _light_5_dir: {r: 0, g: 0, b: 0, a: 0}
+    - _light_6_color: {r: 1, g: 1, b: 1, a: 0}
+    - _light_6_dir: {r: 0, g: 0, b: 0, a: 0}
+    - light_Color: {r: 1, g: 1, b: 1, a: 0}
+    - light_Color_1: {r: 1, g: 1, b: 1, a: 0}
+    - light_Color_2: {r: 1, g: 1, b: 1, a: 0}
+    - light_Color_3: {r: 1, g: 1, b: 1, a: 0}
+    - light_Color_4: {r: 1, g: 1, b: 1, a: 0}
+    - light_Color_5: {r: 1, g: 1, b: 1, a: 0}
+    - light_Dir: {r: 0, g: 0, b: 0, a: 0}
+    - light_Dir_1: {r: 0, g: 0, b: 0, a: 0}
+    - light_Dir_2: {r: 0, g: 0, b: 0, a: 0}
+    - light_Dir_3: {r: 0, g: 0, b: 0, a: 0}
+    - light_Dir_4: {r: 0, g: 0, b: 0, a: 0}
+    - light_Dir_5: {r: 0, g: 0, b: 0, a: 0}
+  m_BuildTextureStacks: []
+  m_AllowLocking: 1
+--- !u!21 &1443794989
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Instance of M_gachatest
+  m_Shader: {fileID: -6465566751694194690, guid: f65702583acdce143b2e443af2e9ffba, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses:
+  - MOTIONVECTORS
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _FlatNormal:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NormalMap:
+        m_Texture: {fileID: 2800000, guid: 91401bb2263881746bc81eeb0e6c6521, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_2846928ad0ea4ea2a665a43b1961f3c4_Texture_1_Texture2D:
+        m_Texture: {fileID: 2800000, guid: 03916d8acea71064a9b546536003c029, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Texture2D:
+        m_Texture: {fileID: 2800000, guid: cc9436e4ca598524cbc83edad93a9335, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Texture2D_1:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Texture2D_2:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _shading_gadrient:
+        m_Texture: {fileID: 2800000, guid: eb606d2fe7fa3e54c8cfc771423e5cbb, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_Lightmaps:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_LightmapsInd:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_ShadowMasks:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _QueueControl: 0
+    - _QueueOffset: 0
+    - _UseNormal: 1
+    - _fresnel_angle: 1
+    - _fresnel_size: 50
+    - _gloss_size: 200
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 0}
+    - _L10_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L10_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L11_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L11_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L12_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L12_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L13_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L13_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L14_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L14_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L15_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L15_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L16_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L16_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L17_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L17_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L18_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L18_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L19_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L19_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L1_color: {r: 1.6735123, g: 1.1529106, b: 0.74992293, a: 0.18941848}
+    - _L1_dir: {r: -0.95881796, g: 0.10118134, b: 0.2653873, a: 0}
+    - _L20_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L20_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L21_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L21_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L22_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L22_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L23_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L23_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L24_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L24_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L25_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L25_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L26_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L26_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L27_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L27_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L28_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L28_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L29_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L29_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L2_color: {r: 0.18490566, g: 0.11576451, b: 0.035760056, a: 0.99}
+    - _L2_dir: {r: -0, g: -0, b: 1, a: 0}
+    - _L30_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L30_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L3_color: {r: 0.16050448, g: 0.11057424, b: 0.07192417, a: 0.16050448}
+    - _L3_dir: {r: -0.9129229, g: 0.26249495, b: 0.31251904, a: 0}
+    - _L4_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L4_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L5_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L5_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L6_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L6_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L7_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L7_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L8_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L8_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L9_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L9_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _fresnel_intensity: {r: 1, g: 1, b: 1, a: 0}
+    - _gloss_intensity: {r: 1, g: 1, b: 1, a: 0}
+    - _light_2_color: {r: 1, g: 1, b: 1, a: 0}
+    - _light_3_color: {r: 1, g: 1, b: 1, a: 0}
+    - _light_3_dir: {r: 0, g: 0, b: 0, a: 0}
+    - _light_4_color: {r: 1, g: 1, b: 1, a: 0}
+    - _light_4_dir: {r: 0, g: 0, b: 0, a: 0}
+    - _light_5_color: {r: 1, g: 1, b: 1, a: 0}
+    - _light_5_dir: {r: 0, g: 0, b: 0, a: 0}
+    - _light_6_color: {r: 1, g: 1, b: 1, a: 0}
+    - _light_6_dir: {r: 0, g: 0, b: 0, a: 0}
+    - light_Color: {r: 1, g: 1, b: 1, a: 0}
+    - light_Color_1: {r: 1, g: 1, b: 1, a: 0}
+    - light_Color_2: {r: 1, g: 1, b: 1, a: 0}
+    - light_Color_3: {r: 1, g: 1, b: 1, a: 0}
+    - light_Color_4: {r: 1, g: 1, b: 1, a: 0}
+    - light_Color_5: {r: 1, g: 1, b: 1, a: 0}
+    - light_Dir: {r: 0, g: 0, b: 0, a: 0}
+    - light_Dir_1: {r: 0, g: 0, b: 0, a: 0}
+    - light_Dir_2: {r: 0, g: 0, b: 0, a: 0}
+    - light_Dir_3: {r: 0, g: 0, b: 0, a: 0}
+    - light_Dir_4: {r: 0, g: 0, b: 0, a: 0}
+    - light_Dir_5: {r: 0, g: 0, b: 0, a: 0}
+  m_BuildTextureStacks: []
+  m_AllowLocking: 1
+--- !u!21 &1532071049
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Instance of M_gachatest
+  m_Shader: {fileID: -6465566751694194690, guid: f65702583acdce143b2e443af2e9ffba, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses:
+  - MOTIONVECTORS
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _FlatNormal:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NormalMap:
+        m_Texture: {fileID: 2800000, guid: 91401bb2263881746bc81eeb0e6c6521, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_2846928ad0ea4ea2a665a43b1961f3c4_Texture_1_Texture2D:
+        m_Texture: {fileID: 2800000, guid: 03916d8acea71064a9b546536003c029, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Texture2D:
+        m_Texture: {fileID: 2800000, guid: cc9436e4ca598524cbc83edad93a9335, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Texture2D_1:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Texture2D_2:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _shading_gadrient:
+        m_Texture: {fileID: 2800000, guid: eb606d2fe7fa3e54c8cfc771423e5cbb, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_Lightmaps:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_LightmapsInd:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_ShadowMasks:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _QueueControl: 0
+    - _QueueOffset: 0
+    - _UseNormal: 1
+    - _fresnel_angle: 1
+    - _fresnel_size: 50
+    - _gloss_size: 200
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 0}
+    - _L10_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L10_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L11_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L11_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L12_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L12_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L13_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L13_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L14_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L14_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L15_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L15_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L16_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L16_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L17_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L17_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L18_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L18_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L19_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L19_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L1_color: {r: 1.4243269, g: 0.9812428, b: 0.6382597, a: 0.16121414}
+    - _L1_dir: {r: -0.8695629, g: 0.20136353, b: -0.4509026, a: 0}
+    - _L20_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L20_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L21_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L21_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L22_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L22_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L23_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L23_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L24_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L24_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L25_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L25_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L26_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L26_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L27_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L27_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L28_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L28_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L29_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L29_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L2_color: {r: 0.18490566, g: 0.11576451, b: 0.035760056, a: 0.99}
+    - _L2_dir: {r: -0, g: -0, b: 1, a: 0}
+    - _L30_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L30_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L3_color: {r: 0.1428716, g: 0.09842664, b: 0.06402265, a: 0.14287159}
+    - _L3_dir: {r: -0.85241556, g: 0.35253626, b: -0.38614222, a: 0}
+    - _L4_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L4_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L5_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L5_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L6_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L6_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L7_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L7_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L8_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L8_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L9_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L9_dir: {r: 0, g: 1, b: 0, a: 0}
     - _fresnel_intensity: {r: 1, g: 1, b: 1, a: 0}
     - _gloss_intensity: {r: 1, g: 1, b: 1, a: 0}
     - _light_2_color: {r: 1, g: 1, b: 1, a: 0}
@@ -950,67 +3639,720 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
---- !u!1001 &1658711834
-PrefabInstance:
+--- !u!1 &1582817291 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 179576942401690905, guid: f305da61cea3bb243b42cfd3a49f22c7, type: 3}
+  m_PrefabInstance: {fileID: 635292038}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1582817295
+MonoBehaviour:
   m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1582817291}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a134d33e4b83384cb8a08f70560bcf5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  material: {fileID: 2100000, guid: d65d670c8d6cdff4aabbb8ad78556c8a, type: 2}
+  instanceMaterial: 1
+  meshCenter: {x: 0, y: 0, z: 0}
+  maxLights: 6
+  raycast: 1
+  raycastMask:
+    serializedVersion: 2
+    m_Bits: 0
+  raycastFadeSpeed: 10
+--- !u!1 &1628052113 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7995157703346857572, guid: f305da61cea3bb243b42cfd3a49f22c7, type: 3}
+  m_PrefabInstance: {fileID: 635292038}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1628052117
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1628052113}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a134d33e4b83384cb8a08f70560bcf5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  material: {fileID: 2100000, guid: d65d670c8d6cdff4aabbb8ad78556c8a, type: 2}
+  instanceMaterial: 1
+  meshCenter: {x: 0, y: 0, z: 0}
+  maxLights: 6
+  raycast: 1
+  raycastMask:
+    serializedVersion: 2
+    m_Bits: 0
+  raycastFadeSpeed: 10
+--- !u!1 &1663356349 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5360498743434337638, guid: f305da61cea3bb243b42cfd3a49f22c7, type: 3}
+  m_PrefabInstance: {fileID: 635292038}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1663356353
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1663356349}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a134d33e4b83384cb8a08f70560bcf5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  material: {fileID: 2100000, guid: d65d670c8d6cdff4aabbb8ad78556c8a, type: 2}
+  instanceMaterial: 1
+  meshCenter: {x: 0, y: 0, z: 0}
+  maxLights: 6
+  raycast: 1
+  raycastMask:
+    serializedVersion: 2
+    m_Bits: 0
+  raycastFadeSpeed: 10
+--- !u!21 &1701674079
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Instance of M_gachatest
+  m_Shader: {fileID: -6465566751694194690, guid: f65702583acdce143b2e443af2e9ffba, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses:
+  - MOTIONVECTORS
+  m_LockedProperties: 
+  m_SavedProperties:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: -8679921383154817045, guid: 64b3c22975bcd7442a7615720356899e, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -138.75
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 64b3c22975bcd7442a7615720356899e, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 3.49
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 64b3c22975bcd7442a7615720356899e, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.48
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 64b3c22975bcd7442a7615720356899e, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 64b3c22975bcd7442a7615720356899e, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 64b3c22975bcd7442a7615720356899e, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 64b3c22975bcd7442a7615720356899e, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 64b3c22975bcd7442a7615720356899e, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 64b3c22975bcd7442a7615720356899e, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 64b3c22975bcd7442a7615720356899e, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 64b3c22975bcd7442a7615720356899e, type: 3}
-      propertyPath: m_Name
-      value: SM_HubRoomBlocking
-      objectReference: {fileID: 0}
-    - target: {fileID: 4246421639261100833, guid: 64b3c22975bcd7442a7615720356899e, type: 3}
-      propertyPath: m_RenderingLayerMask
-      value: 17
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 64b3c22975bcd7442a7615720356899e, type: 3}
+    m_TexEnvs:
+    - _FlatNormal:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NormalMap:
+        m_Texture: {fileID: 2800000, guid: 91401bb2263881746bc81eeb0e6c6521, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_2846928ad0ea4ea2a665a43b1961f3c4_Texture_1_Texture2D:
+        m_Texture: {fileID: 2800000, guid: 03916d8acea71064a9b546536003c029, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Texture2D:
+        m_Texture: {fileID: 2800000, guid: cc9436e4ca598524cbc83edad93a9335, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Texture2D_1:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Texture2D_2:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _shading_gadrient:
+        m_Texture: {fileID: 2800000, guid: eb606d2fe7fa3e54c8cfc771423e5cbb, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_Lightmaps:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_LightmapsInd:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_ShadowMasks:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _QueueControl: 0
+    - _QueueOffset: 0
+    - _UseNormal: 1
+    - _fresnel_angle: 1
+    - _fresnel_size: 50
+    - _gloss_size: 200
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 0}
+    - _L10_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L10_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L11_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L11_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L12_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L12_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L13_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L13_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L14_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L14_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L15_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L15_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L16_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L16_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L17_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L17_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L18_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L18_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L19_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L19_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L1_color: {r: 1.885628, g: 1.2990408, b: 0.8449748, a: 0.21342705}
+    - _L1_dir: {r: -0.2791529, g: 0.7646827, b: 0.58080465, a: 0}
+    - _L20_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L20_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L21_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L21_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L22_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L22_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L23_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L23_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L24_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L24_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L25_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L25_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L26_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L26_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L27_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L27_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L28_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L28_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L29_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L29_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L2_color: {r: 0.18490566, g: 0.11576451, b: 0.035760056, a: 0.99}
+    - _L2_dir: {r: -0, g: -0, b: 1, a: 0}
+    - _L30_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L30_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L3_color: {r: 0.1483165, g: 0.10217773, b: 0.066462584, a: 0.1483165}
+    - _L3_dir: {r: -0.23540679, g: 0.8034257, b: 0.5468918, a: 0}
+    - _L4_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L4_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L5_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L5_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L6_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L6_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L7_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L7_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L8_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L8_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L9_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L9_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _fresnel_intensity: {r: 1, g: 1, b: 1, a: 0}
+    - _gloss_intensity: {r: 1, g: 1, b: 1, a: 0}
+    - _light_2_color: {r: 1, g: 1, b: 1, a: 0}
+    - _light_3_color: {r: 1, g: 1, b: 1, a: 0}
+    - _light_3_dir: {r: 0, g: 0, b: 0, a: 0}
+    - _light_4_color: {r: 1, g: 1, b: 1, a: 0}
+    - _light_4_dir: {r: 0, g: 0, b: 0, a: 0}
+    - _light_5_color: {r: 1, g: 1, b: 1, a: 0}
+    - _light_5_dir: {r: 0, g: 0, b: 0, a: 0}
+    - _light_6_color: {r: 1, g: 1, b: 1, a: 0}
+    - _light_6_dir: {r: 0, g: 0, b: 0, a: 0}
+    - light_Color: {r: 1, g: 1, b: 1, a: 0}
+    - light_Color_1: {r: 1, g: 1, b: 1, a: 0}
+    - light_Color_2: {r: 1, g: 1, b: 1, a: 0}
+    - light_Color_3: {r: 1, g: 1, b: 1, a: 0}
+    - light_Color_4: {r: 1, g: 1, b: 1, a: 0}
+    - light_Color_5: {r: 1, g: 1, b: 1, a: 0}
+    - light_Dir: {r: 0, g: 0, b: 0, a: 0}
+    - light_Dir_1: {r: 0, g: 0, b: 0, a: 0}
+    - light_Dir_2: {r: 0, g: 0, b: 0, a: 0}
+    - light_Dir_3: {r: 0, g: 0, b: 0, a: 0}
+    - light_Dir_4: {r: 0, g: 0, b: 0, a: 0}
+    - light_Dir_5: {r: 0, g: 0, b: 0, a: 0}
+  m_BuildTextureStacks: []
+  m_AllowLocking: 1
+--- !u!21 &1981249762
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Instance of M_gachatest
+  m_Shader: {fileID: -6465566751694194690, guid: f65702583acdce143b2e443af2e9ffba, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses:
+  - MOTIONVECTORS
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _FlatNormal:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NormalMap:
+        m_Texture: {fileID: 2800000, guid: 91401bb2263881746bc81eeb0e6c6521, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_2846928ad0ea4ea2a665a43b1961f3c4_Texture_1_Texture2D:
+        m_Texture: {fileID: 2800000, guid: 03916d8acea71064a9b546536003c029, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Texture2D:
+        m_Texture: {fileID: 2800000, guid: cc9436e4ca598524cbc83edad93a9335, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Texture2D_1:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Texture2D_2:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _shading_gadrient:
+        m_Texture: {fileID: 2800000, guid: eb606d2fe7fa3e54c8cfc771423e5cbb, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_Lightmaps:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_LightmapsInd:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_ShadowMasks:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _QueueControl: 0
+    - _QueueOffset: 0
+    - _UseNormal: 1
+    - _fresnel_angle: 1
+    - _fresnel_size: 50
+    - _gloss_size: 200
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 0}
+    - _L10_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L10_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L11_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L11_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L12_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L12_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L13_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L13_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L14_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L14_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L15_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L15_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L16_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L16_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L17_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L17_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L18_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L18_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L19_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L19_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L1_color: {r: 1.9821633, g: 1.3655455, b: 0.8882335, a: 0.2243535}
+    - _L1_dir: {r: -0.13063826, g: 0.7895153, b: 0.59966594, a: 0}
+    - _L20_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L20_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L21_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L21_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L22_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L22_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L23_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L23_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L24_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L24_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L25_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L25_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L26_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L26_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L27_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L27_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L28_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L28_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L29_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L29_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L2_color: {r: 0.18490566, g: 0.11576451, b: 0.035760056, a: 0.99}
+    - _L2_dir: {r: -0, g: -0, b: 1, a: 0}
+    - _L30_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L30_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L3_color: {r: 0.15409522, g: 0.106158786, b: 0.0690521, a: 0.15409522}
+    - _L3_dir: {r: -0.10913049, g: 0.8217201, b: 0.5593448, a: 0}
+    - _L4_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L4_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L5_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L5_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L6_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L6_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L7_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L7_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L8_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L8_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L9_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L9_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _fresnel_intensity: {r: 1, g: 1, b: 1, a: 0}
+    - _gloss_intensity: {r: 1, g: 1, b: 1, a: 0}
+    - _light_2_color: {r: 1, g: 1, b: 1, a: 0}
+    - _light_3_color: {r: 1, g: 1, b: 1, a: 0}
+    - _light_3_dir: {r: 0, g: 0, b: 0, a: 0}
+    - _light_4_color: {r: 1, g: 1, b: 1, a: 0}
+    - _light_4_dir: {r: 0, g: 0, b: 0, a: 0}
+    - _light_5_color: {r: 1, g: 1, b: 1, a: 0}
+    - _light_5_dir: {r: 0, g: 0, b: 0, a: 0}
+    - _light_6_color: {r: 1, g: 1, b: 1, a: 0}
+    - _light_6_dir: {r: 0, g: 0, b: 0, a: 0}
+    - light_Color: {r: 1, g: 1, b: 1, a: 0}
+    - light_Color_1: {r: 1, g: 1, b: 1, a: 0}
+    - light_Color_2: {r: 1, g: 1, b: 1, a: 0}
+    - light_Color_3: {r: 1, g: 1, b: 1, a: 0}
+    - light_Color_4: {r: 1, g: 1, b: 1, a: 0}
+    - light_Color_5: {r: 1, g: 1, b: 1, a: 0}
+    - light_Dir: {r: 0, g: 0, b: 0, a: 0}
+    - light_Dir_1: {r: 0, g: 0, b: 0, a: 0}
+    - light_Dir_2: {r: 0, g: 0, b: 0, a: 0}
+    - light_Dir_3: {r: 0, g: 0, b: 0, a: 0}
+    - light_Dir_4: {r: 0, g: 0, b: 0, a: 0}
+    - light_Dir_5: {r: 0, g: 0, b: 0, a: 0}
+  m_BuildTextureStacks: []
+  m_AllowLocking: 1
+--- !u!21 &2014739963
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Instance of M_gachatest
+  m_Shader: {fileID: -6465566751694194690, guid: f65702583acdce143b2e443af2e9ffba, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses:
+  - MOTIONVECTORS
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _FlatNormal:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NormalMap:
+        m_Texture: {fileID: 2800000, guid: 91401bb2263881746bc81eeb0e6c6521, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_2846928ad0ea4ea2a665a43b1961f3c4_Texture_1_Texture2D:
+        m_Texture: {fileID: 2800000, guid: 03916d8acea71064a9b546536003c029, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Texture2D:
+        m_Texture: {fileID: 2800000, guid: cc9436e4ca598524cbc83edad93a9335, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Texture2D_1:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Texture2D_2:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _shading_gadrient:
+        m_Texture: {fileID: 2800000, guid: eb606d2fe7fa3e54c8cfc771423e5cbb, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_Lightmaps:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_LightmapsInd:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_ShadowMasks:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _QueueControl: 0
+    - _QueueOffset: 0
+    - _UseNormal: 1
+    - _fresnel_angle: 1
+    - _fresnel_size: 50
+    - _gloss_size: 200
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 0}
+    - _L10_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L10_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L11_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L11_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L12_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L12_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L13_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L13_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L14_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L14_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L15_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L15_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L16_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L16_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L17_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L17_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L18_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L18_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L19_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L19_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L1_color: {r: 1.5576545, g: 1.0730944, b: 0.6980056, a: 0.17630498}
+    - _L1_dir: {r: 0.52214307, g: 0.6791647, b: 0.5158506, a: 0}
+    - _L20_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L20_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L21_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L21_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L22_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L22_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L23_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L23_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L24_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L24_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L25_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L25_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L26_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L26_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L27_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L27_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L28_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L28_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L29_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L29_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L2_color: {r: 0.18490566, g: 0.11576451, b: 0.035760056, a: 0.99}
+    - _L2_dir: {r: -0, g: -0, b: 1, a: 0}
+    - _L30_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L30_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L3_color: {r: 0.12762487, g: 0.08792292, b: 0.05719039, a: 0.12762487}
+    - _L3_dir: {r: 0.45439428, g: 0.73638695, b: 0.50125855, a: 0}
+    - _L4_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L4_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L5_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L5_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L6_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L6_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L7_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L7_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L8_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L8_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L9_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L9_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _fresnel_intensity: {r: 1, g: 1, b: 1, a: 0}
+    - _gloss_intensity: {r: 1, g: 1, b: 1, a: 0}
+    - _light_2_color: {r: 1, g: 1, b: 1, a: 0}
+    - _light_3_color: {r: 1, g: 1, b: 1, a: 0}
+    - _light_3_dir: {r: 0, g: 0, b: 0, a: 0}
+    - _light_4_color: {r: 1, g: 1, b: 1, a: 0}
+    - _light_4_dir: {r: 0, g: 0, b: 0, a: 0}
+    - _light_5_color: {r: 1, g: 1, b: 1, a: 0}
+    - _light_5_dir: {r: 0, g: 0, b: 0, a: 0}
+    - _light_6_color: {r: 1, g: 1, b: 1, a: 0}
+    - _light_6_dir: {r: 0, g: 0, b: 0, a: 0}
+    - light_Color: {r: 1, g: 1, b: 1, a: 0}
+    - light_Color_1: {r: 1, g: 1, b: 1, a: 0}
+    - light_Color_2: {r: 1, g: 1, b: 1, a: 0}
+    - light_Color_3: {r: 1, g: 1, b: 1, a: 0}
+    - light_Color_4: {r: 1, g: 1, b: 1, a: 0}
+    - light_Color_5: {r: 1, g: 1, b: 1, a: 0}
+    - light_Dir: {r: 0, g: 0, b: 0, a: 0}
+    - light_Dir_1: {r: 0, g: 0, b: 0, a: 0}
+    - light_Dir_2: {r: 0, g: 0, b: 0, a: 0}
+    - light_Dir_3: {r: 0, g: 0, b: 0, a: 0}
+    - light_Dir_4: {r: 0, g: 0, b: 0, a: 0}
+    - light_Dir_5: {r: 0, g: 0, b: 0, a: 0}
+  m_BuildTextureStacks: []
+  m_AllowLocking: 1
+--- !u!21 &2115699606
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Instance of M_gachatest
+  m_Shader: {fileID: -6465566751694194690, guid: f65702583acdce143b2e443af2e9ffba, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses:
+  - MOTIONVECTORS
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _FlatNormal:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NormalMap:
+        m_Texture: {fileID: 2800000, guid: 91401bb2263881746bc81eeb0e6c6521, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_2846928ad0ea4ea2a665a43b1961f3c4_Texture_1_Texture2D:
+        m_Texture: {fileID: 2800000, guid: 03916d8acea71064a9b546536003c029, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Texture2D:
+        m_Texture: {fileID: 2800000, guid: cc9436e4ca598524cbc83edad93a9335, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Texture2D_1:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Texture2D_2:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _shading_gadrient:
+        m_Texture: {fileID: 2800000, guid: eb606d2fe7fa3e54c8cfc771423e5cbb, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_Lightmaps:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_LightmapsInd:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_ShadowMasks:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _QueueControl: 0
+    - _QueueOffset: 0
+    - _UseNormal: 1
+    - _fresnel_angle: 1
+    - _fresnel_size: 50
+    - _gloss_size: 200
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 0}
+    - _L10_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L10_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L11_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L11_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L12_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L12_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L13_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L13_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L14_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L14_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L15_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L15_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L16_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L16_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L17_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L17_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L18_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L18_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L19_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L19_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L1_color: {r: 1.9790128, g: 1.3633752, b: 0.88682187, a: 0.22399694}
+    - _L1_dir: {r: 0.13812858, g: 0.7887064, b: 0.59905154, a: 0}
+    - _L20_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L20_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L21_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L21_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L22_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L22_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L23_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L23_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L24_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L24_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L25_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L25_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L26_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L26_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L27_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L27_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L28_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L28_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L29_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L29_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L2_color: {r: 0.18490566, g: 0.11576451, b: 0.035760056, a: 0.99}
+    - _L2_dir: {r: -0, g: -0, b: 1, a: 0}
+    - _L30_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L30_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L3_color: {r: 0.15390874, g: 0.10603032, b: 0.06896854, a: 0.15390874}
+    - _L3_dir: {r: 0.115423344, g: 0.8211323, b: 0.5589447, a: 0}
+    - _L4_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L4_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L5_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L5_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L6_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L6_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L7_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L7_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L8_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L8_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L9_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L9_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _fresnel_intensity: {r: 1, g: 1, b: 1, a: 0}
+    - _gloss_intensity: {r: 1, g: 1, b: 1, a: 0}
+    - _light_2_color: {r: 1, g: 1, b: 1, a: 0}
+    - _light_3_color: {r: 1, g: 1, b: 1, a: 0}
+    - _light_3_dir: {r: 0, g: 0, b: 0, a: 0}
+    - _light_4_color: {r: 1, g: 1, b: 1, a: 0}
+    - _light_4_dir: {r: 0, g: 0, b: 0, a: 0}
+    - _light_5_color: {r: 1, g: 1, b: 1, a: 0}
+    - _light_5_dir: {r: 0, g: 0, b: 0, a: 0}
+    - _light_6_color: {r: 1, g: 1, b: 1, a: 0}
+    - _light_6_dir: {r: 0, g: 0, b: 0, a: 0}
+    - light_Color: {r: 1, g: 1, b: 1, a: 0}
+    - light_Color_1: {r: 1, g: 1, b: 1, a: 0}
+    - light_Color_2: {r: 1, g: 1, b: 1, a: 0}
+    - light_Color_3: {r: 1, g: 1, b: 1, a: 0}
+    - light_Color_4: {r: 1, g: 1, b: 1, a: 0}
+    - light_Color_5: {r: 1, g: 1, b: 1, a: 0}
+    - light_Dir: {r: 0, g: 0, b: 0, a: 0}
+    - light_Dir_1: {r: 0, g: 0, b: 0, a: 0}
+    - light_Dir_2: {r: 0, g: 0, b: 0, a: 0}
+    - light_Dir_3: {r: 0, g: 0, b: 0, a: 0}
+    - light_Dir_4: {r: 0, g: 0, b: 0, a: 0}
+    - light_Dir_5: {r: 0, g: 0, b: 0, a: 0}
+  m_BuildTextureStacks: []
+  m_AllowLocking: 1
 --- !u!1001 &2649240271264835975
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1100,4 +4442,4 @@ SceneRoots:
   - {fileID: 13875956}
   - {fileID: 854579948}
   - {fileID: 1553104266}
-  - {fileID: 1658711834}
+  - {fileID: 635292038}

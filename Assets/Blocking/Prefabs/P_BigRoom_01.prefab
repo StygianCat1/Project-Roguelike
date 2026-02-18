@@ -3055,13 +3055,21 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 1860381475920779316, guid: ea3ca13a875bfd248bab024cfdf5d4a8, type: 3}
+      propertyPath: meshCenter.y
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1991928658412993981, guid: ea3ca13a875bfd248bab024cfdf5d4a8, type: 3}
       propertyPath: meshCenter.x
-      value: -3.5
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1991928658412993981, guid: ea3ca13a875bfd248bab024cfdf5d4a8, type: 3}
       propertyPath: meshCenter.y
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1991928658412993981, guid: ea3ca13a875bfd248bab024cfdf5d4a8, type: 3}
+      propertyPath: meshCenter.z
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2221087752856804832, guid: ea3ca13a875bfd248bab024cfdf5d4a8, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
@@ -3082,6 +3090,10 @@ PrefabInstance:
     - target: {fileID: 4064182572330116169, guid: ea3ca13a875bfd248bab024cfdf5d4a8, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4982268780509339601, guid: ea3ca13a875bfd248bab024cfdf5d4a8, type: 3}
+      propertyPath: meshCenter.y
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5064870754703766303, guid: ea3ca13a875bfd248bab024cfdf5d4a8, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
@@ -3114,6 +3126,14 @@ PrefabInstance:
     - target: {fileID: 7140761699753300391, guid: ea3ca13a875bfd248bab024cfdf5d4a8, type: 3}
       propertyPath: meshCenter.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7231356030978744269, guid: ea3ca13a875bfd248bab024cfdf5d4a8, type: 3}
+      propertyPath: meshCenter.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7772907857241091889, guid: ea3ca13a875bfd248bab024cfdf5d4a8, type: 3}
+      propertyPath: meshCenter.y
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8124287555082911877, guid: ea3ca13a875bfd248bab024cfdf5d4a8, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
