@@ -30,25 +30,21 @@ public class S_GamblingMachineInteraction : MonoBehaviour
         int randomDrop2 = Random.Range(0, 100);
         if (_player.GetComponent<S_Resources>()._resourcesInGame >= _moneyToPlay)
         {
-            if (randomDrop < 50)
+            if (randomDrop <= 60 - _player.GetComponent<S_Rogue_Bonus>().luckMultiplier * 10)
             {
                 gainCanvasUi = "You got nothing";
             }
             else
             {
-                if (randomDrop2 <= 40)
+                if (randomDrop2 <= 50)
                 {
-                    _player.GetComponent<S_HP_Component>().Heal(_healValue);
+                    _player.GetComponent<S_HP_Component>().Heal(_healValue * _player.GetComponent<S_Rogue_Bonus>().luckMultiplier);
                     gainCanvasUi = "You got some heals";
-                }
-                else if (randomDrop2 <= 80)
-                {
-                    _player.GetComponent<S_Rogue_Combat>().gunAmmunitions += _bulletGained;
-                    gainCanvasUi = "You got some bullets";
                 }
                 else
                 {
-                    gainCanvasUi = "You got a perk";
+                    _player.GetComponent<S_Rogue_Combat>().gunAmmunitions += _bulletGained * _player.GetComponent<S_Rogue_Bonus>().luckMultiplier;
+                    gainCanvasUi = "You got some bullets";
                 }
             }
             gainCanvas = Instantiate(_gainCanvasUi);

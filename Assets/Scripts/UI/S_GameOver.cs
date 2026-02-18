@@ -11,6 +11,10 @@ public class S_GameOver : MonoBehaviour
     {
         player = GameObject.FindGameObjectWithTag("MainCharacter");
         S_GameManager.outGameMoneySave = player.GetComponent<S_Resources>()._resourcesOutGame;
+        S_GameManager.luckyGamblerUpgradeLevelSave = 0;
+        S_GameManager.avidityUpgradeLevelSave = 0;
+        S_GameManager.angryKaoriUpgradeLevelSave = 0;
+        S_GameManager.luckyShotCooldownSave = 0;
     }
 
     public void GoBackToMainMenu()
