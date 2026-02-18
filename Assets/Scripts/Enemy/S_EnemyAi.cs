@@ -141,13 +141,17 @@ public class S_EnemyAi : MonoBehaviour
         _alreadyAttacked = false;
     }
 
+    public void Knockback(Vector3 knockbackDirection)
+    {
+        _rb.AddForce(knockbackDirection * 50f, ForceMode.Impulse);
+    }
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.GetComponent<S_EnemyAi>() != null || other.tag == "MainCharacter")
         {
             return;
         }
-        Debug.Log(other.tag);
         if (other.tag == "Obstacles")
         {
             Debug.Log("canJump");

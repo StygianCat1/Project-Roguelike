@@ -14,6 +14,8 @@ public class S_CharacterCollisionHandler : MonoBehaviour
     private S_Rogue_Inputs _inputsManager;
     private S_Rogue_Combat _rogueCombat;
     
+    [SerializeField] GameObject _interactPromptRef;
+    
     private void Start()
     {
         _inputsManager = GetComponentInParent<S_Rogue_Inputs>();
@@ -22,6 +24,9 @@ public class S_CharacterCollisionHandler : MonoBehaviour
 
     private void Update()
     {
+        if (teleporterRef != null || roomTeleporterRef != null || interactibleElementRef != null || merchantInteractionRef != null ||teleportToGameSceneRef != null){_interactPromptRef.SetActive(true); }
+        else {_interactPromptRef.SetActive(false);}
+        
         if (_inputsManager.interact)
         {
             if (teleporterRef != null && teleporterRef.tpLocation != null)
@@ -51,31 +56,21 @@ public class S_CharacterCollisionHandler : MonoBehaviour
             {
                 merchantInteractionRef.ShowMerchantUi();
                 _inputsManager.interact = false;
+                return;
             }
 
             if (interactibleElementRef != null)
             {
                 interactibleElementRef.LaunchInteraction();
                 _inputsManager.interact = false;
+                return;
             }
 
             if (teleportToGameSceneRef != null && teleportToGameSceneRef.levelToLoadName != null)
             {
                 SceneManager.LoadScene(teleportToGameSceneRef.levelToLoadName);
                 _inputsManager.interact = false;
-                return;
             }
         }
-    }
-    
-
-    private void OnCollisionEnter(Collision collision)
-    {
-
-    }
-
-    private void OnTriggerEnter(Collider other)
-    {
-
     }
 }

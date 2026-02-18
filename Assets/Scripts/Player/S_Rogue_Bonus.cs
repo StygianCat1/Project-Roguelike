@@ -2,45 +2,138 @@ using UnityEngine;
 
 public class S_Rogue_Bonus : MonoBehaviour
 {
-    [Range(0, 3)] public int perversionUpgradeLevel;
-    [Range(0, 3)] public int luckyGamblerUpgradeLevel;
-    [Range(0, 3)] public int avidityUpgradeLevel;
-    [Range(0, 3)] public int angryKaoriUpgradeLevel;
-    public int baseKaoriCooldown;
+    [Range(0, 3)] public int luckyGamblerUpgradeLevel = 0;
+    [Range(0, 3)] public int avidityUpgradeLevel = 0;
+    [Range(0, 3)] public int angryKaoriUpgradeLevel = 0;
+    [HideInInspector] public float baseKaoriCooldown;
+    private float newKaoriCooldown;
     
-    [Range(0, 3)] public int luckyShotCooldown;
-    public int luckyshotRate = 0;
+    [Range(0, 3)] public int luckyShotLevel = 0;
+    [HideInInspector] public int luckyshotRate = 0;
     
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        perversionUpgradeLevel = S_GameManager.perversionUpgradeLevelSave;
-        luckyGamblerUpgradeLevel =S_GameManager.luckyGamblerUpgradeLevelSave;
+        luckyGamblerUpgradeLevel = S_GameManager.luckyGamblerUpgradeLevelSave;
         avidityUpgradeLevel = S_GameManager.avidityUpgradeLevelSave;
         angryKaoriUpgradeLevel = S_GameManager.angryKaoriUpgradeLevelSave;
-        luckyShotCooldown = S_GameManager.luckyShotCooldownSave;
-        
-        //VerifyAllBonuses();
+        luckyShotLevel = S_GameManager.luckyShotCooldownSave;
+
+
+        baseKaoriCooldown = GetComponent<S_Rogue_Combat>()._capacityCooldown;
+        VerifyAllBonuses();
     }
     
     public void VerifyAllBonuses()
     {
+        LuckyGamblerLevel(luckyGamblerUpgradeLevel);
+        AvidityLevel(avidityUpgradeLevel);
+        AngryKaoriLevel(angryKaoriUpgradeLevel);
+        LuckyShotLevel(luckyShotLevel);
         
     }
 
-    private void PerversionLevel()
+    private void LuckyGamblerLevel(int lvl)
     {
-        
+        if (lvl == 0)
+        {
+            return;
+        }
+        if (lvl == 1)
+        {
+            return;
+        }
+        if (lvl == 2)
+        {
+            return;
+        }
+        if (lvl == 3)
+        {
+            
+        }
+    }
+    
+    private void AvidityLevel(int lvl)
+    {
+        if (lvl == 0)
+        {
+            return;
+        }
+        if (lvl == 1)
+        {
+            return;
+        }
+        if (lvl == 2)
+        {
+            return;
+        }
+        if (lvl == 3)
+        {
+        }
+    }
+    
+    private void AngryKaoriLevel(int lvl)
+    {
+        if (lvl == 0)
+        {
+            return;
+        }
+        if (lvl == 1)
+        {
+            newKaoriCooldown = baseKaoriCooldown - baseKaoriCooldown / (15 / 100);
+            GetComponent<S_Rogue_Combat>()._capacityCooldown = newKaoriCooldown;
+            return;
+        }
+        if (lvl == 2)
+        {
+            newKaoriCooldown = baseKaoriCooldown - baseKaoriCooldown / (30 / 100);
+            GetComponent<S_Rogue_Combat>()._capacityCooldown = newKaoriCooldown;
+            return;
+        }
+        if (lvl == 3)
+        {
+            newKaoriCooldown = baseKaoriCooldown - baseKaoriCooldown / (50 / 100);
+            GetComponent<S_Rogue_Combat>()._capacityCooldown = newKaoriCooldown;
+        }
+    }
+    
+    private void LuckyShotLevel(int lvl)
+    {
+        if (lvl == 0)
+        {
+            return;
+        }
+        if (lvl == 1)
+        {
+            luckyshotRate = 15;
+            return;
+        }
+        if (lvl == 2)
+        {
+            luckyshotRate = 33;
+            return;
+        }
+        if (lvl == 3)
+        {
+            luckyshotRate = 50;
+        }
     }
     
     public void SaveAllBonuses()
     {
-        S_GameManager.perversionUpgradeLevelSave = perversionUpgradeLevel;
         S_GameManager.luckyGamblerUpgradeLevelSave = luckyGamblerUpgradeLevel;
         S_GameManager.avidityUpgradeLevelSave = avidityUpgradeLevel;
         S_GameManager.angryKaoriUpgradeLevelSave = angryKaoriUpgradeLevel;
-        S_GameManager.luckyShotCooldownSave = luckyShotCooldown;
+        S_GameManager.luckyShotCooldownSave = luckyShotLevel;
         
+    }
+
+    public void CancelBonuses()
+    {
+        S_GameManager.luckyGamblerUpgradeLevelSave = 0;
+        S_GameManager.avidityUpgradeLevelSave = 0;
+        S_GameManager.angryKaoriUpgradeLevelSave = 0;
+        S_GameManager.luckyShotCooldownSave = 0;
     }
 }

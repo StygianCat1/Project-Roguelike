@@ -35,6 +35,7 @@ public class S_DropRateOnEnemy : MonoBehaviour
         int moneyDrop = Random.Range(minDropMoney, maxDropMoney);
         if (moneyDropRate <= Random.Range(0, 100))
         {
+            Debug.Log("money earned");
             _playerRef.GetComponent<S_Resources>().AddInGameMoney(moneyDrop);
         }
     }
