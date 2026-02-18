@@ -143,7 +143,7 @@ public class S_EnemyAi : MonoBehaviour
 
     public void Knockback(Vector3 knockbackDirection)
     {
-        _rb.AddForce(knockbackDirection * 50f, ForceMode.Impulse);
+        _rb.AddForce(knockbackDirection * 25f, ForceMode.Impulse);
     }
 
     private void OnTriggerEnter(Collider other)
