@@ -43,4 +43,13 @@ public class S_Rogue_Bonus : MonoBehaviour
         S_GameManager.luckyShotCooldownSave = luckyShotCooldown;
         
     }
+
+    public void CancelBonuses()
+    {
+        S_GameManager.perversionUpgradeLevelSave = 0;
+        S_GameManager.luckyGamblerUpgradeLevelSave = 0;
+        S_GameManager.avidityUpgradeLevelSave = 0;
+        S_GameManager.angryKaoriUpgradeLevelSave = 0;
+        S_GameManager.luckyShotCooldownSave = 0;
+    }
 }

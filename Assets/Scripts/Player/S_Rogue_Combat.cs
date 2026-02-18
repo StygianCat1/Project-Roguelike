@@ -32,7 +32,7 @@ public class S_Rogue_Combat : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     private void Start()
     {
-        _attackHandler._basiAttackDamage = _basicAttackDamage; 
+        _attackHandler._basicAttackDamage = _basicAttackDamage; 
         _inputsManager = GetComponent<S_Rogue_Inputs>();
         _movementComponent = GetComponent<S_Rogue_MovementComponent>();
         _rogueBonus = GetComponent<S_Rogue_Bonus>();

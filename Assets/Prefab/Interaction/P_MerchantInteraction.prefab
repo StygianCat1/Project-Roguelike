@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 9003081675444301593}
   - component: {fileID: 9029675822020798954}
   - component: {fileID: 6198152688672369081}
+  - component: {fileID: -9095785438956958257}
   m_Layer: 0
   m_Name: P_MerchantInteraction
   m_TagString: Untagged
@@ -108,3 +109,16 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &-9095785438956958257
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4971134125759138179}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 028695561152fc94eb5c6e89c100a78a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _merchantUi: {fileID: 9157625867476831013, guid: 2fb08f6f23a196641bb75892c9043dda, type: 3}
