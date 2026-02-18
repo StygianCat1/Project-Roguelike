@@ -104,7 +104,7 @@ public class S_Rogue_Combat : MonoBehaviour
             
         }
         isShooting = false;
-        if (_rogueBonus.luckyshotRate == 0)
+        if (_rogueBonus.luckyshotRate >= Random.Range(1,101))
         {
             Debug.Log("luckyshot");
             return;

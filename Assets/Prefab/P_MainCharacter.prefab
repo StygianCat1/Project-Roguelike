@@ -285,6 +285,7 @@ GameObject:
   - component: {fileID: 5177497896356174817}
   - component: {fileID: 2992108265016532830}
   - component: {fileID: 2879189063074329450}
+  - component: {fileID: 8877162546782440788}
   m_Layer: 6
   m_Name: P_MainCharacter
   m_TagString: MainCharacter
@@ -617,6 +618,26 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &8877162546782440788
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6302844824968189284}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8c13eda3d396d14a986f1da380973a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  luckyGamblerUpgradeLevel: 0
+  luckMultiplier: 1
+  avidityUpgradeLevel: 0
+  avidityMultiplier: 1
+  angryKaoriUpgradeLevel: 0
+  baseKaoriCooldown: 0
+  luckyShotLevel: 0
+  luckyshotRate: 0
 --- !u!1 &7260672419535194300
 GameObject:
   m_ObjectHideFlags: 0
