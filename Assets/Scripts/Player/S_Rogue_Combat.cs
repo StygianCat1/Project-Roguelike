@@ -116,9 +116,9 @@ public class S_Rogue_Combat : MonoBehaviour
     {
         if (_inputsManager.useCapacity && canUseCapacity)
         {
-            Debug.Log("capacityUsed");
             canUseCapacity = false;
-            Instantiate(_kaoriForCapacity, transform.position, _movementComponent._characterRef.transform.rotation);
+            GameObject kaoriGameObject = Instantiate(_kaoriForCapacity, transform.position, _movementComponent._characterRef.transform.rotation);
+            kaoriGameObject.GetComponent<S_KaoriAttackHandler>()._kaoriAttackDamage = _capacityAttackDamage;
             _inputsManager.useCapacity = false;
             _capacityTimer = _capacityCooldown;
             return;

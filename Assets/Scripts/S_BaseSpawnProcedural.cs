@@ -321,7 +321,6 @@ public class S_BaseSpawnProcedural : MonoBehaviour
         {
             if (room.GetComponent<S_RoomScript>()._enemyInRoom.Count == 0) {continue;}
             totalEnemySpawned.AddRange(room.GetComponent<S_RoomScript>()._enemyInRoom);
-            Debug.Log(totalEnemySpawned.Count);
             teleporterHandler.AddEnemyRefToTeleport();
         }
     }
