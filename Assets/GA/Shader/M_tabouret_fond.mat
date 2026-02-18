@@ -20,7 +20,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: M_lustre_lampe
+  m_Name: M_tabouret_fond
   m_Shader: {fileID: -6465566751694194690, guid: 99ab74da28b0bb346a44615cdc84d207, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -38,7 +38,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _base_color:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: 788004d376360884f960541a88ea793b, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _emissive:
@@ -50,7 +50,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _normal_map:
-        m_Texture: {fileID: 2800000, guid: 93fb7b689b71d1946814a9696eaef987, type: 3}
+        m_Texture: {fileID: 2800000, guid: 1f21a977118a1724b90f1d33ea14aea7, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _smoothness:
@@ -75,10 +75,10 @@ Material:
     - _QueueOffset: -5
     - _test: 1
     - _transparence: 1
-    - _use_base_color: 0
+    - _use_base_color: 1
     m_Colors:
-    - _color: {r: 1, g: 0.80007756, b: 0.5707547, a: 0}
-    - _emissive: {r: 2.7454488, g: 2.4839191, b: 0.5568599, a: 0}
+    - _color: {r: 0, g: 0, b: 0, a: 0}
+    - _emissive: {r: 0, g: 0, b: 0, a: 0}
     - _flat_color: {r: 0.4433962, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
