@@ -24,9 +24,9 @@ public class S_CountingKey : MonoBehaviour
         keyText.text = currentKey.ToString();  
     }
 
-    public void IncreaseKey(int v)
+    public void IncreaseKey()
     {
-        currentKey += v;
+        currentKey += 1;
         keyText.text = "X " + currentKey.ToString();
     }
 }

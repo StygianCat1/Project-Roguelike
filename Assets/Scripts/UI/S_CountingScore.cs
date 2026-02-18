@@ -24,9 +24,21 @@ public class S_CountingScore : MonoBehaviour
         scoreText.text = currentScore.ToString();  
     }
 
-    public void IncreaseCoins(int v)
+    public void PointsKillEnemies()
     {
-        currentScore += v;
-        scoreText.text = "SCORE :  " + currentScore.ToString();
+        currentScore += 750;
+        scoreText.text = "X " + currentScore.ToString();
+    }
+
+    public void PointsPunchEnemies()
+    {
+        currentScore += 500;
+        scoreText.text = "X " + currentScore.ToString();
+    }
+
+    public void PointsPerks()
+    {
+        currentScore += 1000;
+        scoreText.text = "X " + currentScore.ToString();
     }
 }
