@@ -2,16 +2,14 @@ using UnityEngine;
 
 public class S_KaoriAttackHandler : MonoBehaviour
 {
-    [SerializeField] S_Rogue_MovementComponent s_Rogue_MovementComponent;
     public int _kaoriAttackDamage;
     private bool _isAttacking;
     [SerializeField] Collider attackCollider;
 
     private void Start()
     {
-        s_Rogue_MovementComponent = gameObject.GetComponentInParent<S_Rogue_MovementComponent>();
-        Invoke(nameof(StartColliding), 0.5f);
-        Destroy(gameObject, 1f);
+        Invoke(nameof(StartColliding), 0.6f);
+        Destroy(gameObject, 0.85f);
         
     }
 
