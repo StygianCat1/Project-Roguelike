@@ -3,7 +3,9 @@ using UnityEngine;
 public class S_Rogue_Bonus : MonoBehaviour
 {
     [Range(0, 3)] public int luckyGamblerUpgradeLevel = 0;
+    [HideInInspector] public int luckMultiplier = 1;
     [Range(0, 3)] public int avidityUpgradeLevel = 0;
+    [HideInInspector] public int avidityMultiplier = 1;
     [Range(0, 3)] public int angryKaoriUpgradeLevel = 0;
     [HideInInspector] public float baseKaoriCooldown;
     private float newKaoriCooldown;
@@ -19,8 +21,6 @@ public class S_Rogue_Bonus : MonoBehaviour
         avidityUpgradeLevel = S_GameManager.avidityUpgradeLevelSave;
         angryKaoriUpgradeLevel = S_GameManager.angryKaoriUpgradeLevelSave;
         luckyShotLevel = S_GameManager.luckyShotCooldownSave;
-
-
         baseKaoriCooldown = GetComponent<S_Rogue_Combat>()._capacityCooldown;
         VerifyAllBonuses();
     }
@@ -34,7 +34,7 @@ public class S_Rogue_Bonus : MonoBehaviour
         
     }
 
-    private void LuckyGamblerLevel(int lvl)
+    public void LuckyGamblerLevel(int lvl)
     {
         if (lvl == 0)
         {
@@ -42,19 +42,21 @@ public class S_Rogue_Bonus : MonoBehaviour
         }
         if (lvl == 1)
         {
+            luckMultiplier = 2;
             return;
         }
         if (lvl == 2)
         {
+            luckMultiplier = 3;
             return;
         }
         if (lvl == 3)
         {
-            
+            luckMultiplier = 4;   
         }
     }
     
-    private void AvidityLevel(int lvl)
+    public void AvidityLevel(int lvl)
     {
         if (lvl == 0)
         {
@@ -62,18 +64,21 @@ public class S_Rogue_Bonus : MonoBehaviour
         }
         if (lvl == 1)
         {
+            avidityMultiplier = 2;
             return;
         }
         if (lvl == 2)
-        {
+        { 
+            avidityMultiplier = 3;
             return;
         }
         if (lvl == 3)
         {
+            avidityMultiplier = 5;
         }
     }
     
-    private void AngryKaoriLevel(int lvl)
+    public void AngryKaoriLevel(int lvl)
     {
         if (lvl == 0)
         {
@@ -98,7 +103,7 @@ public class S_Rogue_Bonus : MonoBehaviour
         }
     }
     
-    private void LuckyShotLevel(int lvl)
+    public void LuckyShotLevel(int lvl)
     {
         if (lvl == 0)
         {

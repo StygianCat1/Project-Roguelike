@@ -4,7 +4,7 @@ using UnityEngine;
 public class S_Anim_HammerFlicking : MonoBehaviour
 {
    
-    private Animator anim;
+    Animator anim;
     public bool Test;
 
     private void Start()
