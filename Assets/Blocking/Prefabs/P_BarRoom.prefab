@@ -453,6 +453,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 8423133212615401818}
     m_Modifications:
+    - target: {fileID: 2179903602406579573, guid: 386dc9a2c66df224eb1187eebe74673b, type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2179903602406579573, guid: 386dc9a2c66df224eb1187eebe74673b, type: 3}
+      propertyPath: 'm_Materials.Array.data[1]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 7e9334638c075e84689ad01e8bb4eb04, type: 2}
+    - target: {fileID: 2893931473986605964, guid: 386dc9a2c66df224eb1187eebe74673b, type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2893931473986605964, guid: 386dc9a2c66df224eb1187eebe74673b, type: 3}
+      propertyPath: 'm_Materials.Array.data[1]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 7e9334638c075e84689ad01e8bb4eb04, type: 2}
     - target: {fileID: 8371067877628125462, guid: 386dc9a2c66df224eb1187eebe74673b, type: 3}
       propertyPath: m_Name
       value: P_Barriere
