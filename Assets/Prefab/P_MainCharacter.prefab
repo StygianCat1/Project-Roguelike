@@ -119,7 +119,7 @@ Transform:
   m_GameObject: {fileID: 5924809109507281631}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.13515282, y: 0.64923096, z: -10}
+  m_LocalPosition: {x: 2.2253833, y: 0.64923024, z: -9.307322}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -409,7 +409,7 @@ Rigidbody:
     m_Bits: 0
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 120
@@ -431,7 +431,7 @@ MonoBehaviour:
   teleportToGameSceneRef: {fileID: 0}
   interactibleElementRef: {fileID: 0}
   merchantInteractionRef: {fileID: 0}
-  _interactPromptRef: {fileID: 0}
+  _interactPromptRef: {fileID: 6008332028781783576}
 --- !u!114 &5696682646711467489
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -813,6 +813,11 @@ PrefabInstance:
 --- !u!224 &609922071035953123 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 691519712943204657, guid: dc2bf7c45338de14da16e9054704c5cf, type: 3}
+  m_PrefabInstance: {fileID: 139089765993305810}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &6008332028781783576 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5949192719897181386, guid: dc2bf7c45338de14da16e9054704c5cf, type: 3}
   m_PrefabInstance: {fileID: 139089765993305810}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &3688507221288799746

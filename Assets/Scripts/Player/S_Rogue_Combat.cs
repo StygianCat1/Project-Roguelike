@@ -10,7 +10,7 @@ public class S_Rogue_Combat : MonoBehaviour
     private S_Rogue_Bonus _rogueBonus;
     private Animator _animator;
 
-    [SerializeField] private float _capacityCooldown;
+    public float _capacityCooldown;
     private float _capacityTimer;
 
     [SerializeField] private float _gunRange;
@@ -101,9 +101,15 @@ public class S_Rogue_Combat : MonoBehaviour
                 Debug.Log("touched");
                 enemyHit.collider.GameObject().GetComponent<S_HP_Component>().TakeDamage(_gunAttackDamage);
             }
+            
         }
         isShooting = false;
-
+        if (_rogueBonus.luckyshotRate == 0)
+        {
+            Debug.Log("luckyshot");
+            return;
+        }
+        gunAmmunitions -= 1;
     }
 
     private void UseCapacity()

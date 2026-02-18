@@ -70,7 +70,6 @@ public class S_CharacterCollisionHandler : MonoBehaviour
             {
                 SceneManager.LoadScene(teleportToGameSceneRef.levelToLoadName);
                 _inputsManager.interact = false;
-                return;
             }
         }
     }
