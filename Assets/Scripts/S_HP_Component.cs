@@ -16,7 +16,6 @@ public class S_HP_Component : MonoBehaviour
     public void TakeDamage(int damage)
     {
         _currentHealth = Mathf.Clamp(_currentHealth - damage, 0, _maxHealth);
-        Debug.Log(_currentHealth);
         if (_currentHealth <= 0)
         {
             Death();
@@ -35,7 +34,7 @@ public class S_HP_Component : MonoBehaviour
             Instantiate(GameOverCanvas);
             return;
         }
-        //gameObject.GetComponent<S_DropRateOnEnemy>().DropMoney();
+        gameObject.GetComponent<S_DropRateOnEnemy>().DropMoney();
         Invoke(nameof(DestroyGameObject), 0.1f);
     }
 

@@ -7,6 +7,7 @@ public class S_MarchantInteraction : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     private void Start()
     {
+        Time.timeScale = 0f;
         _player = GameObject.FindGameObjectWithTag("MainCharacter");
     }
 
@@ -18,6 +19,7 @@ public class S_MarchantInteraction : MonoBehaviour
     
     public void QuitUi()
     {
+        Time.timeScale = 1f;
         Destroy(gameObject);
     }
 }

@@ -178,6 +178,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _currentHealth: 0
+  GameOverCanvas: {fileID: 0}
   _maxHealth: 100
 --- !u!114 &8823224841079286484
 MonoBehaviour:
@@ -197,6 +198,10 @@ MonoBehaviour:
   _timeBetweenAttacks: 3
   _sightRange: 10
   _attackRange: 1
+  _enemyAttackDamage: 10
+  _enemyAttack: {fileID: 0}
+  _attackCollider: {fileID: 0}
+  _jumpCollider: {fileID: 0}
 --- !u!114 &1434045583463372048
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -212,6 +217,9 @@ MonoBehaviour:
   objectDrops:
   - gameObject: {fileID: 0}
     dropRate: 10
+  moneyDropRate: 50
+  minDropMoney: 50
+  maxDropMoney: 250
 --- !u!114 &4862461139839821499
 MonoBehaviour:
   m_ObjectHideFlags: 0
