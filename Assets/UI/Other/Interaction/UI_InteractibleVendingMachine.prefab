@@ -1480,9 +1480,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b823e6ac9e330c4d8a4cb8e55170d48, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _moneyForFood: 0
-  _healthGainedByFood: 0
-  _moneyForDrink: 0
-  _speedBoost: 0
-  _moneyForBullets: 0
-  _bulletsGained: 0
+  _moneyForFood: 150
+  _healthGainedByFood: 15
+  _moneyForDrink: 150
+  _speedBoost: 0.25
+  _moneyForBullets: 300
+  _bulletsGained: 3

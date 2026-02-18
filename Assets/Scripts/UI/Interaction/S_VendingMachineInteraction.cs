@@ -9,7 +9,7 @@ public class S_VendingMachineInteraction : MonoBehaviour
     [SerializeField] private int _healthGainedByFood;
 
     [SerializeField] private int _moneyForDrink;
-    [SerializeField] private int _speedBoost;
+    [SerializeField] private float _speedBoost;
 
     [SerializeField] private int _moneyForBullets;
     [SerializeField] private int _bulletsGained;
