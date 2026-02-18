@@ -149,6 +149,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8215947642690011858, guid: b5443a5eca67fd749a266ab925738b5e, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: b5443a5eca67fd749a266ab925738b5e, type: 3}
       propertyPath: m_Name
       value: SM_table_mahjong
@@ -160,6 +164,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: b5443a5eca67fd749a266ab925738b5e, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1646234447393755152}
+    - targetCorrespondingSourceObject: {fileID: 810279392098998340, guid: b5443a5eca67fd749a266ab925738b5e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6363432611031810278}
   m_SourcePrefab: {fileID: 100100000, guid: b5443a5eca67fd749a266ab925738b5e, type: 3}
 --- !u!1 &2394780516035136513 stripped
 GameObject:
@@ -187,6 +194,32 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2.5001755, y: 1.4794805, z: 5.1083074}
   m_Center: {x: -0.0011549451, y: 0.736126, z: -0.07647702}
+--- !u!1 &2793394165220731156 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 810279392098998340, guid: b5443a5eca67fd749a266ab925738b5e, type: 3}
+  m_PrefabInstance: {fileID: 3313120871727509840}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &6363432611031810278
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2793394165220731156}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a134d33e4b83384cb8a08f70560bcf5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  material: {fileID: 2100000, guid: 4cec2fa266d6ee445bca67b2f72c79e8, type: 2}
+  instanceMaterial: 1
+  meshCenter: {x: 0, y: 0, z: 0}
+  maxLights: 20
+  raycast: 1
+  raycastMask:
+    serializedVersion: 2
+    m_Bits: 0
+  raycastFadeSpeed: 10
 --- !u!4 &3057988799343449787 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: b5443a5eca67fd749a266ab925738b5e, type: 3}
@@ -240,6 +273,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 7a4ddb573bb188145b87e3119be22344, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 7a4ddb573bb188145b87e3119be22344, type: 3}
       propertyPath: m_Name
       value: SM_Tabouret_Bar (3)
@@ -247,8 +284,37 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 7a4ddb573bb188145b87e3119be22344, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 869381720461578942}
   m_SourcePrefab: {fileID: 100100000, guid: 7a4ddb573bb188145b87e3119be22344, type: 3}
+--- !u!1 &2450914338541129513 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 7a4ddb573bb188145b87e3119be22344, type: 3}
+  m_PrefabInstance: {fileID: 3369268988019929720}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &869381720461578942
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2450914338541129513}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a134d33e4b83384cb8a08f70560bcf5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  material: {fileID: 2100000, guid: 164fb3670faf280459715c9ec7a16dd9, type: 2}
+  instanceMaterial: 1
+  meshCenter: {x: 0, y: 0, z: 0}
+  maxLights: 20
+  raycast: 1
+  raycastMask:
+    serializedVersion: 2
+    m_Bits: 0
+  raycastFadeSpeed: 10
 --- !u!4 &2974826799040009619 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 7a4ddb573bb188145b87e3119be22344, type: 3}
@@ -302,6 +368,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 7a4ddb573bb188145b87e3119be22344, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 7a4ddb573bb188145b87e3119be22344, type: 3}
       propertyPath: m_Name
       value: SM_Tabouret_Bar (2)
@@ -309,13 +379,42 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 7a4ddb573bb188145b87e3119be22344, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6692024864600166384}
   m_SourcePrefab: {fileID: 100100000, guid: 7a4ddb573bb188145b87e3119be22344, type: 3}
 --- !u!4 &3980677212804176990 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 7a4ddb573bb188145b87e3119be22344, type: 3}
   m_PrefabInstance: {fileID: 3509585766014663605}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &4356639423834556132 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 7a4ddb573bb188145b87e3119be22344, type: 3}
+  m_PrefabInstance: {fileID: 3509585766014663605}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &6692024864600166384
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4356639423834556132}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a134d33e4b83384cb8a08f70560bcf5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  material: {fileID: 2100000, guid: 164fb3670faf280459715c9ec7a16dd9, type: 2}
+  instanceMaterial: 1
+  meshCenter: {x: 0, y: 0, z: 0}
+  maxLights: 20
+  raycast: 1
+  raycastMask:
+    serializedVersion: 2
+    m_Bits: 0
+  raycastFadeSpeed: 10
 --- !u!1001 &4070360894760907505
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -364,6 +463,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 7a4ddb573bb188145b87e3119be22344, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 7a4ddb573bb188145b87e3119be22344, type: 3}
       propertyPath: m_Name
       value: SM_Tabouret_Bar
@@ -371,8 +474,37 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 7a4ddb573bb188145b87e3119be22344, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2120955353007727183}
   m_SourcePrefab: {fileID: 100100000, guid: 7a4ddb573bb188145b87e3119be22344, type: 3}
+--- !u!1 &3800398697541423008 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 7a4ddb573bb188145b87e3119be22344, type: 3}
+  m_PrefabInstance: {fileID: 4070360894760907505}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2120955353007727183
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3800398697541423008}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a134d33e4b83384cb8a08f70560bcf5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  material: {fileID: 2100000, guid: 164fb3670faf280459715c9ec7a16dd9, type: 2}
+  instanceMaterial: 1
+  meshCenter: {x: 0, y: 0, z: 0}
+  maxLights: 20
+  raycast: 1
+  raycastMask:
+    serializedVersion: 2
+    m_Bits: 0
+  raycastFadeSpeed: 10
 --- !u!4 &4608988738052166938 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 7a4ddb573bb188145b87e3119be22344, type: 3}
@@ -550,6 +682,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 7a4ddb573bb188145b87e3119be22344, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 7a4ddb573bb188145b87e3119be22344, type: 3}
       propertyPath: m_Name
       value: SM_Tabouret_Bar (1)
@@ -557,8 +693,37 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 7a4ddb573bb188145b87e3119be22344, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4902498613440759755}
   m_SourcePrefab: {fileID: 100100000, guid: 7a4ddb573bb188145b87e3119be22344, type: 3}
+--- !u!1 &8219341601718589208 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 7a4ddb573bb188145b87e3119be22344, type: 3}
+  m_PrefabInstance: {fileID: 9138259333221182025}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &4902498613440759755
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8219341601718589208}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a134d33e4b83384cb8a08f70560bcf5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  material: {fileID: 2100000, guid: 164fb3670faf280459715c9ec7a16dd9, type: 2}
+  instanceMaterial: 1
+  meshCenter: {x: 0, y: 0, z: 0}
+  maxLights: 20
+  raycast: 1
+  raycastMask:
+    serializedVersion: 2
+    m_Bits: 0
+  raycastFadeSpeed: 10
 --- !u!4 &8744626047128341922 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 7a4ddb573bb188145b87e3119be22344, type: 3}

@@ -367,6 +367,131 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 742142710071356869, guid: a36b8fe7194bea74b8a5c72b2382e717, type: 3}
   m_PrefabInstance: {fileID: 420369229}
   m_PrefabAsset: {fileID: 0}
+--- !u!21 &565377922
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Instance of M_Nicky_clothe
+  m_Shader: {fileID: -6465566751694194690, guid: f65702583acdce143b2e443af2e9ffba, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses:
+  - MOTIONVECTORS
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _FlatNormal:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NormalMap:
+        m_Texture: {fileID: 2800000, guid: 91401bb2263881746bc81eeb0e6c6521, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_2846928ad0ea4ea2a665a43b1961f3c4_Texture_1_Texture2D:
+        m_Texture: {fileID: 2800000, guid: 03916d8acea71064a9b546536003c029, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Texture2D:
+        m_Texture: {fileID: 2800000, guid: ab4ab0f0a50b9874e883282ae0b8c141, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Texture2D_1:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Texture2D_2:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _shading_gadrient:
+        m_Texture: {fileID: 2800000, guid: eb606d2fe7fa3e54c8cfc771423e5cbb, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_Lightmaps:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_LightmapsInd:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_ShadowMasks:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _QueueControl: 0
+    - _QueueOffset: 0
+    - _UseNormal: 1
+    - _fresnel_angle: 1
+    - _fresnel_size: 50
+    - _gloss_size: 200
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 0}
+    - _L10_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L10_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L11_color: {r: 1, g: 1, b: 1, a: 0}
+    - _L11_dir: {r: 0, g: 0, b: 0, a: 0}
+    - _L12_color: {r: 1, g: 1, b: 1, a: 0}
+    - _L12_dir: {r: 0, g: 0, b: 0, a: 0}
+    - _L13_color: {r: 1, g: 1, b: 1, a: 0}
+    - _L13_dir: {r: 0, g: 0, b: 0, a: 0}
+    - _L1_color: {r: 1, g: 1, b: 1, a: 0.99}
+    - _L1_dir: {r: 0.6424343, g: 0.76604444, b: -0.021311747, a: 0}
+    - _L2_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L2_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L3_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L3_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L4_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L4_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L5_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L5_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L6_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L6_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L7_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L7_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L8_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L8_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _L9_color: {r: 0, g: 0, b: 0, a: 1}
+    - _L9_dir: {r: 0, g: 1, b: 0, a: 0}
+    - _fresnel_intensity: {r: 1, g: 1, b: 1, a: 0}
+    - _gloss_intensity: {r: 1, g: 1, b: 1, a: 0}
+    - _light_2_color: {r: 1, g: 1, b: 1, a: 0}
+    - _light_3_color: {r: 1, g: 1, b: 1, a: 0}
+    - _light_3_dir: {r: 0, g: 0, b: 0, a: 0}
+    - _light_4_color: {r: 1, g: 1, b: 1, a: 0}
+    - _light_4_dir: {r: 0, g: 0, b: 0, a: 0}
+    - _light_5_color: {r: 1, g: 1, b: 1, a: 0}
+    - _light_5_dir: {r: 0, g: 0, b: 0, a: 0}
+    - _light_6_color: {r: 1, g: 1, b: 1, a: 0}
+    - _light_6_dir: {r: 0, g: 0, b: 0, a: 0}
+    - light_Color: {r: 1, g: 1, b: 1, a: 0}
+    - light_Color_1: {r: 1, g: 1, b: 1, a: 0}
+    - light_Color_2: {r: 1, g: 1, b: 1, a: 0}
+    - light_Color_3: {r: 1, g: 1, b: 1, a: 0}
+    - light_Color_4: {r: 1, g: 1, b: 1, a: 0}
+    - light_Color_5: {r: 1, g: 1, b: 1, a: 0}
+    - light_Dir: {r: 0, g: 0, b: 0, a: 0}
+    - light_Dir_1: {r: 0, g: 0, b: 0, a: 0}
+    - light_Dir_2: {r: 0, g: 0, b: 0, a: 0}
+    - light_Dir_3: {r: 0, g: 0, b: 0, a: 0}
+    - light_Dir_4: {r: 0, g: 0, b: 0, a: 0}
+    - light_Dir_5: {r: 0, g: 0, b: 0, a: 0}
+  m_BuildTextureStacks: []
+  m_AllowLocking: 1
 --- !u!1 &566415270
 GameObject:
   m_ObjectHideFlags: 0
@@ -689,125 +814,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 37423c0666570494ba8927c7eb2b8fb2, type: 3}
---- !u!21 &748172893
-Material:
-  serializedVersion: 8
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Instance of M_Nicky_clothe
-  m_Shader: {fileID: -6465566751694194690, guid: f65702583acdce143b2e443af2e9ffba, type: 3}
-  m_Parent: {fileID: 0}
-  m_ModifiedSerializedProperties: 0
-  m_ValidKeywords: []
-  m_InvalidKeywords: []
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses:
-  - MOTIONVECTORS
-  m_LockedProperties: 
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _FlatNormal:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _NormalMap:
-        m_Texture: {fileID: 2800000, guid: 91401bb2263881746bc81eeb0e6c6521, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _SampleTexture2D_2846928ad0ea4ea2a665a43b1961f3c4_Texture_1_Texture2D:
-        m_Texture: {fileID: 2800000, guid: 03916d8acea71064a9b546536003c029, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _Texture2D:
-        m_Texture: {fileID: 2800000, guid: ab4ab0f0a50b9874e883282ae0b8c141, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _Texture2D_1:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _Texture2D_2:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _shading_gadrient:
-        m_Texture: {fileID: 2800000, guid: eb606d2fe7fa3e54c8cfc771423e5cbb, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - unity_Lightmaps:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - unity_LightmapsInd:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - unity_ShadowMasks:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Ints: []
-    m_Floats:
-    - _QueueControl: 0
-    - _QueueOffset: 0
-    - _UseNormal: 1
-    - _fresnel_angle: 1
-    - _fresnel_size: 50
-    - _gloss_size: 200
-    m_Colors:
-    - _Color: {r: 1, g: 1, b: 1, a: 0}
-    - _L10_color: {r: 0, g: 0, b: 0, a: 1}
-    - _L10_dir: {r: 0, g: 1, b: 0, a: 0}
-    - _L1_color: {r: 1, g: 1, b: 1, a: 0.99}
-    - _L1_dir: {r: 0.6424343, g: 0.76604444, b: -0.021311747, a: 0}
-    - _L2_color: {r: 0, g: 0, b: 0, a: 1}
-    - _L2_dir: {r: 0, g: 1, b: 0, a: 0}
-    - _L3_color: {r: 0, g: 0, b: 0, a: 1}
-    - _L3_dir: {r: 0, g: 1, b: 0, a: 0}
-    - _L4_color: {r: 0, g: 0, b: 0, a: 1}
-    - _L4_dir: {r: 0, g: 1, b: 0, a: 0}
-    - _L5_color: {r: 0, g: 0, b: 0, a: 1}
-    - _L5_dir: {r: 0, g: 1, b: 0, a: 0}
-    - _L6_color: {r: 0, g: 0, b: 0, a: 1}
-    - _L6_dir: {r: 0, g: 1, b: 0, a: 0}
-    - _L7_color: {r: 0, g: 0, b: 0, a: 1}
-    - _L7_dir: {r: 0, g: 1, b: 0, a: 0}
-    - _L8_color: {r: 0, g: 0, b: 0, a: 1}
-    - _L8_dir: {r: 0, g: 1, b: 0, a: 0}
-    - _L9_color: {r: 0, g: 0, b: 0, a: 1}
-    - _L9_dir: {r: 0, g: 1, b: 0, a: 0}
-    - _fresnel_intensity: {r: 1, g: 1, b: 1, a: 0}
-    - _gloss_intensity: {r: 1, g: 1, b: 1, a: 0}
-    - _light_2_color: {r: 1, g: 1, b: 1, a: 0}
-    - _light_3_color: {r: 1, g: 1, b: 1, a: 0}
-    - _light_3_dir: {r: 0, g: 0, b: 0, a: 0}
-    - _light_4_color: {r: 1, g: 1, b: 1, a: 0}
-    - _light_4_dir: {r: 0, g: 0, b: 0, a: 0}
-    - _light_5_color: {r: 1, g: 1, b: 1, a: 0}
-    - _light_5_dir: {r: 0, g: 0, b: 0, a: 0}
-    - _light_6_color: {r: 1, g: 1, b: 1, a: 0}
-    - _light_6_dir: {r: 0, g: 0, b: 0, a: 0}
-    - light_Color: {r: 1, g: 1, b: 1, a: 0}
-    - light_Color_1: {r: 1, g: 1, b: 1, a: 0}
-    - light_Color_2: {r: 1, g: 1, b: 1, a: 0}
-    - light_Color_3: {r: 1, g: 1, b: 1, a: 0}
-    - light_Color_4: {r: 1, g: 1, b: 1, a: 0}
-    - light_Color_5: {r: 1, g: 1, b: 1, a: 0}
-    - light_Dir: {r: 0, g: 0, b: 0, a: 0}
-    - light_Dir_1: {r: 0, g: 0, b: 0, a: 0}
-    - light_Dir_2: {r: 0, g: 0, b: 0, a: 0}
-    - light_Dir_3: {r: 0, g: 0, b: 0, a: 0}
-    - light_Dir_4: {r: 0, g: 0, b: 0, a: 0}
-    - light_Dir_5: {r: 0, g: 0, b: 0, a: 0}
-  m_BuildTextureStacks: []
-  m_AllowLocking: 1
 --- !u!1 &977577083
 GameObject:
   m_ObjectHideFlags: 0
@@ -1204,7 +1210,7 @@ PrefabInstance:
     - target: {fileID: 59431240720657536, guid: 4fab1ef4e2cd21147a07ad997c09ad28, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 748172893}
+      objectReference: {fileID: 565377922}
     - target: {fileID: 1472397160789954494, guid: 4fab1ef4e2cd21147a07ad997c09ad28, type: 3}
       propertyPath: _jumpHeight
       value: 1
@@ -1252,6 +1258,10 @@ PrefabInstance:
     - target: {fileID: 8093733394378181295, guid: 4fab1ef4e2cd21147a07ad997c09ad28, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9153675795187083145, guid: 4fab1ef4e2cd21147a07ad997c09ad28, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.64923024
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
