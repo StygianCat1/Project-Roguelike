@@ -23,9 +23,9 @@ public class S_CountingCards : MonoBehaviour
         cardsText.text = currentCards.ToString();  
     }
 
-    public void IncreaseKey(int v)
+    public void IncreaseKey()
     {
-        currentCards += v;
+        currentCards += 1;
         cardsText.text = "X " + currentCards.ToString();
     }
 }

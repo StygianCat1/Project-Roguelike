@@ -6,7 +6,7 @@ using UnityEngine;
 public class S_Rogue_MovementComponent : MonoBehaviour
 {
     [SerializeField] private float _moveSmoothTime = 0.1f;
-    [SerializeField] private float _movementSpeed = 10.0f;
+    public float _movementSpeed = 10.0f;
     
     [SerializeField] private float _jumpHeight = 5.0f;
     [SerializeField] private float _gravityScale = 5.0f;

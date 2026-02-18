@@ -27,9 +27,9 @@ public class S_CountingCoins : MonoBehaviour
         coinText.text = currentCoins.ToString();  
     }
 
-    public void IncreaseCoins(int v)
+    public void IncreaseCoins()
     {
-        currentCoins += v;
+        currentCoins += 1;
         coinText.text = "X " + currentCoins.ToString();
     }
 }

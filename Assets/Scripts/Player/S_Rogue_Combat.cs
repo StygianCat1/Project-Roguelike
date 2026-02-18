@@ -10,7 +10,7 @@ public class S_Rogue_Combat : MonoBehaviour
     private S_Rogue_Bonus _rogueBonus;
     private Animator _animator;
 
-    [SerializeField] private float _capacityCooldown;
+    public float _capacityCooldown;
     private float _capacityTimer;
 
     [SerializeField] private float _gunRange;
@@ -32,7 +32,7 @@ public class S_Rogue_Combat : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     private void Start()
     {
-        _attackHandler._basiAttackDamage = _basicAttackDamage; 
+        _attackHandler._basicAttackDamage = _basicAttackDamage; 
         _inputsManager = GetComponent<S_Rogue_Inputs>();
         _movementComponent = GetComponent<S_Rogue_MovementComponent>();
         _rogueBonus = GetComponent<S_Rogue_Bonus>();
@@ -101,9 +101,15 @@ public class S_Rogue_Combat : MonoBehaviour
                 Debug.Log("touched");
                 enemyHit.collider.GameObject().GetComponent<S_HP_Component>().TakeDamage(_gunAttackDamage);
             }
+            
         }
         isShooting = false;
-
+        if (_rogueBonus.luckyshotRate == 0)
+        {
+            Debug.Log("luckyshot");
+            return;
+        }
+        gunAmmunitions -= 1;
     }
 
     private void UseCapacity()
