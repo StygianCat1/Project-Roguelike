@@ -464,6 +464,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 127475568504392907, guid: cef243fd2cc53fc46ab4ab01d3e3a9cd, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 484
+      objectReference: {fileID: 0}
+    - target: {fileID: 127475568504392907, guid: cef243fd2cc53fc46ab4ab01d3e3a9cd, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 117
+      objectReference: {fileID: 0}
     - target: {fileID: 207627546332301492, guid: cef243fd2cc53fc46ab4ab01d3e3a9cd, type: 3}
       propertyPath: m_Name
       value: UI_MainHandlerCanvas
@@ -472,9 +480,49 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 247011245030072087, guid: cef243fd2cc53fc46ab4ab01d3e3a9cd, type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 247011245030072087, guid: cef243fd2cc53fc46ab4ab01d3e3a9cd, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 1619c78a5f070434bbcb8c9ca2b54d6b, type: 3}
+    - target: {fileID: 390869637005344928, guid: cef243fd2cc53fc46ab4ab01d3e3a9cd, type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 390869637005344928, guid: cef243fd2cc53fc46ab4ab01d3e3a9cd, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: f1c069e8cad7cfe43acfa6bbede9c7f3, type: 3}
+    - target: {fileID: 722878505511614264, guid: cef243fd2cc53fc46ab4ab01d3e3a9cd, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 483
+      objectReference: {fileID: 0}
+    - target: {fileID: 722878505511614264, guid: cef243fd2cc53fc46ab4ab01d3e3a9cd, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 119
+      objectReference: {fileID: 0}
+    - target: {fileID: 1486352918020242190, guid: cef243fd2cc53fc46ab4ab01d3e3a9cd, type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1486352918020242190, guid: cef243fd2cc53fc46ab4ab01d3e3a9cd, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 5e02338fe8ab02c459f0f0f73265d3e3, type: 3}
+    - target: {fileID: 2560282527711879895, guid: cef243fd2cc53fc46ab4ab01d3e3a9cd, type: 3}
+      propertyPath: m_text
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 5063723844896835799, guid: cef243fd2cc53fc46ab4ab01d3e3a9cd, type: 3}
       propertyPath: _hubSceneName
       value: HubScene
+      objectReference: {fileID: 0}
+    - target: {fileID: 5492698418747118000, guid: cef243fd2cc53fc46ab4ab01d3e3a9cd, type: 3}
+      propertyPath: m_text
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 7734012051667713712, guid: cef243fd2cc53fc46ab4ab01d3e3a9cd, type: 3}
       propertyPath: m_Pivot.x
@@ -555,6 +603,18 @@ PrefabInstance:
     - target: {fileID: 7734012051667713712, guid: cef243fd2cc53fc46ab4ab01d3e3a9cd, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8047638140693337961, guid: cef243fd2cc53fc46ab4ab01d3e3a9cd, type: 3}
+      propertyPath: m_text
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8825353256755068592, guid: cef243fd2cc53fc46ab4ab01d3e3a9cd, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 484
+      objectReference: {fileID: 0}
+    - target: {fileID: 8825353256755068592, guid: cef243fd2cc53fc46ab4ab01d3e3a9cd, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 118
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
