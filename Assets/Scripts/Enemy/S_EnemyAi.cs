@@ -154,8 +154,7 @@ public class S_EnemyAi : MonoBehaviour
         }
         if (other.tag == "Obstacles")
         {
-            Debug.Log("canJump");
-            transform.Translate(new Vector3 (-1, 10, 0) * Time.deltaTime, Space.World);
+            transform.Translate(new Vector3 (0, 10, 0) * Time.deltaTime, Space.World);
         }
     }
 }
