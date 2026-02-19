@@ -25,37 +25,37 @@ public class S_GamblingMachineInteraction : MonoBehaviour
     public void LetsGoGambling()
     {
         GameObject gainCanvas = new GameObject();
-        string gainCanvasUi;
+
+        gainCanvas = Instantiate(_gainCanvasUi);
+        
         int randomDrop = Random.Range(0, 100);
         int randomDrop2 = Random.Range(0, 100);
         if (_player.GetComponent<S_Resources>()._resourcesInGame >= _moneyToPlay)
         {
             if (randomDrop <= 60 - _player.GetComponent<S_Rogue_Bonus>().luckMultiplier * 10)
             {
-                gainCanvasUi = "You got nothing";
+                gainCanvas.GetComponent<S_GamblingGainUi>().imageNothing.SetActive(true);
+                gainCanvas.GetComponent<S_GamblingGainUi>().imageHeals.SetActive(false);
+                gainCanvas.GetComponent<S_GamblingGainUi>().imageBullets.SetActive(false);
             }
             else
             {
                 if (randomDrop2 <= 50)
                 {
                     _player.GetComponent<S_HP_Component>().Heal(_healValue * _player.GetComponent<S_Rogue_Bonus>().luckMultiplier);
-                    gainCanvasUi = "You got some heals";
+                    gainCanvas.GetComponent<S_GamblingGainUi>().imageNothing.SetActive(false);
+                    gainCanvas.GetComponent<S_GamblingGainUi>().imageHeals.SetActive(true);
+                    gainCanvas.GetComponent<S_GamblingGainUi>().imageBullets.SetActive(false);
                 }
                 else
                 {
                     _player.GetComponent<S_Rogue_Combat>().gunAmmunitions += _bulletGained * _player.GetComponent<S_Rogue_Bonus>().luckMultiplier;
-                    gainCanvasUi = "You got some bullets";
+                    gainCanvas.GetComponent<S_GamblingGainUi>().imageNothing.SetActive(false);
+                    gainCanvas.GetComponent<S_GamblingGainUi>().imageHeals.SetActive(false);
+                    gainCanvas.GetComponent<S_GamblingGainUi>().imageBullets.SetActive(true);
                 }
             }
-            gainCanvas = Instantiate(_gainCanvasUi);
-            gainCanvas.GetComponent<S_GamblingGainUi>()._textToChange.text = gainCanvasUi;
         }
-    }
-
-
-    private void GainPerks()
-    {
-        
     }
     
     public void QuitUi()
