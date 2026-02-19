@@ -7,6 +7,8 @@ public class S_HP_Component : MonoBehaviour
     
     private S_CountingScore _countingScore;
     
+    private Animator _animator;
+    
     [HideInInspector] public int _maxHealth = 100;
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -14,6 +16,7 @@ public class S_HP_Component : MonoBehaviour
     {
         _currentHealth = _maxHealth;
         _countingScore = GameObject.FindGameObjectWithTag("GUI").GetComponent<S_CountingScore>();
+        _animator = GetComponent<Animator>();
     }
 
     public void TakeDamage(int damage)
@@ -41,6 +44,13 @@ public class S_HP_Component : MonoBehaviour
             Instantiate(GameOverCanvas);
             return;
         }
+        _animator.SetBool("DeathAnim", true);
+        gameObject.GetComponent<S_EnemyAi>().isDead = true;
+        Invoke(nameof(GiveRewardAtDeath), 2f);
+    }
+
+    private void GiveRewardAtDeath()
+    {
         _countingScore.PointsKillEnemies();
         gameObject.GetComponent<S_DropRateOnEnemy>().DropMoney();
         Invoke(nameof(DestroyGameObject), 0.1f);

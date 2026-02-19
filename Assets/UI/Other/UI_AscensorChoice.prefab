@@ -17,7 +17,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &6999983088402338216
 RectTransform:
   m_ObjectHideFlags: 0
@@ -364,10 +364,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 496ef84688fb373479470ae726c8a430, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ButtonElevatorFloor2: {fileID: 3765091783155656448}
-  ButtonElevatorFloor3: {fileID: 5511575936274186925}
-  ButtonElevatorFloor4: {fileID: 8952324793320851098}
-  ButtonElevatorFloorBoss: {fileID: 379209971161756285}
+  buttonElevatorFloor2: {fileID: 3765091783155656448}
+  buttonElevatorFloor3: {fileID: 5511575936274186925}
+  buttonElevatorFloor4: {fileID: 8952324793320851098}
+  buttonElevatorFloorBoss: {fileID: 379209971161756285}
   teleporterHandlerRef: {fileID: 8440395302633185797, guid: ab9e89890e3798546a7264e7758e6199, type: 3}
 --- !u!1 &3765091783155656448
 GameObject:
@@ -386,7 +386,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &6754494549900406963
 RectTransform:
   m_ObjectHideFlags: 0
@@ -869,7 +869,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1548309238895480141
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1251,15 +1251,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 473235db612c55e43b0ca17a12f3e17a, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -1285,7 +1285,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &3813906666166328625
 RectTransform:
   m_ObjectHideFlags: 0

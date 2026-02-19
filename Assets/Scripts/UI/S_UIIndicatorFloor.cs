@@ -3,12 +3,12 @@ using UnityEngine;
 
 public class S_UIIndicatorFloor : MonoBehaviour
 {
-    public GameObject ButtonElevatorFloor2;
-    public GameObject ButtonElevatorFloor3;
-    public GameObject ButtonElevatorFloor4;
-    public GameObject ButtonElevatorFloorBoss;
+    public GameObject buttonElevatorFloor2;
+    public GameObject buttonElevatorFloor3;
+    public GameObject buttonElevatorFloor4;
+    public GameObject buttonElevatorFloorBoss;
     S_TeleporterHandler teleporterHandler;
-    
+
     [SerializeField] GameObject teleporterHandlerRef;
 
     void Awake()
@@ -16,49 +16,35 @@ public class S_UIIndicatorFloor : MonoBehaviour
         teleporterHandler = teleporterHandlerRef.GetComponent<S_TeleporterHandler>();
     }
 
-    private void Update()
+    void Start()
     {
-        
+        buttonElevatorFloor2.SetActive(false);
+        buttonElevatorFloor3.SetActive(false);
+        buttonElevatorFloor4.SetActive(false);
+        buttonElevatorFloorBoss.SetActive(false);
     }
 
-    public void PopElevatorFloor2()
+    private void Update()
     {
         if (teleporterHandler.floorNumber == 2)
         {
-            ButtonElevatorFloor2.SetActive(true);
+            buttonElevatorFloor2.SetActive(true);
         }
-        
-    }
-    
-    public void PopElevatorFloor3()
-    
-    
-    {
+
         if (teleporterHandler.floorNumber == 3)
         {
-            ButtonElevatorFloor3.SetActive(true);
+            buttonElevatorFloor3.SetActive(true);
         }
-        
-    }
-    
-    public void PopElevatorFloor4()
-    {
+
         if (teleporterHandler.floorNumber == 4)
         {
-            ButtonElevatorFloor4.SetActive(true);
+            buttonElevatorFloor4.SetActive(true);
         }
-        
-    }
-    
-    public void PopElevatorFloorBoss()
-    {
+
         if (teleporterHandler.floorNumber == 5)
         {
-            ButtonElevatorFloorBoss.SetActive(true); 
+            buttonElevatorFloorBoss.SetActive(true);
         }
-        
     }
-
-
-
 }
+    
