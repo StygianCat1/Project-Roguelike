@@ -61,7 +61,8 @@ public class S_Rogue_Combat : MonoBehaviour
         {
             isAttacking = true;
             _animator.SetTrigger("Attack");
-            Invoke(nameof(UseAttackCollision), 1f);
+            Invoke(nameof(UseAttackCollision), 0.65f);
+            Invoke(nameof(MoveBackMovementOnAttack), 1.7f);
             _inputsManager.attack = false;
         }
         _inputsManager.attack = false;
@@ -71,13 +72,17 @@ public class S_Rogue_Combat : MonoBehaviour
     {
         _attackCollider.enabled = true;
         Invoke(nameof(StopAttackCollision), 0.1f);
-        Debug.Log("atta");
+    }
+
+    private void MoveBackMovementOnAttack()
+    {
+        isAttacking = false;
     }
 
     private void StopAttackCollision()
     {
+        Debug.Log("atta");
         _attackCollider.enabled = false;
-        isAttacking = false;
     }
 
     private void UseGun()
@@ -103,13 +108,17 @@ public class S_Rogue_Combat : MonoBehaviour
             }
             
         }
-        isShooting = false;
+        Invoke(nameof(MoveBackMovementOnShooting), 0.7f);
         if (_rogueBonus.luckyshotRate >= Random.Range(1,101))
         {
-            Debug.Log("luckyshot");
             return;
         }
         gunAmmunitions -= 1;
+    }
+    
+    private void MoveBackMovementOnShooting()
+    {
+        isShooting = false;
     }
 
     private void UseCapacity()
@@ -117,13 +126,20 @@ public class S_Rogue_Combat : MonoBehaviour
         if (_inputsManager.useCapacity && canUseCapacity)
         {
             canUseCapacity = false;
+            isUsingCapacity = true;
             GameObject kaoriGameObject = Instantiate(_kaoriForCapacity, transform.position + new Vector3(_movementComponent._directionCharacter * 0.5f,0,0), _movementComponent._characterRef.transform.rotation);
             kaoriGameObject.GetComponent<S_KaoriAttackHandler>()._kaoriAttackDamage = _capacityAttackDamage;
             _inputsManager.useCapacity = false;
+            Invoke(nameof(MoveBackMovementOnCapacity), 1);
             _capacityTimer = 0;
             return;
         }
         _inputsManager.useCapacity = false;
+    }
+    private void MoveBackMovementOnCapacity()
+    {
+        Debug.Log("ca");
+        isUsingCapacity = false;
     }
 
     private void CapacityTimerHandler()

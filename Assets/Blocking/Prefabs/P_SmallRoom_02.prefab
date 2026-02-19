@@ -647,6 +647,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1769782306496378293, guid: 62e8314af9b3b67439bba6954307c82d, type: 3}
   m_PrefabInstance: {fileID: 1561258508688434214}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1329500125972069626 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 565730641640478940, guid: 62e8314af9b3b67439bba6954307c82d, type: 3}
+  m_PrefabInstance: {fileID: 1561258508688434214}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36fddb933f07d3b4ab3cfaaaba3ea983, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &3035495945229272496
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1474,13 +1485,13 @@ MonoBehaviour:
   _rightUpDoor: []
   _enemyInRoom:
   - {fileID: 4749398089664955323}
-  roomHeight: 0
+  roomHeight: 2
   roomType: 0
   specialRoomtype: 0
   _stairsRef: []
-  _tpInRoom: {fileID: 0}
+  _tpInRoom: {fileID: 1329500125972069626}
   _doorOnLeft: 0
-  _doorOnRight: 0
+  _doorOnRight: 1
 --- !u!64 &1535228266542415133
 MeshCollider:
   m_ObjectHideFlags: 0
