@@ -3,43 +3,29 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class S_UIUltBar : MonoBehaviour
-
-
 {
-
-    [SerializeField] public float ultBar = 0f;
-    [SerializeField] public float maxUltBar = 100f;
+    [SerializeField] private float ultBar = 0f;
+    [SerializeField] private float maxUltBar = 100f;
     public Image ultBarImage;
     
-    [SerializeField] private Animator _animator;
+    private Animator _animator;
+    private S_Rogue_Combat _combat;
 
-    public bool Test;
+    private bool UltReady;
 
     private void Start()
     {
         _animator = GetComponent<Animator>();
+        _combat = GameObject.FindGameObjectWithTag("MainCharacter").GetComponent<S_Rogue_Combat>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        {
-            ultBar = Mathf.Clamp(ultBar, 0f, maxUltBar);
-            ultBarImage.fillAmount = ultBar / maxUltBar;
-        }
-        if (Test)
-        {
-            _animator.SetTrigger("UltReady");
-        }
-    }
-    
-    public void DownUltButton(int damageAmount)
-    {
-        ultBar -= damageAmount;
-    }
-    
-    public void UpUltButton(int healAmount)
-    {
-        ultBar += healAmount;
+        UltReady = _combat.canUseCapacity;
+        ultBar = _combat._capacityTimer;
+        maxUltBar = _combat._capacityCooldown; 
+        ultBarImage.fillAmount = Math.Clamp(ultBar / maxUltBar, 0f, 1f);
+        _animator.SetBool("UltReady", UltReady);
     }
 }

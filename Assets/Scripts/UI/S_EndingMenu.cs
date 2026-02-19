@@ -11,12 +11,7 @@ public class S_EndingMenu : MonoBehaviour
     {
         Time.timeScale = 0;
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    
 
     public void GoBackToMainMenu()
     {

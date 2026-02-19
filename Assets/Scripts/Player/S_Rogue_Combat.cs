@@ -11,7 +11,7 @@ public class S_Rogue_Combat : MonoBehaviour
     private Animator _animator;
 
     public float _capacityCooldown;
-    private float _capacityTimer;
+    [HideInInspector] public float _capacityTimer;
 
     [SerializeField] private float _gunRange;
     public int gunAmmunitions;
@@ -117,10 +117,10 @@ public class S_Rogue_Combat : MonoBehaviour
         if (_inputsManager.useCapacity && canUseCapacity)
         {
             canUseCapacity = false;
-            GameObject kaoriGameObject = Instantiate(_kaoriForCapacity, transform.position + new Vector3(_movementComponent._directionCharacter,0,0), _movementComponent._characterRef.transform.rotation);
+            GameObject kaoriGameObject = Instantiate(_kaoriForCapacity, transform.position + new Vector3(_movementComponent._directionCharacter * 0.5f,0,0), _movementComponent._characterRef.transform.rotation);
             kaoriGameObject.GetComponent<S_KaoriAttackHandler>()._kaoriAttackDamage = _capacityAttackDamage;
             _inputsManager.useCapacity = false;
-            _capacityTimer = _capacityCooldown;
+            _capacityTimer = 0;
             return;
         }
         _inputsManager.useCapacity = false;
@@ -128,8 +128,8 @@ public class S_Rogue_Combat : MonoBehaviour
 
     private void CapacityTimerHandler()
     {
-        _capacityTimer -= Time.deltaTime;
-        if (_capacityTimer <= 0)
+        _capacityTimer += Time.deltaTime;
+        if (_capacityTimer >= _capacityCooldown)
         {
             canUseCapacity = true;
         }
