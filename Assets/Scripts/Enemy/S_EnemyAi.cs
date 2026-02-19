@@ -31,6 +31,8 @@ public class S_EnemyAi : MonoBehaviour
     private bool _walkPointSet;
     private bool _alreadyAttacked;
     private bool _playerInSight, _playerInAttackRange;
+    
+    public bool isDead;
 
     private void Awake()
     {
@@ -87,7 +89,6 @@ public class S_EnemyAi : MonoBehaviour
         {
             _walkPointSet = false;
         }
-        //_characterPrefab.transform.LookAt(new Vector3(transform.position.x, _walkPoint.y, transform.position.z));
     }
 
     private void SearchWalkPoint()
@@ -107,6 +108,10 @@ public class S_EnemyAi : MonoBehaviour
     private void ChasePlayer()
     {
         _agent.SetDestination(_player.position);
+        if (isDead)
+        {
+            _agent.SetDestination(transform.position);
+        }
     }
 
     private void AttackPlayer()
