@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -15,7 +16,7 @@ public class S_PauseMenu : MonoBehaviour
     public void ResumeGame()
     {
         Time.timeScale = 1;
-        Destroy(gameObject);
+        Destroy(transform.parent.gameObject);
     }
 
     public void GoBackToMainMenu()

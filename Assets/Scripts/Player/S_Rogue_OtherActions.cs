@@ -20,6 +20,7 @@ public class S_Rogue_OtherActions : MonoBehaviour
             if (_pauseMenu == null)
             {
                 _pauseMenu = Instantiate(_pauseMenuRef);
+                _inputsManager.pause = false;
             }
         }
     }
