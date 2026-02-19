@@ -10,6 +10,7 @@ public class S_EndingMenu : MonoBehaviour
     private void Start()
     {
         Time.timeScale = 0;
+        GameObject.FindGameObjectWithTag("GUI").SetActive(false);
     }
     
 

@@ -61,7 +61,8 @@ public class S_Rogue_Combat : MonoBehaviour
         {
             isAttacking = true;
             _animator.SetTrigger("Attack");
-            Invoke(nameof(UseAttackCollision), 1f);
+            Invoke(nameof(UseAttackCollision), 0.65f);
+            Invoke(nameof(MoveBackMovementOnAttack), 1.7f);
             _inputsManager.attack = false;
         }
         _inputsManager.attack = false;
@@ -71,13 +72,17 @@ public class S_Rogue_Combat : MonoBehaviour
     {
         _attackCollider.enabled = true;
         Invoke(nameof(StopAttackCollision), 0.1f);
-        Debug.Log("atta");
+    }
+
+    private void MoveBackMovementOnAttack()
+    {
+        isAttacking = false;
     }
 
     private void StopAttackCollision()
     {
+        Debug.Log("atta");
         _attackCollider.enabled = false;
-        isAttacking = false;
     }
 
     private void UseGun()

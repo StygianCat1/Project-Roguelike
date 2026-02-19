@@ -40,6 +40,7 @@ public class S_Rogue_MovementComponent : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     private void Start()
     {
+        Time.timeScale = 1;
         _rigidbody = GetComponent<Rigidbody>();
         _inputsManager = GetComponent<S_Rogue_Inputs>();
         _animator = GetComponent<Animator>();
