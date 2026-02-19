@@ -28,7 +28,7 @@ public class S_KaoriAttackHandler : MonoBehaviour
         
         if (other.tag == "BreakableGlass")
         {
-            Destroy(other.gameObject);
+            other.GetComponent<S_GlassDestroyed>().DestroyGlass();
         }
             
         if (other.tag != "Player" && other.GetComponent<S_HP_Component>() != null)
