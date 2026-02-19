@@ -8,7 +8,7 @@ public class S_CountingScore : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        scoreText.text = " X " + currentScore.ToString();  
+        scoreText.text = currentScore.ToString();  
     }
 
     public void PointsKillEnemies()
