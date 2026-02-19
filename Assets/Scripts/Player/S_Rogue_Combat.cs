@@ -108,13 +108,17 @@ public class S_Rogue_Combat : MonoBehaviour
             }
             
         }
-        isShooting = false;
+        Invoke(nameof(MoveBackMovementOnShooting), 0.7f);
         if (_rogueBonus.luckyshotRate >= Random.Range(1,101))
         {
-            Debug.Log("luckyshot");
             return;
         }
         gunAmmunitions -= 1;
+    }
+    
+    private void MoveBackMovementOnShooting()
+    {
+        isShooting = false;
     }
 
     private void UseCapacity()
@@ -122,13 +126,20 @@ public class S_Rogue_Combat : MonoBehaviour
         if (_inputsManager.useCapacity && canUseCapacity)
         {
             canUseCapacity = false;
+            isUsingCapacity = true;
             GameObject kaoriGameObject = Instantiate(_kaoriForCapacity, transform.position + new Vector3(_movementComponent._directionCharacter * 0.5f,0,0), _movementComponent._characterRef.transform.rotation);
             kaoriGameObject.GetComponent<S_KaoriAttackHandler>()._kaoriAttackDamage = _capacityAttackDamage;
             _inputsManager.useCapacity = false;
+            Invoke(nameof(MoveBackMovementOnCapacity), 1);
             _capacityTimer = 0;
             return;
         }
         _inputsManager.useCapacity = false;
+    }
+    private void MoveBackMovementOnCapacity()
+    {
+        Debug.Log("ca");
+        isUsingCapacity = false;
     }
 
     private void CapacityTimerHandler()

@@ -2,7 +2,6 @@ using UnityEngine;
 using TMPro;
 public class S_CountingScore : MonoBehaviour
 {
-     
     public TMP_Text scoreText;
     public int currentScore = 0;
 
