@@ -3,7 +3,9 @@ using UnityEngine;
 
 public class S_GamblingGainUi : MonoBehaviour
 {
-    public TextMeshProUGUI _textToChange;
+    public GameObject imageNothing;
+    public GameObject imageHeals;
+    public GameObject imageBullets;
     
     public void QuitUi()
     {

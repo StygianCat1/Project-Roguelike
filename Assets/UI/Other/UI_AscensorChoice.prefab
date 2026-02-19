@@ -163,6 +163,7 @@ GameObject:
   - component: {fileID: 3281097341495693554}
   - component: {fileID: 8044818367392992501}
   - component: {fileID: 9024421773286449642}
+  - component: {fileID: 8448368047131257458}
   m_Layer: 5
   m_Name: UI_AscensorChoice
   m_TagString: Untagged
@@ -276,6 +277,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   teleporterUsed: {fileID: 0}
+--- !u!114 &8448368047131257458
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2196621134018844819}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 496ef84688fb373479470ae726c8a430, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buttonElevatorFloor2: {fileID: 3765091783155656448}
+  buttonElevatorFloor3: {fileID: 5511575936274186925}
+  buttonElevatorFloor4: {fileID: 8952324793320851098}
+  buttonElevatorFloorBoss: {fileID: 379209971161756285}
 --- !u!1 &2455909800576418340
 GameObject:
   m_ObjectHideFlags: 0
@@ -287,7 +304,6 @@ GameObject:
   - component: {fileID: 6637215972113331235}
   - component: {fileID: 5828960872914508317}
   - component: {fileID: 7070487692174276436}
-  - component: {fileID: 7692329418482048077}
   m_Layer: 5
   m_Name: FloorIndicator
   m_TagString: Untagged
@@ -352,23 +368,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &7692329418482048077
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2455909800576418340}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 496ef84688fb373479470ae726c8a430, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  buttonElevatorFloor2: {fileID: 3765091783155656448}
-  buttonElevatorFloor3: {fileID: 5511575936274186925}
-  buttonElevatorFloor4: {fileID: 8952324793320851098}
-  buttonElevatorFloorBoss: {fileID: 379209971161756285}
-  teleporterHandlerRef: {fileID: 8440395302633185797, guid: ab9e89890e3798546a7264e7758e6199, type: 3}
 --- !u!1 &3765091783155656448
 GameObject:
   m_ObjectHideFlags: 0
