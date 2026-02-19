@@ -24,6 +24,7 @@ public class S_GameOver : MonoBehaviour
     {
         Time.timeScale = 0;
         
+        player = GameObject.FindGameObjectWithTag("MainCharacter");
         _countingScore = GameObject.FindGameObjectWithTag("GUI").GetComponent<S_CountingScore>();
         _rogueBonus = GameObject.FindGameObjectWithTag("MainCharacter").GetComponent<S_Rogue_Bonus>();
 
@@ -35,9 +36,14 @@ public class S_GameOver : MonoBehaviour
         int Total = (_countingScore.currentScore + TotalPerks) / _scoreDivider;
         totalText.SetText( " ( " + _countingScore.currentScore.ToString() + " + " + TotalPerks.ToString() + " ) / " + _scoreDivider.ToString() + " = " + Total.ToString() );
         
-        player.GetComponent<S_Resources>()._resourcesOutGame += Mathf.RoundToInt(Total);
-       
-        player = GameObject.FindGameObjectWithTag("MainCharacter");
+        Debug.Log(Total);
+        player.GetComponent<S_Resources>()._resourcesOutGame += Total;
+        
+        SaveRessourcesInfo();
+    }
+
+    private void SaveRessourcesInfo()
+    {
         S_GameManager.outGameMoneySave = player.GetComponent<S_Resources>()._resourcesOutGame;
         S_GameManager.luckyGamblerUpgradeLevelSave = 0;
         S_GameManager.avidityUpgradeLevelSave = 0;

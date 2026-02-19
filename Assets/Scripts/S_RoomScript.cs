@@ -9,6 +9,9 @@ public class S_RoomScript : MonoBehaviour
     public List<GameObject> _leftUpDoor ;
     public List<GameObject> _rightUpDoor ;
     
+    public List<GameObject> _leftDoorFrame ;
+    public List<GameObject> _rightDoorFrame ;
+    
     public List<GameObject> _enemyInRoom ;
 
     public E_RoomHeight roomHeight;
@@ -45,6 +48,8 @@ public class S_RoomScript : MonoBehaviour
         }
         foreach (GameObject featuresAtLeftDoor  in _leftDoor) featuresAtLeftDoor.SetActive(false);
         foreach (GameObject featuresAtRightDoor  in _rightDoor) featuresAtRightDoor.SetActive(false);
+        foreach (GameObject featuresAtLeftDoor  in _leftDoorFrame) featuresAtLeftDoor.SetActive(false);
+        foreach (GameObject featuresAtRightDoor  in _rightDoorFrame) featuresAtRightDoor.SetActive(false);
 
         if (_tpInRoom != null)
         {
@@ -69,10 +74,18 @@ public class S_RoomScript : MonoBehaviour
         {
             foreach (GameObject featuresAtRightDoor  in _leftDoor) featuresAtRightDoor.SetActive(true);
         }
+        else
+        {
+            foreach (GameObject featuresAtRightDoor  in _leftDoorFrame) featuresAtRightDoor.SetActive(true);
+        }
 
         if (_doorOnRight)
         {
             foreach (GameObject featuresAtRightDoor  in _rightDoor) featuresAtRightDoor.SetActive(true);
+        }
+        else
+        {
+            foreach (GameObject featuresAtRightDoor  in _rightDoorFrame) featuresAtRightDoor.SetActive(true);
         }
     }
     
@@ -82,10 +95,18 @@ public class S_RoomScript : MonoBehaviour
         {
             foreach (GameObject featuresAtLeftUpDoor  in _leftUpDoor) featuresAtLeftUpDoor.SetActive(true);
         }
+        else
+        {
+            foreach (GameObject featuresAtRightDoor  in _leftDoorFrame) featuresAtRightDoor.SetActive(true);
+        }
 
         if (_doorOnRight)
         {
             foreach (GameObject featuresAtRightUpDoor  in _rightUpDoor) featuresAtRightUpDoor.SetActive(true);
+        }
+        else
+        {
+            foreach (GameObject featuresAtRightDoor  in _rightDoorFrame) featuresAtRightDoor.SetActive(true);
         }
     }
 }

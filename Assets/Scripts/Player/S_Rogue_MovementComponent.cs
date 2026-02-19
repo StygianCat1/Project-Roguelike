@@ -51,12 +51,11 @@ public class S_Rogue_MovementComponent : MonoBehaviour
     private void Update()
     {
         GetCharacterDirection();
-        CharacterFaceDirection();
         if (isDashing || _combat.isAttacking || _combat.isShooting || _combat.isUsingCapacity)
         {
             return;
         }
-        //Debug.Log("pomme de terre");
+        CharacterFaceDirection();
         Movement();
         Jump();
         Dash();
