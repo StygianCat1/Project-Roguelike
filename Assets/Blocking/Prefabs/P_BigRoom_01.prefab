@@ -1232,6 +1232,8 @@ MonoBehaviour:
   - {fileID: 6823792188089768581}
   - {fileID: 3094894291396311105}
   - {fileID: 8110957118217081822}
+  _leftDoorFrame: []
+  _rightDoorFrame: []
   _enemyInRoom:
   - {fileID: 4302471787136189412}
   - {fileID: 5707976793404844457}
@@ -1244,7 +1246,7 @@ MonoBehaviour:
   specialRoomtype: 0
   _stairsRef: []
   _tpInRoom: {fileID: 0}
-  _doorOnLeft: 1
+  _doorOnLeft: 0
   _doorOnRight: 0
 --- !u!1 &6761267540234933036
 GameObject:

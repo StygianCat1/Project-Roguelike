@@ -1483,6 +1483,8 @@ MonoBehaviour:
   - {fileID: 7899328001597669275}
   _leftUpDoor: []
   _rightUpDoor: []
+  _leftDoorFrame: []
+  _rightDoorFrame: []
   _enemyInRoom:
   - {fileID: 4749398089664955323}
   roomHeight: 2
@@ -1491,7 +1493,7 @@ MonoBehaviour:
   _stairsRef: []
   _tpInRoom: {fileID: 1329500125972069626}
   _doorOnLeft: 0
-  _doorOnRight: 1
+  _doorOnRight: 0
 --- !u!64 &1535228266542415133
 MeshCollider:
   m_ObjectHideFlags: 0
