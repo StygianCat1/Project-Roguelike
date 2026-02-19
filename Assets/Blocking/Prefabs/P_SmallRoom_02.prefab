@@ -1474,13 +1474,13 @@ MonoBehaviour:
   _rightUpDoor: []
   _enemyInRoom:
   - {fileID: 4749398089664955323}
-  roomHeight: 0
+  roomHeight: 2
   roomType: 0
   specialRoomtype: 0
   _stairsRef: []
   _tpInRoom: {fileID: 0}
   _doorOnLeft: 0
-  _doorOnRight: 0
+  _doorOnRight: 1
 --- !u!64 &1535228266542415133
 MeshCollider:
   m_ObjectHideFlags: 0
