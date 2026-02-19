@@ -349,6 +349,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 95.135
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 78907a07c0f2d804daa3a8582eb8404c, type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 78907a07c0f2d804daa3a8582eb8404c, type: 3}
+      propertyPath: 'm_Materials.Array.data[1]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 90edf03afda7d494280a57ef9269b730, type: 2}
     - target: {fileID: 919132149155446097, guid: 78907a07c0f2d804daa3a8582eb8404c, type: 3}
       propertyPath: m_Name
       value: SM_marteau_Kaori
@@ -434,10 +442,6 @@ PrefabInstance:
     - target: {fileID: -7469931708093840818, guid: 96961c17be15a7a4480a46969a20f0b5, type: 3}
       propertyPath: m_Materials.Array.size
       value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: -7469931708093840818, guid: 96961c17be15a7a4480a46969a20f0b5, type: 3}
-      propertyPath: 'm_Materials.Array.data[0]'
-      value: 
       objectReference: {fileID: 0}
     - target: {fileID: -7469931708093840818, guid: 96961c17be15a7a4480a46969a20f0b5, type: 3}
       propertyPath: 'm_Materials.Array.data[1]'
@@ -684,10 +688,6 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6823536936446573467, guid: 96961c17be15a7a4480a46969a20f0b5, type: 3}
-      propertyPath: 'm_Materials.Array.data[0]'
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 6823536936446573467, guid: 96961c17be15a7a4480a46969a20f0b5, type: 3}
       propertyPath: 'm_Materials.Array.data[1]'
       value: 
       objectReference: {fileID: 2100000, guid: e277dc91bc020d44888e012a50db8c9b, type: 2}
@@ -714,10 +714,6 @@ PrefabInstance:
     - target: {fileID: 8859833490315659835, guid: 96961c17be15a7a4480a46969a20f0b5, type: 3}
       propertyPath: m_Materials.Array.size
       value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 8859833490315659835, guid: 96961c17be15a7a4480a46969a20f0b5, type: 3}
-      propertyPath: 'm_Materials.Array.data[0]'
-      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 8859833490315659835, guid: 96961c17be15a7a4480a46969a20f0b5, type: 3}
       propertyPath: 'm_Materials.Array.data[1]'
@@ -776,7 +772,7 @@ MonoBehaviour:
   material: {fileID: 2100000, guid: 31595980a6baf4c4fb9d3b75c45314b8, type: 2}
   instanceMaterial: 1
   meshCenter: {x: 0, y: 2, z: 0}
-  maxLights: 20
+  maxLights: 30
   raycast: 1
   raycastMask:
     serializedVersion: 2
@@ -802,7 +798,7 @@ MonoBehaviour:
   material: {fileID: 2100000, guid: 54fa06ece0899a54990408f7696967ad, type: 2}
   instanceMaterial: 1
   meshCenter: {x: 0, y: 2, z: 0}
-  maxLights: 20
+  maxLights: 30
   raycast: 1
   raycastMask:
     serializedVersion: 2
@@ -843,7 +839,7 @@ MonoBehaviour:
   material: {fileID: 2100000, guid: 6d2287702f175a8409a0a59dfd9f4067, type: 2}
   instanceMaterial: 1
   meshCenter: {x: 0, y: 2, z: 0}
-  maxLights: 20
+  maxLights: 30
   raycast: 1
   raycastMask:
     serializedVersion: 2
