@@ -117,7 +117,12 @@ public class S_EnemyAi : MonoBehaviour
     private void AttackPlayer()
     {
         _agent.SetDestination(transform.position);
-
+        
+        if (isDead)
+        {
+            return;
+        }
+        
         transform.LookAt(new Vector3(_player.position.x, transform.position.y, transform.position.z));
 
         if (!_alreadyAttacked)
