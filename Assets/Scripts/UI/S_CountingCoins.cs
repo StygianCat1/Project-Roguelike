@@ -7,29 +7,19 @@ public class S_CountingCoins : MonoBehaviour
 {
     
     public TMP_Text coinText;
-    public static S_CountingCoins instance;
     public int currentCoins = 0;
+    
+    private S_Resources _resources;
 
-    void Awake()
+    private void Start()
     {
-        instance = this;
+        _resources = GameObject.FindGameObjectWithTag("MainCharacter").GetComponent<S_Resources>();
     }
-
-    void Start()
-    {
-        coinText.text = "X " + currentCoins.ToString();
-    }
-
 
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        coinText.text = currentCoins.ToString();  
-    }
-
-    public void IncreaseCoins()
-    {
-        currentCoins += 1;
-        coinText.text = "X " + currentCoins.ToString();
+        currentCoins = _resources._resourcesInGame;
+        coinText.text = " X " + currentCoins.ToString();  
     }
 }

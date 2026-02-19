@@ -40,6 +40,7 @@ public class S_Rogue_MovementComponent : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     private void Start()
     {
+        Time.timeScale = 1;
         _rigidbody = GetComponent<Rigidbody>();
         _inputsManager = GetComponent<S_Rogue_Inputs>();
         _animator = GetComponent<Animator>();
@@ -66,7 +67,12 @@ public class S_Rogue_MovementComponent : MonoBehaviour
         Vector3 MoveVector = transform.TransformDirection(new Vector3 (_inputsManager.moveX, 0, 0));
         _currentMoveVelocity = Vector3.SmoothDamp(_currentMoveVelocity, MoveVector * _movementSpeed, ref _moveDampVelocity, _moveSmoothTime);
         _animator.SetFloat("MoveX", _inputsManager.moveX);
-        transform.Translate(_currentMoveVelocity * Time.deltaTime, Space.World);
+        if (!_canJump)
+        {
+            transform.Translate(_currentMoveVelocity * Time.deltaTime, Space.World);
+        }
+        _rigidbody.MovePosition(_rigidbody.position + _currentMoveVelocity * Time.deltaTime);
+
     }
 
     private void CharacterFaceDirection()

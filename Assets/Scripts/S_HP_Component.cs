@@ -5,16 +5,23 @@ public class S_HP_Component : MonoBehaviour
     public int _currentHealth;
     [SerializeField] private GameObject GameOverCanvas;
     
-    [SerializeField] private int _maxHealth = 100;
+    private S_CountingScore _countingScore;
+    
+    [HideInInspector] public int _maxHealth = 100;
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     private void Start()
     {
         _currentHealth = _maxHealth;
+        _countingScore = GameObject.FindGameObjectWithTag("GUI").GetComponent<S_CountingScore>();
     }
 
     public void TakeDamage(int damage)
     {
+        if (gameObject.tag != "Player")
+        {
+            _countingScore.PointsPunchEnemies();
+        }
         _currentHealth = Mathf.Clamp(_currentHealth - damage, 0, _maxHealth);
         if (_currentHealth <= 0)
         {
@@ -34,6 +41,7 @@ public class S_HP_Component : MonoBehaviour
             Instantiate(GameOverCanvas);
             return;
         }
+        _countingScore.PointsKillEnemies();
         gameObject.GetComponent<S_DropRateOnEnemy>().DropMoney();
         Invoke(nameof(DestroyGameObject), 0.1f);
     }

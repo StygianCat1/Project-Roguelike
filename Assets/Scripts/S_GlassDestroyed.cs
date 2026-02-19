@@ -5,7 +5,7 @@ public class S_GlassDestroyed : MonoBehaviour
 {
     [SerializeField] private GameObject _endingUiRef;
 
-    private void OnDestroy()
+    public void DestroyGlass()
     {
         Instantiate(_endingUiRef);
     }
