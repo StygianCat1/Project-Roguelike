@@ -20,7 +20,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: M_Outliner_tabouret
+  m_Name: M_Outliner_tabouret 1
   m_Shader: {fileID: -6465566751694194690, guid: 62795c777351d4041a1e772fe34d91af, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -69,7 +69,7 @@ Material:
     - _ZWrite: 1
     - _ZWriteControl: 0
     - _fade_distance: 75
-    - _outline_tickness: 0.79
+    - _outline_tickness: 0.015
     m_Colors:
     - _outline_color: {r: 0, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []
