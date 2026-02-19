@@ -89,11 +89,15 @@ public class S_Rogue_MovementComponent : MonoBehaviour
             if (!_canJump)
             {
                 Invoke(nameof(ResetJump), _jumpSecurity);
+                _animator.SetBool("Land", true);
+            }
+            else
+            {
+                _animator.SetBool("Land", false);
             }
         }
         if (_inputsManager.jump && _canJump)
         {
-            _animator.SetTrigger("Jump");
             _jumpVelocity = Mathf.Sqrt(_jumpHeight * -2.5f * ( Physics.gravity.y * _gravityScale));
             _canJump = false;
         } 
@@ -103,6 +107,7 @@ public class S_Rogue_MovementComponent : MonoBehaviour
     private void ResetJump()
     {
         _canJump = true;
+        Debug.Log("aled");
     }
 
     private void Dash()
