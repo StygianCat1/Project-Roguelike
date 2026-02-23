@@ -8,7 +8,7 @@ public class S_Resources : MonoBehaviour
 
     private void Start()
     {
-        _resourcesOutGame = S_GameManager.outGameMoneySave;
+        _resourcesOutGame = S_GameManager.outGameMoneySave / 2;
     }
 
     public void AddInGameMoney(int amount)

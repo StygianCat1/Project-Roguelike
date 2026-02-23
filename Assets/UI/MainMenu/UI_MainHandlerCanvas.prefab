@@ -115,6 +115,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: UI_OptionsMenu
       objectReference: {fileID: 0}
+    - target: {fileID: 781741828274249048, guid: da425289c3d579e4bb019300af52fc6d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3218247256765325107, guid: da425289c3d579e4bb019300af52fc6d, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -226,6 +230,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: UI_MainMenuCanvas (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 673867089980198487, guid: 44edb94436ab6f84fac45f4d3397523c, type: 3}
+      propertyPath: m_text
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 1013517328177362300, guid: 44edb94436ab6f84fac45f4d3397523c, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -317,6 +325,74 @@ PrefabInstance:
     - target: {fileID: 1013517328177362300, guid: 44edb94436ab6f84fac45f4d3397523c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2028050459308359168, guid: 44edb94436ab6f84fac45f4d3397523c, type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2028050459308359168, guid: 44edb94436ab6f84fac45f4d3397523c, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 473235db612c55e43b0ca17a12f3e17a, type: 3}
+    - target: {fileID: 2028050459308359168, guid: 44edb94436ab6f84fac45f4d3397523c, type: 3}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2366030014399880120, guid: 44edb94436ab6f84fac45f4d3397523c, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 483
+      objectReference: {fileID: 0}
+    - target: {fileID: 2366030014399880120, guid: 44edb94436ab6f84fac45f4d3397523c, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 119
+      objectReference: {fileID: 0}
+    - target: {fileID: 3004026861567357847, guid: 44edb94436ab6f84fac45f4d3397523c, type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3004026861567357847, guid: 44edb94436ab6f84fac45f4d3397523c, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 1619c78a5f070434bbcb8c9ca2b54d6b, type: 3}
+    - target: {fileID: 3105548268399075403, guid: 44edb94436ab6f84fac45f4d3397523c, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 484
+      objectReference: {fileID: 0}
+    - target: {fileID: 3105548268399075403, guid: 44edb94436ab6f84fac45f4d3397523c, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 117
+      objectReference: {fileID: 0}
+    - target: {fileID: 3436624978467875872, guid: 44edb94436ab6f84fac45f4d3397523c, type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3436624978467875872, guid: 44edb94436ab6f84fac45f4d3397523c, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: f1c069e8cad7cfe43acfa6bbede9c7f3, type: 3}
+    - target: {fileID: 4502873889726617486, guid: 44edb94436ab6f84fac45f4d3397523c, type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4502873889726617486, guid: 44edb94436ab6f84fac45f4d3397523c, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 5e02338fe8ab02c459f0f0f73265d3e3, type: 3}
+    - target: {fileID: 5004354230783720425, guid: 44edb94436ab6f84fac45f4d3397523c, type: 3}
+      propertyPath: m_text
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5810780344248930864, guid: 44edb94436ab6f84fac45f4d3397523c, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 484
+      objectReference: {fileID: 0}
+    - target: {fileID: 5810780344248930864, guid: 44edb94436ab6f84fac45f4d3397523c, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 118
+      objectReference: {fileID: 0}
+    - target: {fileID: 7414053036915096880, guid: 44edb94436ab6f84fac45f4d3397523c, type: 3}
+      propertyPath: m_text
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 7825017454475551831, guid: 44edb94436ab6f84fac45f4d3397523c, type: 3}
       propertyPath: OptionsMenu

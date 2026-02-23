@@ -74,7 +74,7 @@ public class S_RoomScript : MonoBehaviour
         {
             foreach (GameObject featuresAtRightDoor  in _leftDoor) featuresAtRightDoor.SetActive(true);
         }
-        else
+        else if (!_doorOnLeft)
         {
             foreach (GameObject featuresAtRightDoor  in _leftDoorFrame) featuresAtRightDoor.SetActive(true);
         }
@@ -83,7 +83,7 @@ public class S_RoomScript : MonoBehaviour
         {
             foreach (GameObject featuresAtRightDoor  in _rightDoor) featuresAtRightDoor.SetActive(true);
         }
-        else
+        else if (!_doorOnRight)
         {
             foreach (GameObject featuresAtRightDoor  in _rightDoorFrame) featuresAtRightDoor.SetActive(true);
         }
@@ -95,7 +95,7 @@ public class S_RoomScript : MonoBehaviour
         {
             foreach (GameObject featuresAtLeftUpDoor  in _leftUpDoor) featuresAtLeftUpDoor.SetActive(true);
         }
-        else
+        else if (!_doorOnLeft)
         {
             foreach (GameObject featuresAtRightDoor  in _leftDoorFrame) featuresAtRightDoor.SetActive(true);
         }
@@ -104,7 +104,7 @@ public class S_RoomScript : MonoBehaviour
         {
             foreach (GameObject featuresAtRightUpDoor  in _rightUpDoor) featuresAtRightUpDoor.SetActive(true);
         }
-        else
+        else if (!_doorOnRight)
         {
             foreach (GameObject featuresAtRightDoor  in _rightDoorFrame) featuresAtRightDoor.SetActive(true);
         }
